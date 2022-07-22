@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="Batadvisor">
+  <meta name="description" content="NFT">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <title>Batadvisor</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <title>NFT</title>
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64x64.png">
@@ -19,137 +16,237 @@
 </head>
   <body>
     <header class="header">
-  <div class="header__container">
-    <div class="header__left">
-      <div class="header__logo">
-        <img src="data/logo.svg" width="134" height="26" alt="logo">
-        <a href="#" class="header__logo-link"></a>
+  <picture class="header__bg">
+    <source srcset="data/header-mobile.jpg" media="(max-width: 1200px)">
+    <img src="data/header.png" width="1920" height="120" alt="header-bg">
+  </picture>
+  <div class="container">
+    <div class="header__container">
+      <div class="header__left">
+        <div class="header__logo header__logo--main">
+          <img src="images/logo.svg" width="98" height="60" alt="logo">
+          <a href="#" class="header__logo-link"></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <form action="#" class="header__form">
+          <div class="header__form-title">
+            <svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.52841L8.67464 7.31938C8.34607 7.67521 7.90122 7.875 7.43747 7.875C6.97372 7.875 6.52887 7.67521 6.2003 7.31938L0.874971 1.52841C1.13295 1.06331 1.4968 0.678331 1.93142 0.410617C2.36605 0.142903 2.85679 0.00148382 3.35631 0H11.5186C12.0181 0.00148382 12.5089 0.142903 12.9435 0.410617C13.3781 0.678331 13.742 1.06331 14 1.52841ZM9.62908 8.10978L14.8465 2.62491C14.8497 2.66316 14.8545 2.70005 14.8592 2.73656C14.8672 2.79834 14.875 2.85903 14.875 2.92333V10.7421C14.874 11.6058 14.5472 12.4338 13.9662 13.0446C13.3853 13.6553 12.5976 13.9989 11.776 13.9999H3.09896C2.27737 13.9989 1.4897 13.6553 0.908751 13.0446C0.327797 12.4338 0.000984141 11.6058 0 10.7421V2.92333C0 2.85904 0.00783507 2.79834 0.0158106 2.73656C0.0205243 2.70005 0.0252871 2.66316 0.0285104 2.62491L5.24592 8.10978C5.82767 8.71981 6.61582 9.06239 7.4375 9.06239C8.25918 9.06239 9.04733 8.71981 9.62908 8.10978Z" />
+            </svg>
+            Weekly NFT stories and discussions
+          </div>
+          <label class="header__form-checkbox">
+            <input type="checkbox">
+            <span>I agree to <a href="#">T&Cs</a></span>
+          </label>
+          <button type="submit" class="header__form-btn">
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.33265 14.2227L11.5576 4.99783L12.1254 11.2126C12.1387 11.3566 12.1802 11.4966 12.2476 11.6246C12.3149 11.7526 12.4069 11.866 12.5181 11.9585C12.7427 12.1452 13.0323 12.235 13.3232 12.2082C13.6141 12.1814 13.8824 12.0401 14.0691 11.8155C14.2558 11.5908 14.3456 11.3012 14.3188 11.0104L13.541 2.45436C13.53 2.39108 13.5144 2.32868 13.4943 2.26769C13.4554 2.2288 13.471 2.16657 13.4477 2.11212C13.3937 1.98769 13.3173 1.87429 13.2221 1.77766C13.1255 1.6825 13.0121 1.60602 12.8876 1.5521C12.8487 1.51321 12.7865 1.52876 12.7321 1.50543C12.6711 1.48531 12.6087 1.46971 12.5454 1.45876L3.9894 0.680941C3.82847 0.666271 3.66628 0.687241 3.51437 0.74236C3.36245 0.797478 3.22455 0.885391 3.11047 0.999846C2.92837 1.18123 2.81554 1.42065 2.79156 1.67655C2.7781 1.82061 2.79319 1.9659 2.83596 2.10412C2.87874 2.24234 2.94836 2.37076 3.04085 2.48203C3.13333 2.5933 3.24686 2.68523 3.37492 2.75255C3.50299 2.81988 3.64308 2.86128 3.78717 2.87439L10.0019 3.44219L0.777016 12.6671C0.570726 12.8734 0.454834 13.1532 0.454834 13.4449C0.454834 13.7367 0.570726 14.0165 0.777016 14.2227C0.983306 14.429 1.2631 14.5449 1.55483 14.5449C1.84657 14.5449 2.12636 14.429 2.33265 14.2227Z" />
+            </svg>
+            Subscribe
+          </button>
+        </form>
       </div>
-    </div>
-    <div class="header__center">
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="menu-item-has-children">
-            <a href="#">Online Betting</a>
-            <ul>
-              <li><a href="#">Football Betting</a></li>
-              <li><a href="#">NBA Betting</a></li>
-              <li><a href="#">Horse Betting</a></li>
-              <li><a href="#">Tennis Betting</a></li>
-              <li><a href="#">Esports Betting</a></li>
-            </ul>
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">Online Casino</a>
-            <ul>
-              <li><a href="#">Live Casino</a></li>
-              <li><a href="#">Mobile Casino</a></li>
-              <li><a href="#">Real Money Online Casino</a></li>
-              <li><a href="#">Free SGD Credit Online Casino</a></li>
-              <li><a href="#">Casino Games</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Lottery Results</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__right">
-      <div class="header__mobile-btn">
-        <svg width="18" height="12" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.05 0H0.95C0.42533 0 0 0.425329 0 0.95V1.05C0 1.57467 0.42533 2 0.95 2H17.05C17.5747 2 18 1.57467 18 1.05V0.95C18 0.425329 17.5747 0 17.05 0Z"/>
-          <path d="M17.05 5H0.95C0.42533 5 0 5.42533 0 5.95V6.05C0 6.57467 0.42533 7 0.95 7H17.05C17.5747 7 18 6.57467 18 6.05V5.95C18 5.42533 17.5747 5 17.05 5Z"/>
-          <path d="M17.05 10H0.95C0.42533 10 0 10.4253 0 10.95V11.05C0 11.5747 0.42533 12 0.95 12H17.05C17.5747 12 18 11.5747 18 11.05V10.95C18 10.4253 17.5747 10 17.05 10Z"/>
+      <div class="header__right">
+        <a href="#" class="header__contacts-btn btn">Contact Us</a>
+      </div>
+      <div class="header__mobile-menu">
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 0H0.666667C0.298477 0 0 0.29041 0 0.648649C0 1.00689 0.298477 1.2973 0.666667 1.2973H15.3333C15.7015 1.2973 16 1.00689 16 0.648649C16 0.29041 15.7015 0 15.3333 0ZM15.3333 4.75676H0.666667C0.298477 4.75676 0 5.04717 0 5.40541C0 5.76365 0.298477 6.05406 0.666667 6.05406H15.3333C15.7015 6.05406 16 5.76365 16 5.40541C16 5.04717 15.7015 4.75676 15.3333 4.75676ZM0.666667 9.2973H15.3333C15.7015 9.2973 16 9.63611 16 10.0541C16 10.472 15.7015 10.8108 15.3333 10.8108H0.666667C0.298477 10.8108 0 10.472 0 10.0541C0 9.63611 0.298477 9.2973 0.666667 9.2973Z" fill="white"/>
         </svg>
       </div>
-      <a href="#" class="header__btn btn">Contact Us</a>
     </div>
   </div>
   <div class="header__mobile">
-    <div class="header__mobile-overlay js-close-menu"></div>
+    <div class="header__mobile-overlay"></div>
+    <div class="header__mobile-close">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 1.28033C-0.0732234 0.987437 -0.0732234 0.512563 0.21967 0.21967C0.512563 -0.0732235 0.987437 -0.0732235 1.28033 0.21967L6.40723 5.34657L11.5341 0.21967C11.827 -0.0732235 12.3019 -0.0732235 12.5948 0.21967C12.8877 0.512563 12.8877 0.987437 12.5948 1.28033L7.46789 6.40723L12.594 11.5334C12.8869 11.8263 12.8869 12.3011 12.594 12.594C12.3011 12.8869 11.8263 12.8869 11.5334 12.594L6.40723 7.46789L1.28107 12.594C0.988181 12.8869 0.513308 12.8869 0.220415 12.594C-0.0724785 12.3011 -0.0724795 11.8263 0.220415 11.5334L5.34657 6.40723L0.21967 1.28033Z" fill="#F30269"/>
+      </svg>
+    </div>
     <div class="header__mobile-box">
-      <div class="header__mobile-close js-close-menu">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11.113 8.99744L17.5567 2.56866C17.8389 2.28647 17.9974 1.90375 17.9974 1.50468C17.9974 1.10562 17.8389 0.722895 17.5567 0.440712C17.2745 0.158529 16.8918 0 16.4928 0C16.0937 0 15.711 0.158529 15.4288 0.440712L9 6.88448L2.57121 0.440712C2.28903 0.158529 1.90631 -2.97328e-09 1.50724 0C1.10817 2.97328e-09 0.725452 0.158529 0.443269 0.440712C0.161086 0.722895 0.00255743 1.10562 0.00255743 1.50468C0.00255743 1.90375 0.161086 2.28647 0.443269 2.56866L6.88704 8.99744L0.443269 15.4262C0.302812 15.5655 0.191329 15.7313 0.115249 15.9139C0.0391699 16.0965 0 16.2924 0 16.4902C0 16.688 0.0391699 16.8839 0.115249 17.0665C0.191329 17.2491 0.302812 17.4149 0.443269 17.5542C0.582579 17.6946 0.74832 17.8061 0.930933 17.8822C1.11355 17.9583 1.30941 17.9974 1.50724 17.9974C1.70507 17.9974 1.90094 17.9583 2.08355 17.8822C2.26616 17.8061 2.4319 17.6946 2.57121 17.5542L9 11.1104L15.4288 17.5542C15.5681 17.6946 15.7338 17.8061 15.9165 17.8822C16.0991 17.9583 16.2949 17.9974 16.4928 17.9974C16.6906 17.9974 16.8865 17.9583 17.0691 17.8822C17.2517 17.8061 17.4174 17.6946 17.5567 17.5542C17.6972 17.4149 17.8087 17.2491 17.8848 17.0665C17.9608 16.8839 18 16.688 18 16.4902C18 16.2924 17.9608 16.0965 17.8848 15.9139C17.8087 15.7313 17.6972 15.5655 17.5567 15.4262L11.113 8.99744Z" fill="white"/>
-        </svg>
+      <div class="header__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="header__logo-link"></a>
       </div>
-      <div class="header__mobile-title">Menu</div>
+      <div class="social social--header">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__made">Made with ❤️ for NFT</div>
+      <div class="header__copy">© Comvitalo Limited 2022</div>
     </div>
   </div>
 </header>
     <div class="wrapper">
-      <div class="main">
-        <div class="error-page">
-          <img class="error-page__bg" src="data/error-page.jpg" width="1680" height="580" alt="error-page">
+      <div class="error-page">
+        <div class="error-page__top">
+          <svg class="error-page__top-decor" width="1920" height="56" viewBox="0 0 1920 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 -1025H1920V0H1858V26H1762V0H1546V22H1500V0H502V28H474V0H179V56H123V0H96V12H67V0H0V-1025ZM1692 19H1650V55H1692V19Z" fill="white"/>
+          </svg>
           <div class="container">
-            <div class="error-page__text">Sorry. the content you’re looking for doesn’t exist.  Either it was removed, or you mistyped the link.</div>
+            <div class="error-page__oops">Oops! Something went wrong.</div>
+            <div class="error-page__img">
+              <img src="data/404.svg" width="420" height="149" alt="404">
+            </div>
+            <div class="error-page__title title">Page not Found.</div>
+            <div class="error-page__text text-content">
+              <p>There seems to be an issue with the page you’re looking for. The page might be temporarily unavailable or has been removed permanently. If you need any help, feel free to <a href="#">contact us</a> and we’ll get back to you in no time.</p>
+            </div>
             <div class="error-page__btn-box">
-              <a href="#" class="error-page__btn btn-2 btn-2--big">
-                Go to Home Page
-                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.5 8H13.36L9.73 12.36C9.64595 12.4611 9.58265 12.5778 9.5437 12.7034C9.50474 12.829 9.49091 12.961 9.50298 13.0919C9.52736 13.3564 9.65578 13.6003 9.86 13.77C10.0642 13.9397 10.3275 14.0214 10.5919 13.997C10.8563 13.9726 11.1003 13.8442 11.27 13.64L16.27 7.64C16.3036 7.59228 16.3337 7.54214 16.36 7.49C16.36 7.44 16.41 7.41 16.43 7.36C16.4753 7.24534 16.4991 7.12329 16.5 7C16.4991 6.87671 16.4753 6.75466 16.43 6.64C16.43 6.59 16.38 6.56 16.36 6.51C16.3337 6.45786 16.3036 6.40773 16.27 6.36L11.27 0.360002C11.176 0.247119 11.0582 0.156339 10.9252 0.0941181C10.7921 0.0318971 10.6469 -0.000236672 10.5 1.91036e-06C10.2663 -0.000454603 10.0399 0.0809208 9.86 0.230002C9.75874 0.313951 9.67504 0.417051 9.61369 0.533399C9.55234 0.649746 9.51454 0.777054 9.50246 0.908031C9.49039 1.03901 9.50427 1.17108 9.54331 1.29668C9.58236 1.42229 9.6458 1.53895 9.73 1.64L13.36 6H1.5C1.23478 6 0.98043 6.10536 0.792893 6.2929C0.605357 6.48043 0.5 6.73479 0.5 7C0.5 7.26522 0.605357 7.51957 0.792893 7.70711C0.98043 7.89464 1.23478 8 1.5 8Z" fill="white"/>
-                </svg>
-              </a>
+              <a href="#" class="error-page__btn btn-2">Go Back</a>
             </div>
           </div>
+        </div>
+        <div class="form form--decor-2">
+          <div class="form__decor">
+            <svg width="1920" height="382" viewBox="0 0 1920 382" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1815 0H1769V42H1815V0ZM1506 38H1528V60H1506V38ZM1664 79H1700V105H1920V1298H0V186H14V192H39V180H64V192H75H83V166H75V150H91V160H174V221H219V160H251V236H267V160V105H347V78H549V105H550V127H665V105H1664V79ZM167 236H161V244H167V236ZM181 291H197V307H181V291Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="container"><div class="form__box">
+  <div class="form__title">Start Your Journey as an NFT Artist!</div>
+  <div class="form__text">NFT is far far away, behind the word mountains, far from Vokalia and Consonantia.</div>
+  <form action="#" class="form__form">
+    <div class="form__row">
+      <div class="form__cell">
+        <div class="form__label">Your First Name</div>
+        <input type="text" class="form__input">
+      </div>
+      <div class="form__cell">
+        <div class="form__label">Your E-mail</div>
+        <input type="email" class="form__input">
+      </div>
+    </div>
+    <label class="form__checkbox">
+      <input type="checkbox" class="form__checkbox-input">
+      <span class="form__checkbox-text">I agree to the data protection and the GTC</span>
+    </label>
+    <button type="submit" class="form__btn btn-4">Sign Up Now!</button>
+  </form>
+</div></div>
         </div>
       </div>
     </div>
     <footer class="footer">
-  <div class="container">
-    <div class="footer__box">
-      <div class="footer__left">
-        <div class="footer__logo">
-          <img src="data/logo-white.svg" width="134" height="26" alt="logo">
-          <a href="#" class="footer__logo-link"></a>
-        </div>
-        <ul class="footer__list">
-          <li><a href="#">Terms and Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-        <div class="footer__copy">BetAdvisor is the world’s leading independent online gaming authority, providing trusted online casino news, guides, reviews and information since 2020.</div>
+  <div class="footer__container">
+    <div class="footer__left">
+      <div class="footer__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="footer__logo-link"></a>
       </div>
+      <div class="footer__made">Made with ❤️ for NFT</div>
+      <div class="footer__copy">© Comvitalo Limited 2022</div>
+      <div class="footer__info">
+        <div class="footer__info-item">
+          <div class="footer__info-title">Affiliate </div>
+          <div class="footer__info-text text-content">Wir haben eine Affiliate-Partnerschaft mit einigen Partnern, bei der wir einen Prozentsatz des Umsatzes erhalten, wenn du von unserer Seite aus auf die Seite klickst und etwas kaufst</div>
+        </div>
+        <div class="footer__info-item">
+          <div class="footer__info-title">About us  </div>
+          <div class="footer__info-text text-content">Auf dieser Seite findst du Jagdinhalte von Jägern für Jäger. Wir haben unsere Leidenschaft zu diesem Projekt gemacht und hoffen, dass die Inhalte für so viele Jäger wie möglich hilfreich und interessant sind.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__center">
+      <svg class="footer__decor" width="524" height="712" viewBox="0 0 524 712" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M129 712H524V553H511V539H524V370H513V341H524V225H488V169H456V135H488V155H524V0H129V1H116V14H129V60H105V105H129V145H75V130H49V156H69V236H129H195V300H211V340H195V456H216V544H195V564H209V588H195V657H129V682H53V712H129ZM16 209H0V191H16V209ZM425 490H410V475H425V490ZM401 672H425V648H401V672ZM433 206H421V194H433V206Z" fill="white"/>
+      </svg>
       <nav class="footer__nav">
-        <div class="footer__nav-cell">
-          <div class="footer__nav-cell-title">Online Betting</div>
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Legal</div>
           <ul class="footer__nav-list">
-            <li><a href="#">Football Betting</a></li>
-            <li><a href="#">NBA Betting</a></li>
-            <li><a href="#">Horse Betting</a></li>
-            <li><a href="#">Tennis Betting</a></li>
-            <li><a href="#">Esports Betting</a></li>
+            <li><a href="#">Legal Notice</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div class="footer__nav-cell">
-          <div class="footer__nav-cell-title">Online Casino</div>
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Quick Links</div>
           <ul class="footer__nav-list">
-            <li><a href="#">Live Casino</a></li>
-            <li><a href="#">Mobile Casino</a></li>
-            <li><a href="#">Real Money Online Casino</a></li>
-            <li><a href="#">Free SGD Credit Online Casino</a></li>
-            <li><a href="#">Casino Games</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav-cell">
-          <div class="footer__nav-cell-title">Links</div>
-          <ul class="footer__nav-list">
+            <li><a href="#">Academy</a></li>
             <li><a href="#">Reviews</a></li>
-            <li><a href="#">Lottery Results</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#">Projects</a></li>
           </ul>
-          <a href="#" class="footer__btn btn-4">Contact Us</a>
         </div>
       </nav>
     </div>
-  </div>
-  <div class="btn-top js-scroll-top">
-    <div class="btn-top__icon">
-      <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7.99939 15.0006L7.99939 3.14061L12.3594 6.77061C12.4605 6.85466 12.5772 6.91796 12.7028 6.95692C12.8284 6.99587 12.9604 7.0097 13.0913 6.99763C13.3557 6.97325 13.5997 6.84483 13.7694 6.64061C13.9391 6.4364 14.0208 6.17311 13.9964 5.90869C13.972 5.64426 13.8436 5.40035 13.6394 5.23061L7.63939 0.23061C7.59167 0.196971 7.54153 0.166889 7.48939 0.14061C7.43939 0.14061 7.40939 0.0906101 7.35939 0.0706101C7.24473 0.0252836 7.12268 0.00155149 6.99939 0.000610352C6.8761 0.00155146 6.75405 0.0252835 6.63939 0.07061C6.58939 0.07061 6.55939 0.12061 6.50939 0.14061C6.45725 0.166889 6.40712 0.19697 6.35939 0.23061L0.359392 5.23061C0.246509 5.32463 0.155729 5.44237 0.0935078 5.57546C0.0312867 5.70854 -0.000847004 5.8537 -0.000608441 6.00061C-0.00106498 6.23426 0.0803099 6.4607 0.229391 6.64061C0.31334 6.74187 0.416441 6.82557 0.532788 6.88692C0.649135 6.94827 0.776443 6.98607 0.90742 6.99815C1.0384 7.01022 1.17047 6.99634 1.29607 6.9573C1.42168 6.91825 1.53834 6.85481 1.63939 6.77061L5.99939 3.14061L5.99939 15.0006C5.99939 15.2658 6.10475 15.5202 6.29228 15.7077C6.47982 15.8953 6.73417 16.0006 6.99939 16.0006C7.26461 16.0006 7.51896 15.8953 7.7065 15.7077C7.89403 15.5202 7.99939 15.2658 7.99939 15.0006Z" />
-      </svg>
+    <div class="footer__right">
+      <div class="footer__contacts-title">Newsletter Sign Up</div>
+      <div class="footer__contacts-text text-content">We share the top stories and discussions about NFT in a 5 minute email newsletter. Subscribe below to receive it, every week, for free</div>
+      <form action="#" class="footer__form">
+        <div class="footer__form-row">
+          <input type="email" placeholder="Enter your email Address">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <div class="footer__form-row">
+          <input type="text" placeholder="Enter your Name">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <label class="footer__form-checkbox">
+          <input type="checkbox" class="footer__form-checkbox-input">
+          <span class="footer__form-checkbox-text">I agree to my personal data being stored and used to receive newsletters. <a href="#">Terms & Conditions</a> apply.</span>
+        </label>
+        <button type="submit" class="footer__form-btn btn-2">Sign Up Now</button>
+      </form>
+      <div class="social">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    BACK TO TOP
   </div>
 </footer>
     

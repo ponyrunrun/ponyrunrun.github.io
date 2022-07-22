@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="NFT">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>NFT</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+  <link href="css/index.css" rel="stylesheet">
+</head>
+  <body>
+    <header class="header">
+  <picture class="header__bg">
+    <source srcset="data/header-mobile.jpg" media="(max-width: 1200px)">
+    <img src="data/header.png" width="1920" height="120" alt="header-bg">
+  </picture>
+  <div class="container">
+    <div class="header__container">
+      <div class="header__left">
+        <div class="header__logo header__logo--main">
+          <img src="images/logo.svg" width="98" height="60" alt="logo">
+          <a href="#" class="header__logo-link"></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <form action="#" class="header__form">
+          <div class="header__form-title">
+            <svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.52841L8.67464 7.31938C8.34607 7.67521 7.90122 7.875 7.43747 7.875C6.97372 7.875 6.52887 7.67521 6.2003 7.31938L0.874971 1.52841C1.13295 1.06331 1.4968 0.678331 1.93142 0.410617C2.36605 0.142903 2.85679 0.00148382 3.35631 0H11.5186C12.0181 0.00148382 12.5089 0.142903 12.9435 0.410617C13.3781 0.678331 13.742 1.06331 14 1.52841ZM9.62908 8.10978L14.8465 2.62491C14.8497 2.66316 14.8545 2.70005 14.8592 2.73656C14.8672 2.79834 14.875 2.85903 14.875 2.92333V10.7421C14.874 11.6058 14.5472 12.4338 13.9662 13.0446C13.3853 13.6553 12.5976 13.9989 11.776 13.9999H3.09896C2.27737 13.9989 1.4897 13.6553 0.908751 13.0446C0.327797 12.4338 0.000984141 11.6058 0 10.7421V2.92333C0 2.85904 0.00783507 2.79834 0.0158106 2.73656C0.0205243 2.70005 0.0252871 2.66316 0.0285104 2.62491L5.24592 8.10978C5.82767 8.71981 6.61582 9.06239 7.4375 9.06239C8.25918 9.06239 9.04733 8.71981 9.62908 8.10978Z" />
+            </svg>
+            Weekly NFT stories and discussions
+          </div>
+          <label class="header__form-checkbox">
+            <input type="checkbox">
+            <span>I agree to <a href="#">T&Cs</a></span>
+          </label>
+          <button type="submit" class="header__form-btn">
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.33265 14.2227L11.5576 4.99783L12.1254 11.2126C12.1387 11.3566 12.1802 11.4966 12.2476 11.6246C12.3149 11.7526 12.4069 11.866 12.5181 11.9585C12.7427 12.1452 13.0323 12.235 13.3232 12.2082C13.6141 12.1814 13.8824 12.0401 14.0691 11.8155C14.2558 11.5908 14.3456 11.3012 14.3188 11.0104L13.541 2.45436C13.53 2.39108 13.5144 2.32868 13.4943 2.26769C13.4554 2.2288 13.471 2.16657 13.4477 2.11212C13.3937 1.98769 13.3173 1.87429 13.2221 1.77766C13.1255 1.6825 13.0121 1.60602 12.8876 1.5521C12.8487 1.51321 12.7865 1.52876 12.7321 1.50543C12.6711 1.48531 12.6087 1.46971 12.5454 1.45876L3.9894 0.680941C3.82847 0.666271 3.66628 0.687241 3.51437 0.74236C3.36245 0.797478 3.22455 0.885391 3.11047 0.999846C2.92837 1.18123 2.81554 1.42065 2.79156 1.67655C2.7781 1.82061 2.79319 1.9659 2.83596 2.10412C2.87874 2.24234 2.94836 2.37076 3.04085 2.48203C3.13333 2.5933 3.24686 2.68523 3.37492 2.75255C3.50299 2.81988 3.64308 2.86128 3.78717 2.87439L10.0019 3.44219L0.777016 12.6671C0.570726 12.8734 0.454834 13.1532 0.454834 13.4449C0.454834 13.7367 0.570726 14.0165 0.777016 14.2227C0.983306 14.429 1.2631 14.5449 1.55483 14.5449C1.84657 14.5449 2.12636 14.429 2.33265 14.2227Z" />
+            </svg>
+            Subscribe
+          </button>
+        </form>
+      </div>
+      <div class="header__right">
+        <a href="#" class="header__contacts-btn btn">Contact Us</a>
+      </div>
+      <div class="header__mobile-menu">
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 0H0.666667C0.298477 0 0 0.29041 0 0.648649C0 1.00689 0.298477 1.2973 0.666667 1.2973H15.3333C15.7015 1.2973 16 1.00689 16 0.648649C16 0.29041 15.7015 0 15.3333 0ZM15.3333 4.75676H0.666667C0.298477 4.75676 0 5.04717 0 5.40541C0 5.76365 0.298477 6.05406 0.666667 6.05406H15.3333C15.7015 6.05406 16 5.76365 16 5.40541C16 5.04717 15.7015 4.75676 15.3333 4.75676ZM0.666667 9.2973H15.3333C15.7015 9.2973 16 9.63611 16 10.0541C16 10.472 15.7015 10.8108 15.3333 10.8108H0.666667C0.298477 10.8108 0 10.472 0 10.0541C0 9.63611 0.298477 9.2973 0.666667 9.2973Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="header__mobile">
+    <div class="header__mobile-overlay"></div>
+    <div class="header__mobile-close">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 1.28033C-0.0732234 0.987437 -0.0732234 0.512563 0.21967 0.21967C0.512563 -0.0732235 0.987437 -0.0732235 1.28033 0.21967L6.40723 5.34657L11.5341 0.21967C11.827 -0.0732235 12.3019 -0.0732235 12.5948 0.21967C12.8877 0.512563 12.8877 0.987437 12.5948 1.28033L7.46789 6.40723L12.594 11.5334C12.8869 11.8263 12.8869 12.3011 12.594 12.594C12.3011 12.8869 11.8263 12.8869 11.5334 12.594L6.40723 7.46789L1.28107 12.594C0.988181 12.8869 0.513308 12.8869 0.220415 12.594C-0.0724785 12.3011 -0.0724795 11.8263 0.220415 11.5334L5.34657 6.40723L0.21967 1.28033Z" fill="#F30269"/>
+      </svg>
+    </div>
+    <div class="header__mobile-box">
+      <div class="header__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="header__logo-link"></a>
+      </div>
+      <div class="social social--header">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__made">Made with ❤️ for NFT</div>
+      <div class="header__copy">© Comvitalo Limited 2022</div>
+    </div>
+  </div>
+</header>
+    <div class="wrapper">
+      <div class="blog">
+        <div class="blog__body">
+          <div class="blog__body-decor">
+            <svg class="blog__body-decor-top" width="1919" height="56" viewBox="0 0 1919 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 -1377H1919V0H1857V26H1761V0H1545V22H1499V0H501V28H473V0H178V56H122V0H95V12H66V0H-1V-1377ZM1691 19H1649V55H1691V19Z" fill="white"/>
+            </svg>
+            <svg class="blog__body-decor-bottom" width="1919" height="307" viewBox="0 0 1919 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1814 0H1768V42H1814V0ZM1505 38H1527V60H1505V38ZM1663 79H1699V105H1919V6787H-1V186H13V192H38V180H63V192H74H82V166H74V150H90V160H173V221H218V160H250V236H266V160V105H346V78H548V105H549V127H664V105H1663V79ZM166 236H160V244H166V236ZM180 291H196V307H180V291Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="container">
+            <div class="blog__body-box">
+              <ul class="breadcrumb breadcrumb--center">
+                <li>
+                  <a href="#">
+                    Projects
+                    <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.02994 8.95992L7.90034 3.08952L8.26167 7.04437C8.27012 7.13602 8.29654 7.22511 8.33942 7.30655C8.3823 7.38799 8.4408 7.46019 8.51158 7.51903C8.65453 7.63784 8.83883 7.69501 9.02393 7.67794C9.20903 7.66087 9.37977 7.57098 9.49858 7.42803C9.6174 7.28507 9.67456 7.10078 9.6575 6.91568L9.16252 1.47096C9.15555 1.43068 9.14562 1.39098 9.13282 1.35216C9.10807 1.32741 9.11797 1.28782 9.10312 1.25317C9.06881 1.17398 9.02014 1.10182 8.95958 1.04033C8.89809 0.979769 8.82593 0.931103 8.74674 0.896785C8.72199 0.872037 8.6824 0.881936 8.64775 0.867087C8.60893 0.854286 8.56923 0.84436 8.52895 0.837388L3.08423 0.342414C2.98182 0.333078 2.87861 0.346423 2.78194 0.381498C2.68526 0.416574 2.59751 0.472518 2.52491 0.545353C2.40903 0.660779 2.33723 0.813138 2.32197 0.975982C2.3134 1.06765 2.323 1.16012 2.35023 1.24807C2.37745 1.33603 2.42175 1.41775 2.48061 1.48856C2.53946 1.55937 2.6117 1.61787 2.6932 1.66071C2.7747 1.70356 2.86384 1.7299 2.95554 1.73824L6.91039 2.09957L1.03999 7.96997C0.908711 8.10125 0.834961 8.2793 0.834961 8.46495C0.834961 8.6506 0.908711 8.82865 1.03999 8.95992C1.17126 9.0912 1.34931 9.16495 1.53496 9.16495C1.72061 9.16495 1.89866 9.0912 2.02994 8.95992Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Popular NFT projects
+                    <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.02994 8.95992L7.90034 3.08952L8.26167 7.04437C8.27012 7.13602 8.29654 7.22511 8.33942 7.30655C8.3823 7.38799 8.4408 7.46019 8.51158 7.51903C8.65453 7.63784 8.83883 7.69501 9.02393 7.67794C9.20903 7.66087 9.37977 7.57098 9.49858 7.42803C9.6174 7.28507 9.67456 7.10078 9.6575 6.91568L9.16252 1.47096C9.15555 1.43068 9.14562 1.39098 9.13282 1.35216C9.10807 1.32741 9.11797 1.28782 9.10312 1.25317C9.06881 1.17398 9.02014 1.10182 8.95958 1.04033C8.89809 0.979769 8.82593 0.931103 8.74674 0.896785C8.72199 0.872037 8.6824 0.881936 8.64775 0.867087C8.60893 0.854286 8.56923 0.84436 8.52895 0.837388L3.08423 0.342414C2.98182 0.333078 2.87861 0.346423 2.78194 0.381498C2.68526 0.416574 2.59751 0.472518 2.52491 0.545353C2.40903 0.660779 2.33723 0.813138 2.32197 0.975982C2.3134 1.06765 2.323 1.16012 2.35023 1.24807C2.37745 1.33603 2.42175 1.41775 2.48061 1.48856C2.53946 1.55937 2.6117 1.61787 2.6932 1.66071C2.7747 1.70356 2.86384 1.7299 2.95554 1.73824L6.91039 2.09957L1.03999 7.96997C0.908711 8.10125 0.834961 8.2793 0.834961 8.46495C0.834961 8.6506 0.908711 8.82865 1.03999 8.95992C1.17126 9.0912 1.34931 9.16495 1.53496 9.16495C1.72061 9.16495 1.89866 9.0912 2.02994 8.95992Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li><span>Bored Ape Yacht Club (BAYC) Review</span></li>
+              </ul>
+              <div class="blog__title title">NFT culture: a diverse, equitable and inclusive future?</div>
+              <div class="blog__top-info">
+                <div class="blog__top-info-cell">
+                  <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 9H1.5V3.5H8.5V9ZM7 0V1H3V0H2V1H1.5C0.945 1 0.5 1.445 0.5 2V9C0.5 9.26522 0.605357 9.51957 0.792893 9.70711C0.98043 9.89464 1.23478 10 1.5 10H8.5C8.76522 10 9.01957 9.89464 9.20711 9.70711C9.39464 9.51957 9.5 9.26522 9.5 9V2C9.5 1.445 9.05 1 8.5 1H8V0H7ZM7.5 5.5H5V8H7.5V5.5Z" fill="#706C61"/>
+                  </svg>
+                  <b>Last Updated</b> 22 April, 2022
+                </div>
+                <div class="blog__top-info-cell"><b>by Micheal</b></div>
+                <div class="blog__top-info-label">what is nft?</div>
+              </div>
+              <div class="blog__top-img">
+                <img src="data/blog.png" width="750" height="432" alt="blog">
+              </div>
+              <div class="blog__content">
+                <div class="blog__content-inner text-content">
+                  <p style="text-align: center; font-size: 18px;"><b>What does DEI mean in the world of non-fungible tokens? Can NFTs lead the way to a more diverse, equitable and inclusive future?</b></p>
+                  <p style="text-align: center; font-size: 18px;">As NFTs (Non Fungible Tokens) gain popularity as a way of owning digital assets and joining tokenized communities, it’s becoming clear that this use of the blockchain could drive more than just innovation in technology and ownership structures. There are signs that this new way of creating and collecting art could also drive advances in diversity, equity and inclusion in historically inequitable spaces. </p>
+                  <hr>
+                  <h2>Defining Diversity, Equity, and Inclusion (H2) </h2>
+                  <p>The NonFungible team is a diverse one. We bring together a variety of cultures, languages, gender and sexual identities, among other groups and statuses. We believe in equity, which means acknowledging our differences personal and historical, including disadvantages. </p>
+                  <p>Our team’s composition and how we work with one another prompted this article. So did our desire to foster inclusion of the wide-range of folks who have contributed to the amazing proliferation of NFTs in such a short time. All of us have a lot to offer via NFTs, and NFTs can catalyze the innovation we bring. Yet there is a long way to go in the realm of non-fungible tokens more generally when it comes to diversity, equity, and inclusion (DEI), especially for disabled artists who create non-fungible tokens to represent themselves and their culture.</p>
+                  <ol>
+                    <li>Visit the <a href="#">OpenSea</a> website and login into your account.</li>
+                    <li>In the top right-hand corner, click Profile.</li>
+                    <li>Browse your NFT collection and select the NFT you want to sell. Select the ‘Sell‘ option at the top right-hand corner of the page to be taken to the listing page. </li>
+                    <li>Select how you want to sell your NFT. Set the price, auction type, sale duration, and buyer type. </li>
+                  </ol>
+                  <p><b>Also read, <a href="#">How to Mint your First NFT on FTX? [2021]</a></b></p>
+                  <img src="data/blog-2.png" width="750" height="410" alt="blog">
+                  <p style="font-size: 14px; text-align: center; margin-top: 0;">Defining Diversity, Equity, and Inclusion</p>
+                  <br>
+                  <h3>Defining Diversity, Equity, and Inclusion (H3)</h3>
+                  <p>As another of our authors pointed out in her article on the history of NFTs on ethereum, 2021 was a year of representation. NFT projects by women, LGBTQ+ creators, among other marginalized groups. </p>
+                  <p>For the realm of NFTs, DEI means ethical representation and supportive platforming for marginalized groups. It’s a framework that counterbalances white, cis-gendered, heterosexual, and white narratives and power structures. And the NFT world, as much as the world we eat and sleep  in, needs balance if we’re to avoid making the same mistakes that have excluded the full richness of human experience. </p>
+                  <br>
+                  <h3>Who benefits from DEI in NFTs and why? (H3)</h3>
+                  <ul>
+                    <li>When you hold a Bored Ape NFT, you not only own the digital asset, but your token also functions as a “ticket” to the Yacht Club.</li>
+                    <li>Few investors put money into BAYC with the expectation of earning a profit. As BAYC becomes more popular, their prices will increase. As a result, investors will buy apes with the idea of later selling them for a profit.</li>
+                    <li>An ape as a social profile image symbolizes affluence and crypto awareness.</li>
+                    <li>Holders also have access to future collections, airdrops, and other benefits. For example, all Bored Ape Yacht Club members received mutant serum through an airdrop. The Mutant Ape Yacht Club is a method of awarding Bored Ape holders with a completely new NFT.</li>
+                  </ul>
+                  <br>
+                  <img src="data/nft.png" width="750" height="250" alt="nft">
+                  <br>
+                  <h2>ARTXV and Disabled Artists (H2) </h2>
+                  <p><a href="#">ARTXV</a> is a community that serves neurodiverse NFT artists and celebrates their culture. Neurodiversity covers a broad scope of individual experiences  that includes Autism, ADHD, dyslexia, and more. These conditions are common and natural, yet not so common that it’s easy to create community around them in the real-world. The flexibility of NFTs, their openness to carry the experience of very different individuals and communities, also creates common digital ground. The wide range of neurodiverse experiences can be valued and made visible for the community as well as those outside it.</p>
+                  <br>
+                  <h5>Visual Art Speaks Emotional Truths (H5)</h5>
+                  <p>Visual art speaks emotional truths that words often fail to do, especially  in neurodiverse discourses. Seeing is believing and believing can yield understanding. Once visible, disabled experiences are harder to deny. Communities like ARTXV, the NFTs they’ll soon mint, and the conversations they promote extend beyond a small, often excluded community. </p>
+                  <p>When disabled artists can show their art without passing a credential check for a Master of Fine Arts, or for their connections to high-profile galleries, or agents and influencers’ gatherings that require neurotypical tact, boundaries dissolve and possibilities arise for individual expression and community. The art demands of the viewer: “Could you exclude me now?”</p>
+                  <div class="info-box">
+                    <div class="info-box__head">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.2 13.2H10.8V6H13.2V13.2ZM13.2 18H10.8V15.6H13.2V18ZM12 0C10.4241 0 8.86371 0.310389 7.4078 0.913446C5.95189 1.5165 4.62902 2.40042 3.51472 3.51472C1.26428 5.76516 0 8.8174 0 12C0 15.1826 1.26428 18.2348 3.51472 20.4853C4.62902 21.5996 5.95189 22.4835 7.4078 23.0866C8.86371 23.6896 10.4241 24 12 24C15.1826 24 18.2348 22.7357 20.4853 20.4853C22.7357 18.2348 24 15.1826 24 12C24 10.4241 23.6896 8.86371 23.0866 7.4078C22.4835 5.95189 21.5996 4.62902 20.4853 3.51472C19.371 2.40042 18.0481 1.5165 16.5922 0.913446C15.1363 0.310389 13.5759 0 12 0Z" fill="#570191"/>
+                      </svg>
+                      Who benefits from DEI in NFTs and why?
+                    </div>
+                    <div class="info-box__text">
+                      <p>We all benefit. While younger generations like Gen Z support increased diversity, equity, and inclusion, that seems to be skewing upward as older generations realize DEI applies to age as well. </p>
+                      <p>At the same time, the youth-oriented NFT market continues to gain coverage and legitimacy in places as unexpected as golf and fine wine that have been traditionally associated with older, more affluent groups. The culture of disabled artists may be the next field non-fungible tokens will spotlight.</p>
+                    </div>
+                  </div>
+                  <br>
+                  <h5>Disabled Folks can Build Thriving Communities Online (H5)</h5>
+                  <p>Perhaps for disabled artists the flow of inclusion will pour into the real world from their art. Or from able-bodied allies who transfer their appreciation from the NFT gallery back to the person in the wheelchair. Or the young lady flapping her arms happily at the cafe.</p>
+                  <p>When disabled folks can build thriving communities online that elevate individual and cultural dignity, both individuals and culture become that much harder to tear down. Part of that individual dignity is financial stability. This is key for Autistic folks in particular as the unemployment rate in that population may be nearly 40% in the United States.</p>
+                  <br>
+                  <h2>Pros & Cons</h2>
+                  <div class="pros-cons">
+                    <div class="pros-cons__cell pros-cons__cell--pros">
+                      <div class="pros-cons__title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 0C5.37286 0 0 5.37185 0 12C0 18.6282 5.37286 24 12 24C18.6271 24 24 18.6271 24 12C24 5.37286 18.6271 0 12 0ZM16.5002 6.89218L18.6089 9.0014L10.5004 17.1099L5.39111 12L7.50032 9.89079L10.5004 12.8909L16.5002 6.89168V6.89218Z" fill="#44982F"/>
+                        </svg>
+                        Pros
+                      </div>
+                      <div class="pros-cons__list">
+                        <div class="pros-cons__item">Only 10,000 BAYC NFTs will ever be created, making them one-of-a-kind.</div>
+                        <div class="pros-cons__item">Buying an ape entitles you to membership in the Bored Ape Yacht Club. You can have access to a club, the perks and offers that will grow over time. </div>
+                      </div>
+                    </div>
+                    <div class="pros-cons__cell pros-cons__cell--cons">
+                      <div class="pros-cons__title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 0C5.37286 0 0 5.37185 0 12C0 18.6282 5.37286 24 12 24C18.6271 24 24 18.6271 24 12C24 5.37286 18.6271 0 12 0ZM16.5002 6.89218L18.6089 9.0014L10.5004 17.1099L5.39111 12L7.50032 9.89079L10.5004 12.8909L16.5002 6.89168V6.89218Z" fill="#F30269"/>
+                        </svg>
+                        Cons
+                      </div>
+                      <div class="pros-cons__list">
+                        <div class="pros-cons__item">Bored Ape Yacht NFTs are so pricey that the transaction costs involved in buying them are too high</div>
+                        <div class="pros-cons__item">There is no simple way to purchase BAYC using typical payment methods such as a credit card.</div>
+                        <div class="pros-cons__item">The NFT market is still in its infancy, and connecting with a concept like a blockchain and decentralization remains difficult for the ordinary individual.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p><b>Also read, <a href="#">Is NFT Euphoria Coming to End or Gaming Sector will Carry the Torch?</a></b></p>
+                  <h2>DEI and the NFT Market</h2>
+                  <p>Can NFTs facilitate DEI practices in the metaverse? We hope so. The metaverse and marginalized groups like Autistic folks have everything to gain from diversity, equity, and inclusion. We encourage you to continue this conversation while the NFT market is young and the ethics that guide it are in flux.</p>
+                  <p>As part of Web3, NFTs can be a lever we use to push and innovate real-world discussions. NFTs, thanks to their horizontal and transparent nature, can give exposure to anyone who wants to build the next web and a better world. So far, the next web looks more diverse and inclusive thanks to NFTs and their creators.</p>
+                  <h6>Read more about DEI: (H6)</h6>
+                  <ul>
+                    <li>Bastian, R., 2021. <a href="#">The Diversity, Equity And Inclusion Potential Of NFTs.</a> Forbes</li>
+                    <li>Cat-Wells, K., 2021. <a href="#">NFTs By Disabled Creatives Breaking Moulds And Making Profits.</a> Forbes</li>
+                    <li>Fries, T., 2021. <a href="#">NFT Projects Raised Over $23 Million for Charity in August</a>. The Tokenist</li>
+                    <li>Bishara, H., 2019. <a href="#">Artists in 18 Major US Museums Are 85% White and 87% Male.</a> Hyperallergic</li>
+                  </ul>
+                </div>
+                <div class="blog__share js-sticky">
+                  <div class="blog__share-title">Spread the word!</div>
+                  <ul class="share-list">
+                    <li>
+                      <button data-sharer="facebook" data-url="https://nft.com">
+                        <img src="data/facebook.svg" width="48" height="48" alt="Facebook">
+                      </button>
+                    </li>
+                    <li>
+                      <button data-sharer="twitter" data-title="Lorem" data-hashtags="Lorem, Lorem" data-url="https://nft.com">
+                        <img src="data/twitter.svg" width="48" height="48" alt="twitter">
+                      </button>
+                    </li>
+                    <li>
+                      <button data-sharer="linkedin" data-url="https://nft.com">
+                        <img src="data/linkedin.svg" width="48" height="48" alt="linkedin">
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog__related">
+          <svg class="blog__related-decor" width="1920" height="26" viewBox="0 0 1920 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1763.59 0H1859.84V26.0677H1763.59V0ZM1693.41 27.0703H1922V1558.05H1859.84V1584.11H1763.59V1558.05H1547.03V1580.1H1500.91V1558.05H510.334V1586.12H482.261V1558.05H176.466V1614.19H120.32V1558.05H93.2503V1570.08H64.1748V1558.05H-3V27.0703H120.32V0H176.466V27.0703H472.234V0H500.307V27.0703H1500.91V0H1547.03V27.0703H1651.3V19.0488H1693.41V27.0703ZM1693.41 1577.1H1651.3V1613.19H1693.41V1577.1ZM93.2503 0H64.1748V12.0312H93.2503V0Z" fill="#F9F9F9"/>
+          </svg>
+          <div class="container">
+            <div class="blog__related-title title">Related Articles</div>
+            <div class="news__list">
+              <div class="news__item">
+                <a href="#" class="news__item-img">
+                  <img src="data/news-1.jpg" width="380" height="220" alt="news">
+                  <div class="news__item-label">what is nft?</div>
+                </a>
+                <div class="news-home__item-info news-home__item-info--padding-0">
+                  <div class="news-home__item-date">
+                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 9H1V3.5H8V9ZM6.5 0V1H2.5V0H1.5V1H1C0.445 1 0 1.445 0 2V9C0 9.26522 0.105357 9.51957 0.292893 9.70711C0.48043 9.89464 0.734784 10 1 10H8C8.26522 10 8.51957 9.89464 8.70711 9.70711C8.89464 9.51957 9 9.26522 9 9V2C9 1.445 8.55 1 8 1H7.5V0H6.5ZM7 5.5H4.5V8H7V5.5Z" fill="#706C61"/>
+                    </svg>
+                    25 April, 2022
+                  </div>
+                  <div class="news-home__item-author">by Vitalik</div>
+                </div>
+                <a href="#" class="news__item-title news__item-title--full" title=".Art Domains and Snark Art: the future of digital art and blockchain">.Art Domains and Snark Art: the future of digital art and blockchain</a>
+                <div class="news__item-text text-content">
+                  <p>There is a dramatic difference between making a couple of artworks a year and selling them to a collector – which is the usual way – and having direct positive feedback from thousands of real...</p>
+                </div>
+              </div>
+              <div class="news__item">
+                <a href="#" class="news__item-img">
+                  <img src="data/news-1.jpg" width="380" height="220" alt="news">
+                  <div class="news__item-label">what is nft?</div>
+                </a>
+                <div class="news-home__item-info news-home__item-info--padding-0">
+                  <div class="news-home__item-date">
+                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 9H1V3.5H8V9ZM6.5 0V1H2.5V0H1.5V1H1C0.445 1 0 1.445 0 2V9C0 9.26522 0.105357 9.51957 0.292893 9.70711C0.48043 9.89464 0.734784 10 1 10H8C8.26522 10 8.51957 9.89464 8.70711 9.70711C8.89464 9.51957 9 9.26522 9 9V2C9 1.445 8.55 1 8 1H7.5V0H6.5ZM7 5.5H4.5V8H7V5.5Z" fill="#706C61"/>
+                    </svg>
+                    04 February, 2022
+                  </div>
+                  <div class="news-home__item-author">by Michael</div>
+                </div>
+                <a href="#" class="news__item-title news__item-title--full" title="Gamified Yield Farming!? 3 big takeaways from Aavegotchi’s metaverse reveal">Gamified Yield Farming!? 3 big takeaways from Aavegotchi’s metaverse reveal</a>
+                <div class="news__item-text text-content">
+                  <p>Our minting service tutorial shows how to create a simple web app that mints NFTs on Ethereum, building on a great open-source starter repository called scaffold-eth (opens new window).</p>
+                </div>
+              </div>
+              <div class="news__item">
+                <a href="#" class="news__item-img">
+                  <img src="data/news-1.jpg" width="380" height="220" alt="news">
+                  <div class="news__item-label">what is nft?</div>
+                </a>
+                <div class="news-home__item-info news-home__item-info--padding-0">
+                  <div class="news-home__item-date">
+                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 9H1V3.5H8V9ZM6.5 0V1H2.5V0H1.5V1H1C0.445 1 0 1.445 0 2V9C0 9.26522 0.105357 9.51957 0.292893 9.70711C0.48043 9.89464 0.734784 10 1 10H8C8.26522 10 8.51957 9.89464 8.70711 9.70711C8.89464 9.51957 9 9.26522 9 9V2C9 1.445 8.55 1 8 1H7.5V0H6.5ZM7 5.5H4.5V8H7V5.5Z" fill="#706C61"/>
+                    </svg>
+                    09 July, 2022
+                  </div>
+                  <div class="news-home__item-author">by Jack</div>
+                </div>
+                <a href="#" class="news__item-title news__item-title--full" title="Facing the Raffle Odds with Lucky NFTigers">Facing the Raffle Odds with Lucky NFTigers</a>
+                <div class="news__item-text text-content">
+                  <p>Among the earliest NFT experiments is CryptoPunks (opens new window), a set of 10,000 pixel art characters that can be collected and traded on Ethereum.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__left">
+      <div class="footer__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="footer__logo-link"></a>
+      </div>
+      <div class="footer__made">Made with ❤️ for NFT</div>
+      <div class="footer__copy">© Comvitalo Limited 2022</div>
+      <div class="footer__info">
+        <div class="footer__info-item">
+          <div class="footer__info-title">Affiliate </div>
+          <div class="footer__info-text text-content">Wir haben eine Affiliate-Partnerschaft mit einigen Partnern, bei der wir einen Prozentsatz des Umsatzes erhalten, wenn du von unserer Seite aus auf die Seite klickst und etwas kaufst</div>
+        </div>
+        <div class="footer__info-item">
+          <div class="footer__info-title">About us  </div>
+          <div class="footer__info-text text-content">Auf dieser Seite findst du Jagdinhalte von Jägern für Jäger. Wir haben unsere Leidenschaft zu diesem Projekt gemacht und hoffen, dass die Inhalte für so viele Jäger wie möglich hilfreich und interessant sind.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__center">
+      <svg class="footer__decor" width="524" height="712" viewBox="0 0 524 712" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M129 712H524V553H511V539H524V370H513V341H524V225H488V169H456V135H488V155H524V0H129V1H116V14H129V60H105V105H129V145H75V130H49V156H69V236H129H195V300H211V340H195V456H216V544H195V564H209V588H195V657H129V682H53V712H129ZM16 209H0V191H16V209ZM425 490H410V475H425V490ZM401 672H425V648H401V672ZM433 206H421V194H433V206Z" fill="white"/>
+      </svg>
+      <nav class="footer__nav">
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Legal</div>
+          <ul class="footer__nav-list">
+            <li><a href="#">Legal Notice</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Quick Links</div>
+          <ul class="footer__nav-list">
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__right">
+      <div class="footer__contacts-title">Newsletter Sign Up</div>
+      <div class="footer__contacts-text text-content">We share the top stories and discussions about NFT in a 5 minute email newsletter. Subscribe below to receive it, every week, for free</div>
+      <form action="#" class="footer__form">
+        <div class="footer__form-row">
+          <input type="email" placeholder="Enter your email Address">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <div class="footer__form-row">
+          <input type="text" placeholder="Enter your Name">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <label class="footer__form-checkbox">
+          <input type="checkbox" class="footer__form-checkbox-input">
+          <span class="footer__form-checkbox-text">I agree to my personal data being stored and used to receive newsletters. <a href="#">Terms & Conditions</a> apply.</span>
+        </label>
+        <button type="submit" class="footer__form-btn btn-2">Sign Up Now</button>
+      </form>
+      <div class="social">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+    <script src="js/app.js"></script>
+  </body>
+</html>

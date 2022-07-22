@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="NFT">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>NFT</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+  <link href="css/index.css" rel="stylesheet">
+</head>
+  <body>
+    <header class="header">
+  <picture class="header__bg">
+    <source srcset="data/header-mobile.jpg" media="(max-width: 1200px)">
+    <img src="data/header.png" width="1920" height="120" alt="header-bg">
+  </picture>
+  <div class="container">
+    <div class="header__container">
+      <div class="header__left">
+        <div class="header__logo header__logo--main">
+          <img src="images/logo.svg" width="98" height="60" alt="logo">
+          <a href="#" class="header__logo-link"></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <form action="#" class="header__form">
+          <div class="header__form-title">
+            <svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.52841L8.67464 7.31938C8.34607 7.67521 7.90122 7.875 7.43747 7.875C6.97372 7.875 6.52887 7.67521 6.2003 7.31938L0.874971 1.52841C1.13295 1.06331 1.4968 0.678331 1.93142 0.410617C2.36605 0.142903 2.85679 0.00148382 3.35631 0H11.5186C12.0181 0.00148382 12.5089 0.142903 12.9435 0.410617C13.3781 0.678331 13.742 1.06331 14 1.52841ZM9.62908 8.10978L14.8465 2.62491C14.8497 2.66316 14.8545 2.70005 14.8592 2.73656C14.8672 2.79834 14.875 2.85903 14.875 2.92333V10.7421C14.874 11.6058 14.5472 12.4338 13.9662 13.0446C13.3853 13.6553 12.5976 13.9989 11.776 13.9999H3.09896C2.27737 13.9989 1.4897 13.6553 0.908751 13.0446C0.327797 12.4338 0.000984141 11.6058 0 10.7421V2.92333C0 2.85904 0.00783507 2.79834 0.0158106 2.73656C0.0205243 2.70005 0.0252871 2.66316 0.0285104 2.62491L5.24592 8.10978C5.82767 8.71981 6.61582 9.06239 7.4375 9.06239C8.25918 9.06239 9.04733 8.71981 9.62908 8.10978Z" />
+            </svg>
+            Weekly NFT stories and discussions
+          </div>
+          <label class="header__form-checkbox">
+            <input type="checkbox">
+            <span>I agree to <a href="#">T&Cs</a></span>
+          </label>
+          <button type="submit" class="header__form-btn">
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.33265 14.2227L11.5576 4.99783L12.1254 11.2126C12.1387 11.3566 12.1802 11.4966 12.2476 11.6246C12.3149 11.7526 12.4069 11.866 12.5181 11.9585C12.7427 12.1452 13.0323 12.235 13.3232 12.2082C13.6141 12.1814 13.8824 12.0401 14.0691 11.8155C14.2558 11.5908 14.3456 11.3012 14.3188 11.0104L13.541 2.45436C13.53 2.39108 13.5144 2.32868 13.4943 2.26769C13.4554 2.2288 13.471 2.16657 13.4477 2.11212C13.3937 1.98769 13.3173 1.87429 13.2221 1.77766C13.1255 1.6825 13.0121 1.60602 12.8876 1.5521C12.8487 1.51321 12.7865 1.52876 12.7321 1.50543C12.6711 1.48531 12.6087 1.46971 12.5454 1.45876L3.9894 0.680941C3.82847 0.666271 3.66628 0.687241 3.51437 0.74236C3.36245 0.797478 3.22455 0.885391 3.11047 0.999846C2.92837 1.18123 2.81554 1.42065 2.79156 1.67655C2.7781 1.82061 2.79319 1.9659 2.83596 2.10412C2.87874 2.24234 2.94836 2.37076 3.04085 2.48203C3.13333 2.5933 3.24686 2.68523 3.37492 2.75255C3.50299 2.81988 3.64308 2.86128 3.78717 2.87439L10.0019 3.44219L0.777016 12.6671C0.570726 12.8734 0.454834 13.1532 0.454834 13.4449C0.454834 13.7367 0.570726 14.0165 0.777016 14.2227C0.983306 14.429 1.2631 14.5449 1.55483 14.5449C1.84657 14.5449 2.12636 14.429 2.33265 14.2227Z" />
+            </svg>
+            Subscribe
+          </button>
+        </form>
+      </div>
+      <div class="header__right">
+        <a href="#" class="header__contacts-btn btn">Contact Us</a>
+      </div>
+      <div class="header__mobile-menu">
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 0H0.666667C0.298477 0 0 0.29041 0 0.648649C0 1.00689 0.298477 1.2973 0.666667 1.2973H15.3333C15.7015 1.2973 16 1.00689 16 0.648649C16 0.29041 15.7015 0 15.3333 0ZM15.3333 4.75676H0.666667C0.298477 4.75676 0 5.04717 0 5.40541C0 5.76365 0.298477 6.05406 0.666667 6.05406H15.3333C15.7015 6.05406 16 5.76365 16 5.40541C16 5.04717 15.7015 4.75676 15.3333 4.75676ZM0.666667 9.2973H15.3333C15.7015 9.2973 16 9.63611 16 10.0541C16 10.472 15.7015 10.8108 15.3333 10.8108H0.666667C0.298477 10.8108 0 10.472 0 10.0541C0 9.63611 0.298477 9.2973 0.666667 9.2973Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="header__mobile">
+    <div class="header__mobile-overlay"></div>
+    <div class="header__mobile-close">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 1.28033C-0.0732234 0.987437 -0.0732234 0.512563 0.21967 0.21967C0.512563 -0.0732235 0.987437 -0.0732235 1.28033 0.21967L6.40723 5.34657L11.5341 0.21967C11.827 -0.0732235 12.3019 -0.0732235 12.5948 0.21967C12.8877 0.512563 12.8877 0.987437 12.5948 1.28033L7.46789 6.40723L12.594 11.5334C12.8869 11.8263 12.8869 12.3011 12.594 12.594C12.3011 12.8869 11.8263 12.8869 11.5334 12.594L6.40723 7.46789L1.28107 12.594C0.988181 12.8869 0.513308 12.8869 0.220415 12.594C-0.0724785 12.3011 -0.0724795 11.8263 0.220415 11.5334L5.34657 6.40723L0.21967 1.28033Z" fill="#F30269"/>
+      </svg>
+    </div>
+    <div class="header__mobile-box">
+      <div class="header__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="header__logo-link"></a>
+      </div>
+      <div class="social social--header">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__made">Made with ❤️ for NFT</div>
+      <div class="header__copy">© Comvitalo Limited 2022</div>
+    </div>
+  </div>
+</header>
+    <div class="wrapper">
+      <div class="blog">
+        <div class="blog__body">
+          <div class="blog__body-decor blog__body-decor--2">
+            <svg class="blog__body-decor-top" width="1919" height="56" viewBox="0 0 1919 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 -1377H1919V0H1857V26H1761V0H1545V22H1499V0H501V28H473V0H178V56H122V0H95V12H66V0H-1V-1377ZM1691 19H1649V55H1691V19Z" fill="white"/>
+            </svg>
+            <svg class="blog__body-decor-bottom" width="1919" height="307" viewBox="0 0 1919 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1814 0H1768V42H1814V0ZM1505 38H1527V60H1505V38ZM1663 79H1699V105H1919V6787H-1V186H13V192H38V180H63V192H74H82V166H74V150H90V160H173V221H218V160H250V236H266V160V105H346V78H548V105H549V127H664V105H1663V79ZM166 236H160V244H166V236ZM180 291H196V307H180V291Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="container">
+            <div class="blog__body-box blog__body-box--prroject">
+              <ul class="breadcrumb breadcrumb--center">
+                <li>
+                  <a href="#">
+                    Projects
+                    <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.02994 8.95992L7.90034 3.08952L8.26167 7.04437C8.27012 7.13602 8.29654 7.22511 8.33942 7.30655C8.3823 7.38799 8.4408 7.46019 8.51158 7.51903C8.65453 7.63784 8.83883 7.69501 9.02393 7.67794C9.20903 7.66087 9.37977 7.57098 9.49858 7.42803C9.6174 7.28507 9.67456 7.10078 9.6575 6.91568L9.16252 1.47096C9.15555 1.43068 9.14562 1.39098 9.13282 1.35216C9.10807 1.32741 9.11797 1.28782 9.10312 1.25317C9.06881 1.17398 9.02014 1.10182 8.95958 1.04033C8.89809 0.979769 8.82593 0.931103 8.74674 0.896785C8.72199 0.872037 8.6824 0.881936 8.64775 0.867087C8.60893 0.854286 8.56923 0.84436 8.52895 0.837388L3.08423 0.342414C2.98182 0.333078 2.87861 0.346423 2.78194 0.381498C2.68526 0.416574 2.59751 0.472518 2.52491 0.545353C2.40903 0.660779 2.33723 0.813138 2.32197 0.975982C2.3134 1.06765 2.323 1.16012 2.35023 1.24807C2.37745 1.33603 2.42175 1.41775 2.48061 1.48856C2.53946 1.55937 2.6117 1.61787 2.6932 1.66071C2.7747 1.70356 2.86384 1.7299 2.95554 1.73824L6.91039 2.09957L1.03999 7.96997C0.908711 8.10125 0.834961 8.2793 0.834961 8.46495C0.834961 8.6506 0.908711 8.82865 1.03999 8.95992C1.17126 9.0912 1.34931 9.16495 1.53496 9.16495C1.72061 9.16495 1.89866 9.0912 2.02994 8.95992Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Popular NFT projects
+                    <svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.02994 8.95992L7.90034 3.08952L8.26167 7.04437C8.27012 7.13602 8.29654 7.22511 8.33942 7.30655C8.3823 7.38799 8.4408 7.46019 8.51158 7.51903C8.65453 7.63784 8.83883 7.69501 9.02393 7.67794C9.20903 7.66087 9.37977 7.57098 9.49858 7.42803C9.6174 7.28507 9.67456 7.10078 9.6575 6.91568L9.16252 1.47096C9.15555 1.43068 9.14562 1.39098 9.13282 1.35216C9.10807 1.32741 9.11797 1.28782 9.10312 1.25317C9.06881 1.17398 9.02014 1.10182 8.95958 1.04033C8.89809 0.979769 8.82593 0.931103 8.74674 0.896785C8.72199 0.872037 8.6824 0.881936 8.64775 0.867087C8.60893 0.854286 8.56923 0.84436 8.52895 0.837388L3.08423 0.342414C2.98182 0.333078 2.87861 0.346423 2.78194 0.381498C2.68526 0.416574 2.59751 0.472518 2.52491 0.545353C2.40903 0.660779 2.33723 0.813138 2.32197 0.975982C2.3134 1.06765 2.323 1.16012 2.35023 1.24807C2.37745 1.33603 2.42175 1.41775 2.48061 1.48856C2.53946 1.55937 2.6117 1.61787 2.6932 1.66071C2.7747 1.70356 2.86384 1.7299 2.95554 1.73824L6.91039 2.09957L1.03999 7.96997C0.908711 8.10125 0.834961 8.2793 0.834961 8.46495C0.834961 8.6506 0.908711 8.82865 1.03999 8.95992C1.17126 9.0912 1.34931 9.16495 1.53496 9.16495C1.72061 9.16495 1.89866 9.0912 2.02994 8.95992Z" />
+                    </svg>
+                  </a>
+                </li>
+                <li><span>Bored Ape Yacht Club (BAYC) Review</span></li>
+              </ul>
+              <div class="blog__title title">Bored Ape Yacht <br> Club (BAYC) Review</div>
+              <div class="blog__top-img">
+                <img src="data/bored.png" width="250" height="250" alt="bored">
+              </div>
+              <div class="blog__content">
+                <div class="blog__content-inner text-content">
+                  <p style="text-align: center;">You’ve undoubtedly seen a Bored Ape Yacht Club (BAYC) NFT if you have spent time online, particularly on Twitter. It all started when celebrities began using BAYC NFTs as their profile photo on social media. One of the critical reasons why NFTs (Non-Fungible Token) are so popular right now is the Bored Ape Yacht Club. Here’s a brief Bored Ape Yacht Club (BAYC</p>
+                  <div class="sites">
+                    <a href="#" target="_blank" rel="nofollow" class="sites__item">
+                      View Website
+                      <img src="data/arrowRight.svg" width="18" height="18" alt="arrowRight">
+                    </a>
+                    <a href="#" target="_blank" rel="nofollow" class="sites__item">
+                      Twitter
+                      <img src="data/twit2.svg" width="18" height="18" alt="Twitter">
+                    </a>
+                    <a href="#" target="_blank" rel="nofollow" class="sites__item">
+                      Discord
+                      <img src="data/Discord.svg" width="18" height="18" alt="Discord">
+                    </a>
+                  </div>
+                  <div class="row-info">
+                    <div class="row-info__cell">
+                      <div class="row-info__img">
+                        <img src="data/checked.svg" width="16" height="16" alt="checked">
+                      </div>
+                      <div class="row-info__title">Founded:</div>
+                      <div class="row-info__value">April 2021</div>
+                    </div>
+                    <div class="row-info__cell">
+                      <div class="row-info__img">
+                        <img src="data/checked.svg" width="16" height="16" alt="checked">
+                      </div>
+                      <div class="row-info__title">Founder:</div>
+                      <div class="row-info__value">Yuga Labs</div>
+                    </div>
+                    <div class="row-info__cell">
+                      <div class="row-info__img">
+                        <img src="data/checked.svg" width="16" height="16" alt="checked">
+                      </div>
+                      <div class="row-info__title">Collectables:</div>
+                      <div class="row-info__value">Available: 10,000</div>
+                    </div>
+                    <div class="row-info__cell">
+                      <div class="row-info__title">Blockchain:</div>
+                      <div class="row-info__img">
+                        <img src="data/ethereum2.svg" width="11" height="20" alt="ethereum2">
+                      </div>
+                    </div>
+                    <div class="row-info__cell">
+                      <div class="row-info__title">Available in:</div>
+                      <div class="row-info__img">
+                        <img src="data/Available1.svg" width="20" height="20" alt="ethereum2">
+                      </div>
+                      <div class="row-info__img">
+                        <img src="data/Available2.svg" width="20" height="20" alt="ethereum2">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table-content">
+                    <div class="faq__item active">
+                      <div class="faq__head faq__head--mobile-no-click">
+                        <div class="faq__item-title faq__item-title--full">Table of Contents</div>
+                        <div class="faq__item-btn">
+                          <svg width="8" height="6" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.77145 5.06466C4.37147 5.54961 3.62853 5.54961 3.22855 5.06466L1.01946 2.38629C0.481499 1.73404 0.945444 0.75 1.79091 0.75L6.20909 0.750001C7.05455 0.750001 7.5185 1.73405 6.98054 2.38629L4.77145 5.06466Z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="faq__item-body faq__item-body--table">
+                        <div class="table-content__list">
+                          <div class="table-content__item">
+                            <a href="#anchor-1" class="table-content__link">
+                              <div class="table-content__item-counter">1</div>
+                              What is Bored Ape Yacht Club (BAYC)?
+                            </a>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-2" class="table-content__link">
+                              <div class="table-content__item-counter">2</div>
+                              Bored Ape Yacht Club (BAYC) Review: History
+                            </a>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-3" class="table-content__link">
+                              <div class="table-content__item-counter">3</div>
+                              What are the Benefits of Owning a Bored Ape Yacht Club NFT?
+                            </a>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-4" class="table-content__link">
+                              <div class="table-content__item-counter">4</div>
+                              What is Mutant Ape Yacht club (MAYC)?
+                            </a>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-5" class="table-content__link">
+                              <div class="table-content__item-counter">5</div>
+                              How to buy Bored Ape Yacht Club NFT?
+                            </a>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-6" class="table-content__link">
+                              <div class="table-content__item-counter">6</div>
+                              How to Sell Bored Ape Yacht Club NFT?
+                            </a>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-7" class="table-content__link">
+                              <div class="table-content__item-counter">7</div>
+                              Is it a smart idea to invest in the Bored Ape Yacht Club?
+                            </a>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-8" class="table-content__link">
+                              <div class="table-content__item-counter">8</div>
+                              Pros & Cons
+                            </a>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-9" class="table-content__link">
+                              <div class="table-content__item-counter">9</div>
+                              BAYC Alternatives
+                            </a>
+                            <div class="table-content__item-sub">
+                              <div class="table-content__item-sub-item">
+                                <a href="#anchor-9-1" class="table-content__item-sub-link">9.1 Cryptopunk: </a>
+                              </div>
+                              <div class="table-content__item-sub-item">
+                                <a href="#anchor-9-2" class="table-content__item-sub-link">9.2 Prime Ape Planet PAP: </a>
+                              </div>
+                              <div class="table-content__item-sub-item">
+                                <a href="#anchor-9-3" class="table-content__item-sub-link">9.3 Doodles: </a>
+                              </div>
+                              <div class="table-content__item-sub-item">
+                                <a href="#anchor-9-4" class="table-content__item-sub-link">9.4 CLONE X – X TAKASHI MURAKAMI:</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-10" class="table-content__link">
+                              <div class="table-content__item-counter">10</div>
+                              Conclusion
+                            </a>
+                          </div>
+                          <div class="table-content__item">
+                            <a href="#anchor-11" class="table-content__link">
+                              <div class="table-content__item-counter">11</div>
+                              Frequently Asked Questions
+                            </a>
+                            <div class="table-content__item-sub">
+                              <div class="table-content__item-sub-item">
+                                <a href="#anchor-11-1" class="table-content__item-sub-link">11.1 Where is a bored ape yacht available for sale?</a>
+                              </div>
+                              <div class="table-content__item-sub-item">
+                                <a href="#anchor-11-2" class="table-content__item-sub-link">11.2 Is there a BAYC Coin?</a>
+                              </div>
+                              <div class="table-content__item-sub-item">
+                                <a href="#anchor-11-3" class="table-content__item-sub-link">11.3 What is the most expensive and cheapest BAYC?</a>
+                              </div>
+                              <div class="table-content__item-sub-item">
+                                <a href="#anchor-11-4" class="table-content__item-sub-link">11.4 How do you mutate a Bored Ape?</a>
+                              </div>
+                              <div class="table-content__item-sub-item">
+                                <a href="#anchor-11-5" class="table-content__item-sub-link">11.5 Can we get a free Bored Ape Yacht Club NFT?</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h2 id="anchor-1">What is Bored Ape Yacht Club (BAYC)?</h2>
+                  <p>The Bored Ape Yacht Club (BAYC) is a collection of 10,000 collectable NFTs generated programmatically from 170 distinct qualities. An NFT is simply a way for digital goods ownership to be represented on the blockchain. BAYC’s artwork includes cartoonish apes with unique features and odd qualities.</p>
+                  <p>While each ape is unique, some have qualities that increase the ape’s value. The most desired features are laser eyes, gold fur, and a king’s crown. They are ERC-721 tokens on the Ethereum network. Each Bored Ape artwork also functions as a Yacht Club membership card, granting access to members-only services. The BAYC is a project of Yuga Labs, based in the United States.</p>
+                  <p><b>Also read, <a href="#">How to Mint your First NFT on FTX? [2021]</a></b></p>
+                  <img src="data/blog2.png" width="750" height="562" alt="blog2">
+                  <p style="font-size: 14px; text-align: center; margin-top: 0;">Bored Ape Collection</p>
+                  <br>
+                  <h2 id="anchor-2">Bored Ape Yacht Club (BAYC) Review: History</h2>
+                  <p>BAYC was launched in April 2021 by four pseudonymous developers, Gargamel, Gordon Goner, Emperor Tomato Ketchup, and No Sass. Users were given NFT coupons but did not have the opportunity to view the art at first. As a result, the project received little interest and did not sell out. However, the initiative soon sold out as the art was sent, and people saw their NFTs for the first time. Jimmy Fallon, DJ Khaled, and Stephen Curry are among the celebrities that possess a BAYC NFT and use it as their social media profile photo.</p>
+                  <br>
+                  <h2 id="anchor-3">What are the Benefits of Owning a Bored Ape Yacht Club NFT?</h2>
+                  <ul>
+                    <li>When you hold a Bored Ape NFT, you not only own the digital asset, but your token also functions as a “ticket” to the Yacht Club.</li>
+                    <li>Few investors put money into BAYC with the expectation of earning a profit. As BAYC becomes more popular, their prices will increase. As a result, investors will buy apes with the idea of later selling them for a profit.</li>
+                    <li>An ape as a social profile image symbolizes affluence and crypto awareness.</li>
+                    <li>Holders also have access to future collections, airdrops, and other benefits. For example, all Bored Ape Yacht Club members received mutant serum through an airdrop. The Mutant Ape Yacht Club is a method of awarding Bored Ape holders with a completely new NFT.</li>
+                  </ul>
+                  <p><b>Also read, <a href="#">What are Fractional NFTs or F-NFTs?</a></b></p>
+                  <div class="btn-box">
+                    <a href="#" class="btn-2">JOIN BORED APE YACHT CLUB</a>
+                  </div>
+                  <br>
+                  <img src="data/nft.png" width="750" height="250" alt="nft">
+                  <br>
+                  <h2 id="anchor-4">What is Mutant Ape Yacht club (MAYC)?</h2>
+                  <p>The Bored Ape Yacht Club has done a few things to keep owners engaged. Out of which, they launched a freebie in August: digital vials of mutant serum. Owners might combine their Bored Ape with the serum to produce a Mutant Ape, another NFT.</p>
+                  <img src="data/blog3.png" width="750" height="342" alt="blog3">
+                  <p style="font-size: 14px; text-align: center; margin-top: 0;">Bored Ape and Its Mutant</p>
+                  <br>
+                  <h2 id="anchor-5">How to buy Bored Ape Yacht Club NFT?</h2>
+                  <p>The simplest way to buy a Bored Ape NFT is to visit their collection on OpenSea. Here is a step-by-step guide to buying BAYC NFT at <a href="#">OpenSea</a>:</p>
+                  <ul>
+                    <li>To buy and store an NFT, you must first connect your crypto wallet to the marketplace. With OpenSea, the marketplace where most investors purchase and trade NFTs, the most widely used wallet is <a href="#">MetaMask</a>.</li>
+                  </ul>
+                  <p><b>Also read, <a href="#">Set up MetaMask for Binance Smart Chain</a></b></p>
+                  <ul>
+                    <li>Send ETH to MetaMask from your trading platform. Enter your Metamask address to your trading platform’s “Send” option. To complete the transaction, enter the amount to be sent and click the Send button.</li>
+                    <li>Go to OpenSea once you have ETH in your wallet. Connect your wallet and look for the NFT you want to buy. You can buy it right away if it has a “buy now” pricing. You may also bid on the ape if it has a bid and wait for the seller to accept. The NFT will be saved in your wallet after the deal has been completed.</li>
+                  </ul>
+                  <img src="data/blog4.png" width="750" height="422" alt="blog">
+                  <p style="font-size: 14px; text-align: center; margin-top: 0;">BoredApe NFT OpenSea Listing</p>
+                  <br>
+                  <h2 id="anchor-6">How to Sell Bored Ape Yacht Club NFT?</h2>
+                  <p>The simplest way to sell a Bored Ape NFT is at OpenSea. Here is a step-by-step guide to sell BAYC NFT at OpenSea:</p>
+                  <ul>
+                    <li>Visit the <a href="#">OpenSea</a> website and login into your account.</li>
+                    <li>In the top right-hand corner, click Profile.</li>
+                    <li>Browse your NFT collection and select the NFT you want to sell. Select the ‘Sell‘ option at the top right-hand corner of the page to be taken to the listing page. </li>
+                    <li>Select how you want to sell your NFT. Set the price, auction type, sale duration, and buyer type. </li>
+                    <li>Choose how long your item will be available for sale. The default settings are one day, three days, or one week, but you may use the calendar to select whatever period you like.</li>
+                    <li>Pay fees and complete your NFT listing. </li>
+                  </ul>
+                  <p>A popup will appear after completing the steps, requiring you to confirm a signature request to finalize your NFT listing. That’s it! You have successfully put your NFT on OpenSea for sale! It will display in your Profile under the ‘Activity’ page.</p>
+                  <p><b>Also read, <a href="#">Different Types of Crypto Wallets</a></b></p>
+                  <div class="info-box">
+                    <div class="info-box__head">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.2 13.2H10.8V6H13.2V13.2ZM13.2 18H10.8V15.6H13.2V18ZM12 0C10.4241 0 8.86371 0.310389 7.4078 0.913446C5.95189 1.5165 4.62902 2.40042 3.51472 3.51472C1.26428 5.76516 0 8.8174 0 12C0 15.1826 1.26428 18.2348 3.51472 20.4853C4.62902 21.5996 5.95189 22.4835 7.4078 23.0866C8.86371 23.6896 10.4241 24 12 24C15.1826 24 18.2348 22.7357 20.4853 20.4853C22.7357 18.2348 24 15.1826 24 12C24 10.4241 23.6896 8.86371 23.0866 7.4078C22.4835 5.95189 21.5996 4.62902 20.4853 3.51472C19.371 2.40042 18.0481 1.5165 16.5922 0.913446C15.1363 0.310389 13.5759 0 12 0Z" fill="#570191"/>
+                      </svg>
+                      Important Message about BAYC History
+                    </div>
+                    <div class="info-box__text">
+                      <p>BAYC was launched in April 2021 by four pseudonymous developers, Gargamel, Gordon Goner, Emperor Tomato Ketchup, and No Sass. Users were given NFT coupons but did not have the opportunity to view the art at first. </p>
+                      <p>As a result, the project received little interest and did not sell out. However, the initiative soon sold out as the art was sent, and people saw their NFTs for the first time. Jimmy Fallon, DJ Khaled, and Stephen Curry are among the celebrities that possess a BAYC NFT and use it as their social media profile photo.</p>
+                    </div>
+                  </div>
+                  <br>
+                  <h2 id="anchor-7">Is it a smart idea to invest in the Bored Ape Yacht Club?</h2>
+                  <p>Why would someone invest in NFT? In the same way as evidence of ownership is crucial in the offline world, it is vital in the online world. NFT is essentially a token that proves you hold the proof of ownership. You have a potentially valuable digital asset if you have evidence of ownership because you are the only one who genuinely possesses the original. However, there are additional reasons why BAYC NFTs can be valuable, such as:</p>
+                  <ul>
+                    <li>Only 10,000 Bored Apes were created. As a result, there is limited availability.</li>
+                    <li>The last and most essential aspect is the community that has grown up around a BAYC collection. The Bored Ape Yacht Club has planned gatherings in New York, California, Hong Kong, and the United Kingdom. Recently, a celebration for the owner was conducted in New York with a real yacht party and a concert including <a href="#">Chris Rock, Aziz Ansari</a>, and <a href="#">The Strokes</a>.</li>
+                    <li>BAYC is strategically working with other companies such as Adidas and recently announced a partnership with Animoca Brands, a Hong Kong-based software business focused on blockchain gaming, for future play-to-earn (P2E) games.</li>
+                  </ul>
+                  <p><b>Also read,  <a href="#">Is NFT Euphoria Coming to End or Gaming Sector will Carry the Torch?</a></b></p>
+                  <br>
+                  <img src="data/largest.png" width="750" height="250" alt="largest">
+                  <br>
+                  <h2 id="anchor-8">Pros & Cons</h2>
+                  <div class="pros-cons">
+                    <div class="pros-cons__cell pros-cons__cell--pros">
+                      <div class="pros-cons__title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 0C5.37286 0 0 5.37185 0 12C0 18.6282 5.37286 24 12 24C18.6271 24 24 18.6271 24 12C24 5.37286 18.6271 0 12 0ZM16.5002 6.89218L18.6089 9.0014L10.5004 17.1099L5.39111 12L7.50032 9.89079L10.5004 12.8909L16.5002 6.89168V6.89218Z" fill="#44982F"/>
+                        </svg>
+                        Pros
+                      </div>
+                      <div class="pros-cons__list">
+                        <div class="pros-cons__item">Only 10,000 BAYC NFTs will ever be created, making them one-of-a-kind.</div>
+                        <div class="pros-cons__item">Buying an ape entitles you to membership in the Bored Ape Yacht Club. You can have access to a club, the perks and offers that will grow over time. </div>
+                      </div>
+                    </div>
+                    <div class="pros-cons__cell pros-cons__cell--cons">
+                      <div class="pros-cons__title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 0C5.37286 0 0 5.37185 0 12C0 18.6282 5.37286 24 12 24C18.6271 24 24 18.6271 24 12C24 5.37286 18.6271 0 12 0ZM16.5002 6.89218L18.6089 9.0014L10.5004 17.1099L5.39111 12L7.50032 9.89079L10.5004 12.8909L16.5002 6.89168V6.89218Z" fill="#F30269"/>
+                        </svg>
+                        Cons
+                      </div>
+                      <div class="pros-cons__list">
+                        <div class="pros-cons__item">Bored Ape Yacht NFTs are so pricey that the transaction costs involved in buying them are too high</div>
+                        <div class="pros-cons__item">There is no simple way to purchase BAYC using typical payment methods such as a credit card.</div>
+                        <div class="pros-cons__item">The NFT market is still in its infancy, and connecting with a concept like a blockchain and decentralization remains difficult for the ordinary individual.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p><b>Also read, <a href="#">Is NFT Euphoria Coming to End or Gaming Sector will Carry the Torch?</a></b></p>
+                  <br>
+                  <h2 id="anchor-9">BAYC Alternatives</h2>
+                  <h5 id="anchor-9-1">Cryptopunk: </h5>
+                  <p>CryptoPunks, released in 2017, is considered one of the first NFT collections. The project comprises 10,000 randomly produced 24×24 pixel images with random characteristics such as a person wearing a hat or smoking a pipe. </p>
+                  <h5 id="anchor-9-2">Prime Ape Planet PAP:</h5>
+                  <p>Prime Ape Planet has attracted a whopping 100,000+ Discord members in less than 24 hours. It is unusual in the NFT space. The project’s high worth stems from a mix of high-quality art and metaverse-ready design. </p>
+                  <p><b>Also read,  <a href="#">Is NFT Euphoria Coming to End or Gaming Sector will Carry the Torch?</a></b></p>
+                  <h5 id="anchor-9-3">Doodles: </h5>
+                  <p>Doodles is a collectable NFT initiative driven by the community. Doodle NFTs have over a hundred fascinating qualities like faces, hair, headgear, bodies, and backdrops. On the Ethereum blockchain, each Doodle is a one-of-a-kind, non-fungible token (NFT).</p>
+                  <h5 id="anchor-9-4">CLONE X – X TAKASHI MURAKAMI:</h5>
+                  <p>Clone X is a 20,000 next-gen Avatar created by RTFKT and Takashi Murakami. Clone X NFTs are 3D-based. The term 3D says it all since buyers of NFTs will have access to 3D data from which holders can modify the NFT properties and express themselves appropriately. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog__body-decor-footer">
+            <svg class="blog__body-decor-top" width="1920" height="26" viewBox="0 0 1920 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1762 0H1858V26H1762V0ZM1692 27H1920V1554H1858V1580H1762V1554H1546V1576H1500V1554H512V1582H484V1554H179V1610H123V1554H96V1566H67V1554H0V27H123V0H179V27H474V0H502V27H1500V0H1546V27H1650V19H1692V27ZM1692 1573H1650V1609H1692V1573ZM96 0H67V12H96V0Z" fill="#F9F9F9"/>
+            </svg>
+            <svg class="blog__body-decor-bottom" width="1920" height="56" viewBox="0 0 1920 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1762 -1554H1858V-1528H1762V-1554ZM1692 -1527H1920V0H1858V26H1762V0H1546V22H1500V0H512V28H484V0H179V56H123V0H96V12H67V0H0V-1527H123V-1554H179V-1527H474V-1554H502V-1527H1500V-1554H1546V-1527H1650V-1535H1692V-1527ZM1692 19H1650V55H1692V19ZM96 -1554H67V-1542H96V-1554Z" fill="#F9F9F9"/>
+            </svg>
+          </div>
+        </div>
+        <div id="anchor-10" class="conclusion">
+          <div class="container">
+            <div class="conclusion__box">
+              <svg class="conclusion__box-decor" width="701" height="41" viewBox="0 0 701 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="659" width="42" height="36" fill="white"/>
+                <rect x="633" y="1" width="46" height="22" fill="white"/>
+                <rect x="227" y="1" width="28" height="20" fill="white"/>
+                <rect x="15" y="1" width="56" height="40" fill="white"/>
+                <rect y="1" width="29" height="12" fill="white"/>
+              </svg>
+              <div class="conclusion__title">Conclusion</div>
+              <div class="conclusion__text text-content">
+                <p>Some of you may believe NFTs are absurd but the Bored Apes aren’t going away anytime soon. In the realm of NFTs, the Bored Ape Yacht Club is an exciting development. These NFTs, however, are not cheap. So, it may make sense for newcomers to search for less-priced NFTs to practice with. It is generally not a brilliant idea to invest your life savings in an ape, but if you have the money and are ready to take the risk, an ape may be worthwhile to acquire.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="anchor-11" class="faq faq--white">
+          <div class="container">
+            <div class="faq__title">Frequently Asked Questions</div>
+            <div class="faq__list">
+              <div id="anchor-11-1" class="faq__item">
+                <div class="faq__head">
+                  <div class="faq__icon">
+                    <svg width="40" height="41" viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.9998 0C8.97136 0 0 8.47241 0 18.8868C0 23.6768 1.90165 28.2388 5.36017 31.7542L4.56716 33.3398C3.73063 35.01 3.98124 37.0015 5.20471 38.4126L5.26354 38.48C6.13547 39.4461 7.38143 40.0015 8.68336 40.0015C9.23818 40.0015 9.78248 39.9029 10.301 39.7078L16.3126 37.4526C17.5222 37.666 18.763 37.7741 20.0002 37.7741C31.0277 37.7741 40 29.3016 40 18.8873C39.999 8.47295 31.0278 0.000536209 20.0002 0.000536209L19.9998 0ZM19.7343 30.6816C18.2153 30.6869 17.0975 29.5395 17.0946 27.9721C17.0912 26.3866 18.1349 25.376 19.7792 25.373C21.4097 25.3697 22.4577 26.3865 22.4654 27.9787C22.4726 29.5418 21.3275 30.6753 19.7343 30.6815V30.6816ZM24.7464 17.5276C24.0318 18.1049 23.257 18.6076 22.5491 19.1916C21.6633 19.921 21.0879 20.8609 20.7857 21.9805C20.4954 23.0605 19.9994 23.5703 19.349 23.5713C18.6837 23.5722 18.1767 23.0026 17.8792 21.9168C17.2526 19.6349 18.1375 17.2573 20.174 15.7445C20.5126 15.4929 20.8713 15.2614 21.1822 14.9783C21.8026 14.4158 22.2287 13.7506 21.9236 12.87C21.6074 11.9574 20.8513 11.5781 19.9673 11.49C18.896 11.3829 17.8944 11.6431 17.0192 12.3065C16.9398 12.3663 16.8585 12.4232 16.7771 12.4811C15.6048 13.3286 14.5057 13.3305 13.7644 12.4887C12.8519 11.4518 12.8997 9.88876 13.9027 8.91449C14.9482 7.8986 16.219 7.29457 17.6405 7.02336C18.2469 6.90762 18.8706 6.87558 19.4049 6.81531C22.2803 6.97411 24.6483 7.88859 26.1043 10.4407C27.521 12.9292 26.9791 15.7225 24.7464 17.5276L24.7464 17.5276Z" />
+                    </svg>
+                  </div>
+                  <div class="faq__item-title">Where is a bored ape yacht available for sale?</div>
+                  <div class="faq__item-btn">
+                    <svg width="8" height="6" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.77145 5.06466C4.37147 5.54961 3.62853 5.54961 3.22855 5.06466L1.01946 2.38629C0.481499 1.73404 0.945444 0.75 1.79091 0.75L6.20909 0.750001C7.05455 0.750001 7.5185 1.73405 6.98054 2.38629L4.77145 5.06466Z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__item-body">
+                  <div class="text-content">
+                    <p>No, you cannot get BAYC NFT for free. <br> Also read,</p>
+                    <ul>
+                      <li style="color: #570191">Jet-Bot Review: The Best Copy Trading Bot for Binance [Free]</li>
+                      <li style="color: #570191">Giottus Review: Is it Really Legit or a Scam?</li>
+                      <li style="color: #570191">Anny Trade Review: Is it Really Legit or Scam?</li>
+                      <li style="color: #570191">ArbiSmart Review: Is it Really Legit?</li>
+                      <li style="color: #570191">Paybis Review: Is it Safe or Legit?</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="anchor-11-2" class="faq__item">
+                <div class="faq__head">
+                  <div class="faq__icon">
+                    <svg width="40" height="41" viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.9998 0C8.97136 0 0 8.47241 0 18.8868C0 23.6768 1.90165 28.2388 5.36017 31.7542L4.56716 33.3398C3.73063 35.01 3.98124 37.0015 5.20471 38.4126L5.26354 38.48C6.13547 39.4461 7.38143 40.0015 8.68336 40.0015C9.23818 40.0015 9.78248 39.9029 10.301 39.7078L16.3126 37.4526C17.5222 37.666 18.763 37.7741 20.0002 37.7741C31.0277 37.7741 40 29.3016 40 18.8873C39.999 8.47295 31.0278 0.000536209 20.0002 0.000536209L19.9998 0ZM19.7343 30.6816C18.2153 30.6869 17.0975 29.5395 17.0946 27.9721C17.0912 26.3866 18.1349 25.376 19.7792 25.373C21.4097 25.3697 22.4577 26.3865 22.4654 27.9787C22.4726 29.5418 21.3275 30.6753 19.7343 30.6815V30.6816ZM24.7464 17.5276C24.0318 18.1049 23.257 18.6076 22.5491 19.1916C21.6633 19.921 21.0879 20.8609 20.7857 21.9805C20.4954 23.0605 19.9994 23.5703 19.349 23.5713C18.6837 23.5722 18.1767 23.0026 17.8792 21.9168C17.2526 19.6349 18.1375 17.2573 20.174 15.7445C20.5126 15.4929 20.8713 15.2614 21.1822 14.9783C21.8026 14.4158 22.2287 13.7506 21.9236 12.87C21.6074 11.9574 20.8513 11.5781 19.9673 11.49C18.896 11.3829 17.8944 11.6431 17.0192 12.3065C16.9398 12.3663 16.8585 12.4232 16.7771 12.4811C15.6048 13.3286 14.5057 13.3305 13.7644 12.4887C12.8519 11.4518 12.8997 9.88876 13.9027 8.91449C14.9482 7.8986 16.219 7.29457 17.6405 7.02336C18.2469 6.90762 18.8706 6.87558 19.4049 6.81531C22.2803 6.97411 24.6483 7.88859 26.1043 10.4407C27.521 12.9292 26.9791 15.7225 24.7464 17.5276L24.7464 17.5276Z" />
+                    </svg>
+                  </div>
+                  <div class="faq__item-title">Is there a BAYC Coin?</div>
+                  <div class="faq__item-btn">
+                    <svg width="8" height="6" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.77145 5.06466C4.37147 5.54961 3.62853 5.54961 3.22855 5.06466L1.01946 2.38629C0.481499 1.73404 0.945444 0.75 1.79091 0.75L6.20909 0.750001C7.05455 0.750001 7.5185 1.73405 6.98054 2.38629L4.77145 5.06466Z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__item-body">
+                  <div class="text-content">
+                    <p>No, you cannot get BAYC NFT for free. <br> Also read,</p>
+                    <ul>
+                      <li style="color: #570191">Jet-Bot Review: The Best Copy Trading Bot for Binance [Free]</li>
+                      <li style="color: #570191">Giottus Review: Is it Really Legit or a Scam?</li>
+                      <li style="color: #570191">Anny Trade Review: Is it Really Legit or Scam?</li>
+                      <li style="color: #570191">ArbiSmart Review: Is it Really Legit?</li>
+                      <li style="color: #570191">Paybis Review: Is it Safe or Legit?</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="anchor-11-3" class="faq__item">
+                <div class="faq__head">
+                  <div class="faq__icon">
+                    <svg width="40" height="41" viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.9998 0C8.97136 0 0 8.47241 0 18.8868C0 23.6768 1.90165 28.2388 5.36017 31.7542L4.56716 33.3398C3.73063 35.01 3.98124 37.0015 5.20471 38.4126L5.26354 38.48C6.13547 39.4461 7.38143 40.0015 8.68336 40.0015C9.23818 40.0015 9.78248 39.9029 10.301 39.7078L16.3126 37.4526C17.5222 37.666 18.763 37.7741 20.0002 37.7741C31.0277 37.7741 40 29.3016 40 18.8873C39.999 8.47295 31.0278 0.000536209 20.0002 0.000536209L19.9998 0ZM19.7343 30.6816C18.2153 30.6869 17.0975 29.5395 17.0946 27.9721C17.0912 26.3866 18.1349 25.376 19.7792 25.373C21.4097 25.3697 22.4577 26.3865 22.4654 27.9787C22.4726 29.5418 21.3275 30.6753 19.7343 30.6815V30.6816ZM24.7464 17.5276C24.0318 18.1049 23.257 18.6076 22.5491 19.1916C21.6633 19.921 21.0879 20.8609 20.7857 21.9805C20.4954 23.0605 19.9994 23.5703 19.349 23.5713C18.6837 23.5722 18.1767 23.0026 17.8792 21.9168C17.2526 19.6349 18.1375 17.2573 20.174 15.7445C20.5126 15.4929 20.8713 15.2614 21.1822 14.9783C21.8026 14.4158 22.2287 13.7506 21.9236 12.87C21.6074 11.9574 20.8513 11.5781 19.9673 11.49C18.896 11.3829 17.8944 11.6431 17.0192 12.3065C16.9398 12.3663 16.8585 12.4232 16.7771 12.4811C15.6048 13.3286 14.5057 13.3305 13.7644 12.4887C12.8519 11.4518 12.8997 9.88876 13.9027 8.91449C14.9482 7.8986 16.219 7.29457 17.6405 7.02336C18.2469 6.90762 18.8706 6.87558 19.4049 6.81531C22.2803 6.97411 24.6483 7.88859 26.1043 10.4407C27.521 12.9292 26.9791 15.7225 24.7464 17.5276L24.7464 17.5276Z" />
+                    </svg>
+                  </div>
+                  <div class="faq__item-title">What is the most expensive and cheapest BAYC?</div>
+                  <div class="faq__item-btn">
+                    <svg width="8" height="6" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.77145 5.06466C4.37147 5.54961 3.62853 5.54961 3.22855 5.06466L1.01946 2.38629C0.481499 1.73404 0.945444 0.75 1.79091 0.75L6.20909 0.750001C7.05455 0.750001 7.5185 1.73405 6.98054 2.38629L4.77145 5.06466Z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__item-body">
+                  <div class="text-content">
+                    <p>No, you cannot get BAYC NFT for free. <br> Also read,</p>
+                    <ul>
+                      <li style="color: #570191">Jet-Bot Review: The Best Copy Trading Bot for Binance [Free]</li>
+                      <li style="color: #570191">Giottus Review: Is it Really Legit or a Scam?</li>
+                      <li style="color: #570191">Anny Trade Review: Is it Really Legit or Scam?</li>
+                      <li style="color: #570191">ArbiSmart Review: Is it Really Legit?</li>
+                      <li style="color: #570191">Paybis Review: Is it Safe or Legit?</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="anchor-11-4" class="faq__item">
+                <div class="faq__head">
+                  <div class="faq__icon">
+                    <svg width="40" height="41" viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.9998 0C8.97136 0 0 8.47241 0 18.8868C0 23.6768 1.90165 28.2388 5.36017 31.7542L4.56716 33.3398C3.73063 35.01 3.98124 37.0015 5.20471 38.4126L5.26354 38.48C6.13547 39.4461 7.38143 40.0015 8.68336 40.0015C9.23818 40.0015 9.78248 39.9029 10.301 39.7078L16.3126 37.4526C17.5222 37.666 18.763 37.7741 20.0002 37.7741C31.0277 37.7741 40 29.3016 40 18.8873C39.999 8.47295 31.0278 0.000536209 20.0002 0.000536209L19.9998 0ZM19.7343 30.6816C18.2153 30.6869 17.0975 29.5395 17.0946 27.9721C17.0912 26.3866 18.1349 25.376 19.7792 25.373C21.4097 25.3697 22.4577 26.3865 22.4654 27.9787C22.4726 29.5418 21.3275 30.6753 19.7343 30.6815V30.6816ZM24.7464 17.5276C24.0318 18.1049 23.257 18.6076 22.5491 19.1916C21.6633 19.921 21.0879 20.8609 20.7857 21.9805C20.4954 23.0605 19.9994 23.5703 19.349 23.5713C18.6837 23.5722 18.1767 23.0026 17.8792 21.9168C17.2526 19.6349 18.1375 17.2573 20.174 15.7445C20.5126 15.4929 20.8713 15.2614 21.1822 14.9783C21.8026 14.4158 22.2287 13.7506 21.9236 12.87C21.6074 11.9574 20.8513 11.5781 19.9673 11.49C18.896 11.3829 17.8944 11.6431 17.0192 12.3065C16.9398 12.3663 16.8585 12.4232 16.7771 12.4811C15.6048 13.3286 14.5057 13.3305 13.7644 12.4887C12.8519 11.4518 12.8997 9.88876 13.9027 8.91449C14.9482 7.8986 16.219 7.29457 17.6405 7.02336C18.2469 6.90762 18.8706 6.87558 19.4049 6.81531C22.2803 6.97411 24.6483 7.88859 26.1043 10.4407C27.521 12.9292 26.9791 15.7225 24.7464 17.5276L24.7464 17.5276Z" />
+                    </svg>
+                  </div>
+                  <div class="faq__item-title">How do you mutate a Bored Ape?</div>
+                  <div class="faq__item-btn">
+                    <svg width="8" height="6" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.77145 5.06466C4.37147 5.54961 3.62853 5.54961 3.22855 5.06466L1.01946 2.38629C0.481499 1.73404 0.945444 0.75 1.79091 0.75L6.20909 0.750001C7.05455 0.750001 7.5185 1.73405 6.98054 2.38629L4.77145 5.06466Z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__item-body">
+                  <div class="text-content">
+                    <p>No, you cannot get BAYC NFT for free. <br> Also read,</p>
+                    <ul>
+                      <li style="color: #570191">Jet-Bot Review: The Best Copy Trading Bot for Binance [Free]</li>
+                      <li style="color: #570191">Giottus Review: Is it Really Legit or a Scam?</li>
+                      <li style="color: #570191">Anny Trade Review: Is it Really Legit or Scam?</li>
+                      <li style="color: #570191">ArbiSmart Review: Is it Really Legit?</li>
+                      <li style="color: #570191">Paybis Review: Is it Safe or Legit?</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div id="anchor-11-5" class="faq__item">
+                <div class="faq__head">
+                  <div class="faq__icon">
+                    <svg width="40" height="41" viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.9998 0C8.97136 0 0 8.47241 0 18.8868C0 23.6768 1.90165 28.2388 5.36017 31.7542L4.56716 33.3398C3.73063 35.01 3.98124 37.0015 5.20471 38.4126L5.26354 38.48C6.13547 39.4461 7.38143 40.0015 8.68336 40.0015C9.23818 40.0015 9.78248 39.9029 10.301 39.7078L16.3126 37.4526C17.5222 37.666 18.763 37.7741 20.0002 37.7741C31.0277 37.7741 40 29.3016 40 18.8873C39.999 8.47295 31.0278 0.000536209 20.0002 0.000536209L19.9998 0ZM19.7343 30.6816C18.2153 30.6869 17.0975 29.5395 17.0946 27.9721C17.0912 26.3866 18.1349 25.376 19.7792 25.373C21.4097 25.3697 22.4577 26.3865 22.4654 27.9787C22.4726 29.5418 21.3275 30.6753 19.7343 30.6815V30.6816ZM24.7464 17.5276C24.0318 18.1049 23.257 18.6076 22.5491 19.1916C21.6633 19.921 21.0879 20.8609 20.7857 21.9805C20.4954 23.0605 19.9994 23.5703 19.349 23.5713C18.6837 23.5722 18.1767 23.0026 17.8792 21.9168C17.2526 19.6349 18.1375 17.2573 20.174 15.7445C20.5126 15.4929 20.8713 15.2614 21.1822 14.9783C21.8026 14.4158 22.2287 13.7506 21.9236 12.87C21.6074 11.9574 20.8513 11.5781 19.9673 11.49C18.896 11.3829 17.8944 11.6431 17.0192 12.3065C16.9398 12.3663 16.8585 12.4232 16.7771 12.4811C15.6048 13.3286 14.5057 13.3305 13.7644 12.4887C12.8519 11.4518 12.8997 9.88876 13.9027 8.91449C14.9482 7.8986 16.219 7.29457 17.6405 7.02336C18.2469 6.90762 18.8706 6.87558 19.4049 6.81531C22.2803 6.97411 24.6483 7.88859 26.1043 10.4407C27.521 12.9292 26.9791 15.7225 24.7464 17.5276L24.7464 17.5276Z" />
+                    </svg>
+                  </div>
+                  <div class="faq__item-title">Can we get a free Bored Ape Yacht Club NFT?</div>
+                  <div class="faq__item-btn">
+                    <svg width="8" height="6" viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.77145 5.06466C4.37147 5.54961 3.62853 5.54961 3.22855 5.06466L1.01946 2.38629C0.481499 1.73404 0.945444 0.75 1.79091 0.75L6.20909 0.750001C7.05455 0.750001 7.5185 1.73405 6.98054 2.38629L4.77145 5.06466Z" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="faq__item-body">
+                  <div class="text-content">
+                    <p>No, you cannot get BAYC NFT for free. <br> Also read,</p>
+                    <ul>
+                      <li style="color: #570191">Jet-Bot Review: The Best Copy Trading Bot for Binance [Free]</li>
+                      <li style="color: #570191">Giottus Review: Is it Really Legit or a Scam?</li>
+                      <li style="color: #570191">Anny Trade Review: Is it Really Legit or Scam?</li>
+                      <li style="color: #570191">ArbiSmart Review: Is it Really Legit?</li>
+                      <li style="color: #570191">Paybis Review: Is it Safe or Legit?</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__left">
+      <div class="footer__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="footer__logo-link"></a>
+      </div>
+      <div class="footer__made">Made with ❤️ for NFT</div>
+      <div class="footer__copy">© Comvitalo Limited 2022</div>
+      <div class="footer__info">
+        <div class="footer__info-item">
+          <div class="footer__info-title">Affiliate </div>
+          <div class="footer__info-text text-content">Wir haben eine Affiliate-Partnerschaft mit einigen Partnern, bei der wir einen Prozentsatz des Umsatzes erhalten, wenn du von unserer Seite aus auf die Seite klickst und etwas kaufst</div>
+        </div>
+        <div class="footer__info-item">
+          <div class="footer__info-title">About us  </div>
+          <div class="footer__info-text text-content">Auf dieser Seite findst du Jagdinhalte von Jägern für Jäger. Wir haben unsere Leidenschaft zu diesem Projekt gemacht und hoffen, dass die Inhalte für so viele Jäger wie möglich hilfreich und interessant sind.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__center">
+      <svg class="footer__decor" width="524" height="712" viewBox="0 0 524 712" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M129 712H524V553H511V539H524V370H513V341H524V225H488V169H456V135H488V155H524V0H129V1H116V14H129V60H105V105H129V145H75V130H49V156H69V236H129H195V300H211V340H195V456H216V544H195V564H209V588H195V657H129V682H53V712H129ZM16 209H0V191H16V209ZM425 490H410V475H425V490ZM401 672H425V648H401V672ZM433 206H421V194H433V206Z" fill="white"/>
+      </svg>
+      <nav class="footer__nav">
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Legal</div>
+          <ul class="footer__nav-list">
+            <li><a href="#">Legal Notice</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Quick Links</div>
+          <ul class="footer__nav-list">
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__right">
+      <div class="footer__contacts-title">Newsletter Sign Up</div>
+      <div class="footer__contacts-text text-content">We share the top stories and discussions about NFT in a 5 minute email newsletter. Subscribe below to receive it, every week, for free</div>
+      <form action="#" class="footer__form">
+        <div class="footer__form-row">
+          <input type="email" placeholder="Enter your email Address">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <div class="footer__form-row">
+          <input type="text" placeholder="Enter your Name">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <label class="footer__form-checkbox">
+          <input type="checkbox" class="footer__form-checkbox-input">
+          <span class="footer__form-checkbox-text">I agree to my personal data being stored and used to receive newsletters. <a href="#">Terms & Conditions</a> apply.</span>
+        </label>
+        <button type="submit" class="footer__form-btn btn-2">Sign Up Now</button>
+      </form>
+      <div class="social">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+    <script src="js/app.js"></script>
+  </body>
+</html>

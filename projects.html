@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="NFT">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>NFT</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
+  <link href="css/index.css" rel="stylesheet">
+</head>
+  <body>
+    <header class="header">
+  <picture class="header__bg">
+    <source srcset="data/header-mobile.jpg" media="(max-width: 1200px)">
+    <img src="data/header.png" width="1920" height="120" alt="header-bg">
+  </picture>
+  <div class="container">
+    <div class="header__container">
+      <div class="header__left">
+        <div class="header__logo header__logo--main">
+          <img src="images/logo.svg" width="98" height="60" alt="logo">
+          <a href="#" class="header__logo-link"></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <form action="#" class="header__form">
+          <div class="header__form-title">
+            <svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.52841L8.67464 7.31938C8.34607 7.67521 7.90122 7.875 7.43747 7.875C6.97372 7.875 6.52887 7.67521 6.2003 7.31938L0.874971 1.52841C1.13295 1.06331 1.4968 0.678331 1.93142 0.410617C2.36605 0.142903 2.85679 0.00148382 3.35631 0H11.5186C12.0181 0.00148382 12.5089 0.142903 12.9435 0.410617C13.3781 0.678331 13.742 1.06331 14 1.52841ZM9.62908 8.10978L14.8465 2.62491C14.8497 2.66316 14.8545 2.70005 14.8592 2.73656C14.8672 2.79834 14.875 2.85903 14.875 2.92333V10.7421C14.874 11.6058 14.5472 12.4338 13.9662 13.0446C13.3853 13.6553 12.5976 13.9989 11.776 13.9999H3.09896C2.27737 13.9989 1.4897 13.6553 0.908751 13.0446C0.327797 12.4338 0.000984141 11.6058 0 10.7421V2.92333C0 2.85904 0.00783507 2.79834 0.0158106 2.73656C0.0205243 2.70005 0.0252871 2.66316 0.0285104 2.62491L5.24592 8.10978C5.82767 8.71981 6.61582 9.06239 7.4375 9.06239C8.25918 9.06239 9.04733 8.71981 9.62908 8.10978Z" />
+            </svg>
+            Weekly NFT stories and discussions
+          </div>
+          <label class="header__form-checkbox">
+            <input type="checkbox">
+            <span>I agree to <a href="#">T&Cs</a></span>
+          </label>
+          <button type="submit" class="header__form-btn">
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.33265 14.2227L11.5576 4.99783L12.1254 11.2126C12.1387 11.3566 12.1802 11.4966 12.2476 11.6246C12.3149 11.7526 12.4069 11.866 12.5181 11.9585C12.7427 12.1452 13.0323 12.235 13.3232 12.2082C13.6141 12.1814 13.8824 12.0401 14.0691 11.8155C14.2558 11.5908 14.3456 11.3012 14.3188 11.0104L13.541 2.45436C13.53 2.39108 13.5144 2.32868 13.4943 2.26769C13.4554 2.2288 13.471 2.16657 13.4477 2.11212C13.3937 1.98769 13.3173 1.87429 13.2221 1.77766C13.1255 1.6825 13.0121 1.60602 12.8876 1.5521C12.8487 1.51321 12.7865 1.52876 12.7321 1.50543C12.6711 1.48531 12.6087 1.46971 12.5454 1.45876L3.9894 0.680941C3.82847 0.666271 3.66628 0.687241 3.51437 0.74236C3.36245 0.797478 3.22455 0.885391 3.11047 0.999846C2.92837 1.18123 2.81554 1.42065 2.79156 1.67655C2.7781 1.82061 2.79319 1.9659 2.83596 2.10412C2.87874 2.24234 2.94836 2.37076 3.04085 2.48203C3.13333 2.5933 3.24686 2.68523 3.37492 2.75255C3.50299 2.81988 3.64308 2.86128 3.78717 2.87439L10.0019 3.44219L0.777016 12.6671C0.570726 12.8734 0.454834 13.1532 0.454834 13.4449C0.454834 13.7367 0.570726 14.0165 0.777016 14.2227C0.983306 14.429 1.2631 14.5449 1.55483 14.5449C1.84657 14.5449 2.12636 14.429 2.33265 14.2227Z" />
+            </svg>
+            Subscribe
+          </button>
+        </form>
+      </div>
+      <div class="header__right">
+        <a href="#" class="header__contacts-btn btn">Contact Us</a>
+      </div>
+      <div class="header__mobile-menu">
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 0H0.666667C0.298477 0 0 0.29041 0 0.648649C0 1.00689 0.298477 1.2973 0.666667 1.2973H15.3333C15.7015 1.2973 16 1.00689 16 0.648649C16 0.29041 15.7015 0 15.3333 0ZM15.3333 4.75676H0.666667C0.298477 4.75676 0 5.04717 0 5.40541C0 5.76365 0.298477 6.05406 0.666667 6.05406H15.3333C15.7015 6.05406 16 5.76365 16 5.40541C16 5.04717 15.7015 4.75676 15.3333 4.75676ZM0.666667 9.2973H15.3333C15.7015 9.2973 16 9.63611 16 10.0541C16 10.472 15.7015 10.8108 15.3333 10.8108H0.666667C0.298477 10.8108 0 10.472 0 10.0541C0 9.63611 0.298477 9.2973 0.666667 9.2973Z" fill="white"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="header__mobile">
+    <div class="header__mobile-overlay"></div>
+    <div class="header__mobile-close">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 1.28033C-0.0732234 0.987437 -0.0732234 0.512563 0.21967 0.21967C0.512563 -0.0732235 0.987437 -0.0732235 1.28033 0.21967L6.40723 5.34657L11.5341 0.21967C11.827 -0.0732235 12.3019 -0.0732235 12.5948 0.21967C12.8877 0.512563 12.8877 0.987437 12.5948 1.28033L7.46789 6.40723L12.594 11.5334C12.8869 11.8263 12.8869 12.3011 12.594 12.594C12.3011 12.8869 11.8263 12.8869 11.5334 12.594L6.40723 7.46789L1.28107 12.594C0.988181 12.8869 0.513308 12.8869 0.220415 12.594C-0.0724785 12.3011 -0.0724795 11.8263 0.220415 11.5334L5.34657 6.40723L0.21967 1.28033Z" fill="#F30269"/>
+      </svg>
+    </div>
+    <div class="header__mobile-box">
+      <div class="header__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="header__logo-link"></a>
+      </div>
+      <div class="social social--header">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__made">Made with ❤️ for NFT</div>
+      <div class="header__copy">© Comvitalo Limited 2022</div>
+    </div>
+  </div>
+</header>
+    <div class="wrapper">
+      <div class="projects-page">
+        <div class="projects-page__decor">
+          <svg width="1920" height="56" viewBox="0 0 1920 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 -1025H1920V0H1858V26H1762V0H1546V22H1500V0H502V28H474V0H179V56H123V0H96V12H67V0H0V-1025ZM1692 19H1650V55H1692V19Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="projects-page__top">
+            <div class="projects-page__top-title title title--no-responsive">Popular NFT projects</div>
+            <div class="projects-page__top-text text-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+          </div>
+          <div class="projects-page__nav">
+            <ul class="projects-page__nav-list">
+              <li><a href="#" class="active">All</a></li>
+              <li><a href="#">Music</a></li>
+              <li><a href="#">Art</a></li>
+              <li><a href="#">Collectible</a></li>
+              <li><a href="#">Game</a></li>
+              <li><a href="#">Metaverse</a></li>
+              <li><a href="#">Sports</a></li>
+            </ul>
+            <div class="projects-page__nav-options">
+              <label class="projects-page__nav-checkbox">
+                <input type="checkbox">
+                <span>Verified</span>
+              </label>
+              <div class="projects-page__nav-select js-parent-select">
+                <select class="init-select2-img" style="width: 100%;">
+                  <option data-img="data/Ethereum.svg" value="Ethereum">Ethereum</option>
+                  <option data-img="data/Solana.svg" value="Solana">Solana</option>
+                  <option data-img="data/Polygon.svg" value="Polygon">Polygon</option>
+                </select>
+              </div>
+              <span class="projects-page__nav-select-title">Sort by:</span>
+              <div class="projects-page__nav-select js-parent-select">
+                <select class="init-select2" style="width: 100%;">
+                  <option value="Price">Price</option>
+                  <option value="Most Recent">Most Recent</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="projects-page__list">
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Crypto-Baristas.jpg" width="285" height="285" alt="Crypto-Baristas">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">ART</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Crypto Baristas">Crypto Baristas</a>
+              <div class="projects-page__item-text text-content">
+                <p>Crypto Baristas is looking to partner with an established farm and invest in their operations to improve the farm operations through transparency, sustainability, and eco-efficiency.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Kibatsu-Mecha.jpg" width="285" height="285" alt="Kibatsu-Mecha">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">Collectible</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Kibatsu Mecha">Kibatsu Mecha</a>
+              <div class="projects-page__item-text text-content">
+                <p>Each Kibatsu Mecha consists of a combination of 7 traits. Each and every single one is meticulously pieced together manually, hand generated, and designed with intent.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/MekaVerse.jpg" width="285" height="285" alt="MekaVerse">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">metaverse</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="MekaVerse">MekaVerse</a>
+              <div class="projects-page__item-text text-content">
+                <p>The MekaVerse is a series of 8,888 generative Mekas with more than a hundreds elements inspired from the Japanese and Mecha universe. Each piece is unique and has its own colors.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Bored-Ape-Yacht-Club.jpg" width="285" height="285" alt="Bored-Ape-Yacht-Club">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">Collectible</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Bored Ape Yacht Club">Bored Ape Yacht Club</a>
+              <div class="projects-page__item-text text-content">
+                <p>The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club...</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Crypto-Baristas.jpg" width="285" height="285" alt="Crypto-Baristas">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">ART</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Crypto Baristas">Crypto Baristas</a>
+              <div class="projects-page__item-text text-content">
+                <p>Crypto Baristas is looking to partner with an established farm and invest in their operations to improve the farm operations through transparency, sustainability, and eco-efficiency.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Kibatsu-Mecha.jpg" width="285" height="285" alt="Kibatsu-Mecha">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">Collectible</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Kibatsu Mecha">Kibatsu Mecha</a>
+              <div class="projects-page__item-text text-content">
+                <p>Each Kibatsu Mecha consists of a combination of 7 traits. Each and every single one is meticulously pieced together manually, hand generated, and designed with intent.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/MekaVerse.jpg" width="285" height="285" alt="MekaVerse">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">metaverse</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="MekaVerse">MekaVerse</a>
+              <div class="projects-page__item-text text-content">
+                <p>The MekaVerse is a series of 8,888 generative Mekas with more than a hundreds elements inspired from the Japanese and Mecha universe. Each piece is unique and has its own colors.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Bored-Ape-Yacht-Club.jpg" width="285" height="285" alt="Bored-Ape-Yacht-Club">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">Collectible</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Bored Ape Yacht Club">Bored Ape Yacht Club</a>
+              <div class="projects-page__item-text text-content">
+                <p>The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club...</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Crypto-Baristas.jpg" width="285" height="285" alt="Crypto-Baristas">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">ART</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Crypto Baristas">Crypto Baristas</a>
+              <div class="projects-page__item-text text-content">
+                <p>Crypto Baristas is looking to partner with an established farm and invest in their operations to improve the farm operations through transparency, sustainability, and eco-efficiency.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Kibatsu-Mecha.jpg" width="285" height="285" alt="Kibatsu-Mecha">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">Collectible</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Kibatsu Mecha">Kibatsu Mecha</a>
+              <div class="projects-page__item-text text-content">
+                <p>Each Kibatsu Mecha consists of a combination of 7 traits. Each and every single one is meticulously pieced together manually, hand generated, and designed with intent.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/MekaVerse.jpg" width="285" height="285" alt="MekaVerse">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">metaverse</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="MekaVerse">MekaVerse</a>
+              <div class="projects-page__item-text text-content">
+                <p>The MekaVerse is a series of 8,888 generative Mekas with more than a hundreds elements inspired from the Japanese and Mecha universe. Each piece is unique and has its own colors.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Bored-Ape-Yacht-Club.jpg" width="285" height="285" alt="Bored-Ape-Yacht-Club">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">Collectible</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Bored Ape Yacht Club">Bored Ape Yacht Club</a>
+              <div class="projects-page__item-text text-content">
+                <p>The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club...</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Crypto-Baristas.jpg" width="285" height="285" alt="Crypto-Baristas">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">ART</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Crypto Baristas">Crypto Baristas</a>
+              <div class="projects-page__item-text text-content">
+                <p>Crypto Baristas is looking to partner with an established farm and invest in their operations to improve the farm operations through transparency, sustainability, and eco-efficiency.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Kibatsu-Mecha.jpg" width="285" height="285" alt="Kibatsu-Mecha">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">Collectible</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Kibatsu Mecha">Kibatsu Mecha</a>
+              <div class="projects-page__item-text text-content">
+                <p>Each Kibatsu Mecha consists of a combination of 7 traits. Each and every single one is meticulously pieced together manually, hand generated, and designed with intent.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/MekaVerse.jpg" width="285" height="285" alt="MekaVerse">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">metaverse</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="MekaVerse">MekaVerse</a>
+              <div class="projects-page__item-text text-content">
+                <p>The MekaVerse is a series of 8,888 generative Mekas with more than a hundreds elements inspired from the Japanese and Mecha universe. Each piece is unique and has its own colors.</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="projects-page__item">
+              <a href="#" class="projects-page__item-img">
+                <img src="data/Bored-Ape-Yacht-Club.jpg" width="285" height="285" alt="Bored-Ape-Yacht-Club">
+                <div class="projects-page__item-img-box">
+                  <div class="projects-page__item-label">Collectible</div>
+                  <div class="projects-page__item-check">
+                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M7.72797 0.273656C7.36527 -0.0912186 6.77674 -0.0912186 6.41421 0.273656L3.13044 3.57707C3.03871 3.669 2.89009 3.669 2.79854 3.57707L1.58579 2.35724C1.22308 1.99237 0.634559 1.99237 0.272029 2.35724C-0.0906764 2.72194 -0.0906764 3.31398 0.272029 3.67868L2.30752 5.72634C2.67005 6.09122 3.25857 6.09122 3.62128 5.72634L7.72797 1.59509C7.90215 1.41988 8 1.18214 8 0.934374C8 0.686604 7.90215 0.448873 7.72797 0.273656Z" fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="projects-page__item-title" title="Bored Ape Yacht Club">Bored Ape Yacht Club</a>
+              <div class="projects-page__item-text text-content">
+                <p>The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club...</p>
+              </div>
+              <div class="projects-page__item-btn-box">
+                <a href="#" class="projects-page__item-btn btn-3">
+                  Read More
+                  <svg width="12" height="12" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-page__btn-box">
+            <div class="projects-page__btn btn-5">Show More</div>
+          </div>
+        </div>
+      </div>
+      <div class="info-text">
+        <div class="info-text__decor">
+          <svg width="1920" height="307" viewBox="0 0 1920 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1815 0H1769V42H1815V0ZM1506 38H1528V60H1506V38ZM1664 79H1700V105H1920V1298H0V186H14V192H39V180H64V192H75H83V166H75V150H91V160H174V221H219V160H251V236H267V160V105H347V78H549V105H550V127H665V105H1664V79ZM167 236H161V244H167V236ZM181 291H197V307H181V291Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="info-text__box text-content">
+            <h1>SEO text</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</p>
+          </div>
+        </div>
+      </div>
+      <div class="form form--white">
+        <div class="container"><div class="form__box">
+  <div class="form__title">Start Your Journey as an NFT Artist!</div>
+  <div class="form__text">NFT is far far away, behind the word mountains, far from Vokalia and Consonantia.</div>
+  <form action="#" class="form__form">
+    <div class="form__row">
+      <div class="form__cell">
+        <div class="form__label">Your First Name</div>
+        <input type="text" class="form__input">
+      </div>
+      <div class="form__cell">
+        <div class="form__label">Your E-mail</div>
+        <input type="email" class="form__input">
+      </div>
+    </div>
+    <label class="form__checkbox">
+      <input type="checkbox" class="form__checkbox-input">
+      <span class="form__checkbox-text">I agree to the data protection and the GTC</span>
+    </label>
+    <button type="submit" class="form__btn btn-4">Sign Up Now!</button>
+  </form>
+</div></div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__left">
+      <div class="footer__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="footer__logo-link"></a>
+      </div>
+      <div class="footer__made">Made with ❤️ for NFT</div>
+      <div class="footer__copy">© Comvitalo Limited 2022</div>
+      <div class="footer__info">
+        <div class="footer__info-item">
+          <div class="footer__info-title">Affiliate </div>
+          <div class="footer__info-text text-content">Wir haben eine Affiliate-Partnerschaft mit einigen Partnern, bei der wir einen Prozentsatz des Umsatzes erhalten, wenn du von unserer Seite aus auf die Seite klickst und etwas kaufst</div>
+        </div>
+        <div class="footer__info-item">
+          <div class="footer__info-title">About us  </div>
+          <div class="footer__info-text text-content">Auf dieser Seite findst du Jagdinhalte von Jägern für Jäger. Wir haben unsere Leidenschaft zu diesem Projekt gemacht und hoffen, dass die Inhalte für so viele Jäger wie möglich hilfreich und interessant sind.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__center">
+      <svg class="footer__decor" width="524" height="712" viewBox="0 0 524 712" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M129 712H524V553H511V539H524V370H513V341H524V225H488V169H456V135H488V155H524V0H129V1H116V14H129V60H105V105H129V145H75V130H49V156H69V236H129H195V300H211V340H195V456H216V544H195V564H209V588H195V657H129V682H53V712H129ZM16 209H0V191H16V209ZM425 490H410V475H425V490ZM401 672H425V648H401V672ZM433 206H421V194H433V206Z" fill="white"/>
+      </svg>
+      <nav class="footer__nav">
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Legal</div>
+          <ul class="footer__nav-list">
+            <li><a href="#">Legal Notice</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Quick Links</div>
+          <ul class="footer__nav-list">
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__right">
+      <div class="footer__contacts-title">Newsletter Sign Up</div>
+      <div class="footer__contacts-text text-content">We share the top stories and discussions about NFT in a 5 minute email newsletter. Subscribe below to receive it, every week, for free</div>
+      <form action="#" class="footer__form">
+        <div class="footer__form-row">
+          <input type="email" placeholder="Enter your email Address">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <div class="footer__form-row">
+          <input type="text" placeholder="Enter your Name">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <label class="footer__form-checkbox">
+          <input type="checkbox" class="footer__form-checkbox-input">
+          <span class="footer__form-checkbox-text">I agree to my personal data being stored and used to receive newsletters. <a href="#">Terms & Conditions</a> apply.</span>
+        </label>
+        <button type="submit" class="footer__form-btn btn-2">Sign Up Now</button>
+      </form>
+      <div class="social">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+    <script src="js/app.js"></script>
+  </body>
+</html>

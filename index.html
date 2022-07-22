@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="Batadvisor">
+  <meta name="description" content="NFT">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <title>Batadvisor</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <title>NFT</title>
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="64x64" href="images/favicon-64x64.png">
@@ -17,468 +14,660 @@
   <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192x192.png">
   <link href="css/index.css" rel="stylesheet">
 </head>
-  <body>
+  <body class="home">
     <header class="header">
-  <div class="header__container">
-    <div class="header__left">
-      <div class="header__logo">
-        <img src="data/logo.svg" width="134" height="26" alt="logo">
-        <a href="#" class="header__logo-link"></a>
+  <picture class="header__bg">
+    <source srcset="data/header-mobile.jpg" media="(max-width: 1200px)">
+    <img src="data/header.png" width="1920" height="120" alt="header-bg">
+  </picture>
+  <div class="container">
+    <div class="header__container">
+      <div class="header__left">
+        <div class="header__logo header__logo--main">
+          <img src="images/logo.svg" width="98" height="60" alt="logo">
+          <a href="#" class="header__logo-link"></a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="#">Academy</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <form action="#" class="header__form">
+          <div class="header__form-title">
+            <svg width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14 1.52841L8.67464 7.31938C8.34607 7.67521 7.90122 7.875 7.43747 7.875C6.97372 7.875 6.52887 7.67521 6.2003 7.31938L0.874971 1.52841C1.13295 1.06331 1.4968 0.678331 1.93142 0.410617C2.36605 0.142903 2.85679 0.00148382 3.35631 0H11.5186C12.0181 0.00148382 12.5089 0.142903 12.9435 0.410617C13.3781 0.678331 13.742 1.06331 14 1.52841ZM9.62908 8.10978L14.8465 2.62491C14.8497 2.66316 14.8545 2.70005 14.8592 2.73656C14.8672 2.79834 14.875 2.85903 14.875 2.92333V10.7421C14.874 11.6058 14.5472 12.4338 13.9662 13.0446C13.3853 13.6553 12.5976 13.9989 11.776 13.9999H3.09896C2.27737 13.9989 1.4897 13.6553 0.908751 13.0446C0.327797 12.4338 0.000984141 11.6058 0 10.7421V2.92333C0 2.85904 0.00783507 2.79834 0.0158106 2.73656C0.0205243 2.70005 0.0252871 2.66316 0.0285104 2.62491L5.24592 8.10978C5.82767 8.71981 6.61582 9.06239 7.4375 9.06239C8.25918 9.06239 9.04733 8.71981 9.62908 8.10978Z" />
+            </svg>
+            Weekly NFT stories and discussions
+          </div>
+          <label class="header__form-checkbox">
+            <input type="checkbox">
+            <span>I agree to <a href="#">T&Cs</a></span>
+          </label>
+          <button type="submit" class="header__form-btn">
+            <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.33265 14.2227L11.5576 4.99783L12.1254 11.2126C12.1387 11.3566 12.1802 11.4966 12.2476 11.6246C12.3149 11.7526 12.4069 11.866 12.5181 11.9585C12.7427 12.1452 13.0323 12.235 13.3232 12.2082C13.6141 12.1814 13.8824 12.0401 14.0691 11.8155C14.2558 11.5908 14.3456 11.3012 14.3188 11.0104L13.541 2.45436C13.53 2.39108 13.5144 2.32868 13.4943 2.26769C13.4554 2.2288 13.471 2.16657 13.4477 2.11212C13.3937 1.98769 13.3173 1.87429 13.2221 1.77766C13.1255 1.6825 13.0121 1.60602 12.8876 1.5521C12.8487 1.51321 12.7865 1.52876 12.7321 1.50543C12.6711 1.48531 12.6087 1.46971 12.5454 1.45876L3.9894 0.680941C3.82847 0.666271 3.66628 0.687241 3.51437 0.74236C3.36245 0.797478 3.22455 0.885391 3.11047 0.999846C2.92837 1.18123 2.81554 1.42065 2.79156 1.67655C2.7781 1.82061 2.79319 1.9659 2.83596 2.10412C2.87874 2.24234 2.94836 2.37076 3.04085 2.48203C3.13333 2.5933 3.24686 2.68523 3.37492 2.75255C3.50299 2.81988 3.64308 2.86128 3.78717 2.87439L10.0019 3.44219L0.777016 12.6671C0.570726 12.8734 0.454834 13.1532 0.454834 13.4449C0.454834 13.7367 0.570726 14.0165 0.777016 14.2227C0.983306 14.429 1.2631 14.5449 1.55483 14.5449C1.84657 14.5449 2.12636 14.429 2.33265 14.2227Z" />
+            </svg>
+            Subscribe
+          </button>
+        </form>
       </div>
-    </div>
-    <div class="header__center">
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="menu-item-has-children">
-            <a href="#">Online Betting</a>
-            <ul>
-              <li><a href="#">Football Betting</a></li>
-              <li><a href="#">NBA Betting</a></li>
-              <li><a href="#">Horse Betting</a></li>
-              <li><a href="#">Tennis Betting</a></li>
-              <li><a href="#">Esports Betting</a></li>
-            </ul>
-          </li>
-          <li class="menu-item-has-children">
-            <a href="#">Online Casino</a>
-            <ul>
-              <li><a href="#">Live Casino</a></li>
-              <li><a href="#">Mobile Casino</a></li>
-              <li><a href="#">Real Money Online Casino</a></li>
-              <li><a href="#">Free SGD Credit Online Casino</a></li>
-              <li><a href="#">Casino Games</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Reviews</a></li>
-          <li><a href="#">Lottery Results</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__right">
-      <div class="header__mobile-btn">
-        <svg width="18" height="12" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
-          <path d="M17.05 0H0.95C0.42533 0 0 0.425329 0 0.95V1.05C0 1.57467 0.42533 2 0.95 2H17.05C17.5747 2 18 1.57467 18 1.05V0.95C18 0.425329 17.5747 0 17.05 0Z"/>
-          <path d="M17.05 5H0.95C0.42533 5 0 5.42533 0 5.95V6.05C0 6.57467 0.42533 7 0.95 7H17.05C17.5747 7 18 6.57467 18 6.05V5.95C18 5.42533 17.5747 5 17.05 5Z"/>
-          <path d="M17.05 10H0.95C0.42533 10 0 10.4253 0 10.95V11.05C0 11.5747 0.42533 12 0.95 12H17.05C17.5747 12 18 11.5747 18 11.05V10.95C18 10.4253 17.5747 10 17.05 10Z"/>
+      <div class="header__right">
+        <a href="#" class="header__contacts-btn btn">Contact Us</a>
+      </div>
+      <div class="header__mobile-menu">
+        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3333 0H0.666667C0.298477 0 0 0.29041 0 0.648649C0 1.00689 0.298477 1.2973 0.666667 1.2973H15.3333C15.7015 1.2973 16 1.00689 16 0.648649C16 0.29041 15.7015 0 15.3333 0ZM15.3333 4.75676H0.666667C0.298477 4.75676 0 5.04717 0 5.40541C0 5.76365 0.298477 6.05406 0.666667 6.05406H15.3333C15.7015 6.05406 16 5.76365 16 5.40541C16 5.04717 15.7015 4.75676 15.3333 4.75676ZM0.666667 9.2973H15.3333C15.7015 9.2973 16 9.63611 16 10.0541C16 10.472 15.7015 10.8108 15.3333 10.8108H0.666667C0.298477 10.8108 0 10.472 0 10.0541C0 9.63611 0.298477 9.2973 0.666667 9.2973Z" fill="white"/>
         </svg>
       </div>
-      <a href="#" class="header__btn btn">Contact Us</a>
     </div>
   </div>
   <div class="header__mobile">
-    <div class="header__mobile-overlay js-close-menu"></div>
+    <div class="header__mobile-overlay"></div>
+    <div class="header__mobile-close">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.21967 1.28033C-0.0732234 0.987437 -0.0732234 0.512563 0.21967 0.21967C0.512563 -0.0732235 0.987437 -0.0732235 1.28033 0.21967L6.40723 5.34657L11.5341 0.21967C11.827 -0.0732235 12.3019 -0.0732235 12.5948 0.21967C12.8877 0.512563 12.8877 0.987437 12.5948 1.28033L7.46789 6.40723L12.594 11.5334C12.8869 11.8263 12.8869 12.3011 12.594 12.594C12.3011 12.8869 11.8263 12.8869 11.5334 12.594L6.40723 7.46789L1.28107 12.594C0.988181 12.8869 0.513308 12.8869 0.220415 12.594C-0.0724785 12.3011 -0.0724795 11.8263 0.220415 11.5334L5.34657 6.40723L0.21967 1.28033Z" fill="#F30269"/>
+      </svg>
+    </div>
     <div class="header__mobile-box">
-      <div class="header__mobile-close js-close-menu">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11.113 8.99744L17.5567 2.56866C17.8389 2.28647 17.9974 1.90375 17.9974 1.50468C17.9974 1.10562 17.8389 0.722895 17.5567 0.440712C17.2745 0.158529 16.8918 0 16.4928 0C16.0937 0 15.711 0.158529 15.4288 0.440712L9 6.88448L2.57121 0.440712C2.28903 0.158529 1.90631 -2.97328e-09 1.50724 0C1.10817 2.97328e-09 0.725452 0.158529 0.443269 0.440712C0.161086 0.722895 0.00255743 1.10562 0.00255743 1.50468C0.00255743 1.90375 0.161086 2.28647 0.443269 2.56866L6.88704 8.99744L0.443269 15.4262C0.302812 15.5655 0.191329 15.7313 0.115249 15.9139C0.0391699 16.0965 0 16.2924 0 16.4902C0 16.688 0.0391699 16.8839 0.115249 17.0665C0.191329 17.2491 0.302812 17.4149 0.443269 17.5542C0.582579 17.6946 0.74832 17.8061 0.930933 17.8822C1.11355 17.9583 1.30941 17.9974 1.50724 17.9974C1.70507 17.9974 1.90094 17.9583 2.08355 17.8822C2.26616 17.8061 2.4319 17.6946 2.57121 17.5542L9 11.1104L15.4288 17.5542C15.5681 17.6946 15.7338 17.8061 15.9165 17.8822C16.0991 17.9583 16.2949 17.9974 16.4928 17.9974C16.6906 17.9974 16.8865 17.9583 17.0691 17.8822C17.2517 17.8061 17.4174 17.6946 17.5567 17.5542C17.6972 17.4149 17.8087 17.2491 17.8848 17.0665C17.9608 16.8839 18 16.688 18 16.4902C18 16.2924 17.9608 16.0965 17.8848 15.9139C17.8087 15.7313 17.6972 15.5655 17.5567 15.4262L11.113 8.99744Z" fill="white"/>
-        </svg>
+      <div class="header__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="header__logo-link"></a>
       </div>
-      <div class="header__mobile-title">Menu</div>
+      <div class="social social--header">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__made">Made with ❤️ for NFT</div>
+      <div class="header__copy">© Comvitalo Limited 2022</div>
     </div>
   </div>
 </header>
     <div class="wrapper">
       <div class="first-screen">
-        <picture class="first-screen__bg">
-          <source srcset="data/first-screen-mobile.jpg" media="(max-width: 1200px)">
-          <img src="data/first-screen.jpg" width="1680" height="900" alt="first-screen">
-        </picture>
-        <div class="container-small">
-          <div class="first-screen__title title-page">Turning Players into Winners</div>
-          <div class="first-screen__text">With our independent reviews, latest news and in-depth game guides we’ve been keeping players worldwide safe and secure since 2005.</div>
-          <div class="first-screen__list">
-            <a href="#" class="first-screen__link">
-              <div class="first-screen__link-img">
-                <img src="data/token.svg" width="70" height="70" alt="token">
-              </div>
-              <div class="first-screen__link-title">Online Casinos</div>
-            </a>
-            <a href="#" class="first-screen__link">
-              <div class="first-screen__link-img">
-                <img src="data/betting.svg" width="70" height="70" alt="betting">
-              </div>
-              <div class="first-screen__link-title">Online Betting</div>
-            </a>
-            <a href="#" class="first-screen__link">
-              <div class="first-screen__link-img">
-                <img src="data/casino.svg" width="70" height="70" alt="casino">
-              </div>
-              <div class="first-screen__link-title">Casino Games</div>
-            </a>
-            <a href="#" class="first-screen__link">
-              <div class="first-screen__link-img">
-                <img src="data/footbet.svg" width="70" height="70" alt="footbet">
-              </div>
-              <div class="first-screen__link-title">Football Betting</div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="favorite">
-        <div class="container-full">
-          <div class="favorite__box">
-            <div class="container">
-              <div class="favorite__top">
-                <div class="favorite__img">
-                  <img src="data/Your-Favorite.jpg" width="405" height="494" alt="Your-Favorite">
-                </div>
-                <div class="favorite__info">
-                  <div class="favorite__title title">Your Favorite <br> <span>Gambling</span> Advisor</div>
-                  <div class="favorite__text text-content">As one of the most reputable brands in the online gambling industry, BETadvisor offers betting on a wide variety of sports and games.</div>
-                  <div class="favorite__info-list js-accordion">
-                    <div class="favorite__info-item js-accordion-item">
-                      <div class="favorite__info-item-head js-accordion-btn">
-                        <div class="favorite__info-item-icon">
-                          <img src="data/Gambling-History.svg" width="26" height="26" alt="Gambling-History">
-                        </div>
-                        <div class="favorite__info-item-title">Gambling History in Singapore</div>
-                        <svg class="favorite__info-item-arrow" width="10" height="7" viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.98037 6.00409C4.84938 6.00485 4.71954 5.97963 4.59828 5.92986C4.47702 5.8801 4.36673 5.80677 4.27373 5.71409L0.292697 1.71409C0.1999 1.62085 0.126291 1.51016 0.0760698 1.38834C0.0258487 1.26652 -2.10994e-08 1.13595 0 1.00409C2.10995e-08 0.872232 0.0258497 0.741664 0.0760708 0.619842C0.126292 0.49802 0.199901 0.38733 0.292698 0.294091C0.385494 0.200853 0.49566 0.126892 0.616904 0.0764312C0.738149 0.0259709 0.868098 -2.49105e-08 0.999332 0C1.13057 2.49106e-08 1.26052 0.025971 1.38176 0.0764313C1.503 0.126892 1.61317 0.200853 1.70597 0.294091L4.98037 3.60409L8.26472 0.424093C8.35628 0.321803 8.46785 0.239594 8.59247 0.182608C8.71709 0.125622 8.85207 0.095085 8.98897 0.0929057C9.12588 0.0907265 9.26175 0.116952 9.38811 0.169943C9.51446 0.222934 9.62857 0.301551 9.72331 0.400875C9.81804 0.500199 9.89136 0.618095 9.93868 0.747189C9.986 0.876284 10.0063 1.0138 9.9983 1.15114C9.99031 1.28847 9.95421 1.42267 9.89224 1.54535C9.83028 1.66803 9.74379 1.77653 9.63818 1.86409L5.65714 5.72409C5.47513 5.90041 5.23317 6.00052 4.98037 6.00409Z" />
-                        </svg>
-                      </div>
-                      <div class="favorite__info-item-body">
-                        <p>Gambling in Singapore can be quite difficult for permanent residents of Singapore. Singapore Pools and foreign casinos are the only platforms that can offer gambling services. </p>
-                      </div>
-                    </div>
-                    <div class="favorite__info-item js-accordion-item">
-                      <div class="favorite__info-item-head js-accordion-btn">
-                        <div class="favorite__info-item-icon">
-                          <img src="data/All-Gambling.svg" width="26" height="26" alt="All-Gambling">
-                        </div>
-                        <div class="favorite__info-item-title">All Gambling Options</div>
-                        <svg class="favorite__info-item-arrow" width="10" height="7" viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.98037 6.00409C4.84938 6.00485 4.71954 5.97963 4.59828 5.92986C4.47702 5.8801 4.36673 5.80677 4.27373 5.71409L0.292697 1.71409C0.1999 1.62085 0.126291 1.51016 0.0760698 1.38834C0.0258487 1.26652 -2.10994e-08 1.13595 0 1.00409C2.10995e-08 0.872232 0.0258497 0.741664 0.0760708 0.619842C0.126292 0.49802 0.199901 0.38733 0.292698 0.294091C0.385494 0.200853 0.49566 0.126892 0.616904 0.0764312C0.738149 0.0259709 0.868098 -2.49105e-08 0.999332 0C1.13057 2.49106e-08 1.26052 0.025971 1.38176 0.0764313C1.503 0.126892 1.61317 0.200853 1.70597 0.294091L4.98037 3.60409L8.26472 0.424093C8.35628 0.321803 8.46785 0.239594 8.59247 0.182608C8.71709 0.125622 8.85207 0.095085 8.98897 0.0929057C9.12588 0.0907265 9.26175 0.116952 9.38811 0.169943C9.51446 0.222934 9.62857 0.301551 9.72331 0.400875C9.81804 0.500199 9.89136 0.618095 9.93868 0.747189C9.986 0.876284 10.0063 1.0138 9.9983 1.15114C9.99031 1.28847 9.95421 1.42267 9.89224 1.54535C9.83028 1.66803 9.74379 1.77653 9.63818 1.86409L5.65714 5.72409C5.47513 5.90041 5.23317 6.00052 4.98037 6.00409Z" />
-                        </svg>
-                      </div>
-                      <div class="favorite__info-item-body">
-                        <p>Gambling in Singapore can be quite difficult for permanent residents of Singapore. Singapore Pools and foreign casinos are the only platforms that can offer gambling services. </p>
-                      </div>
-                    </div>
-                    <div class="favorite__info-item js-accordion-item">
-                      <div class="favorite__info-item-head js-accordion-btn">
-                        <div class="favorite__info-item-icon">
-                          <img src="data/Gambling-History.svg" width="26" height="26" alt="Gambling-History">
-                        </div>
-                        <div class="favorite__info-item-title">Experts Recommandations</div>
-                        <svg class="favorite__info-item-arrow" width="10" height="7" viewBox="0 0 10 7" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M4.98037 6.00409C4.84938 6.00485 4.71954 5.97963 4.59828 5.92986C4.47702 5.8801 4.36673 5.80677 4.27373 5.71409L0.292697 1.71409C0.1999 1.62085 0.126291 1.51016 0.0760698 1.38834C0.0258487 1.26652 -2.10994e-08 1.13595 0 1.00409C2.10995e-08 0.872232 0.0258497 0.741664 0.0760708 0.619842C0.126292 0.49802 0.199901 0.38733 0.292698 0.294091C0.385494 0.200853 0.49566 0.126892 0.616904 0.0764312C0.738149 0.0259709 0.868098 -2.49105e-08 0.999332 0C1.13057 2.49106e-08 1.26052 0.025971 1.38176 0.0764313C1.503 0.126892 1.61317 0.200853 1.70597 0.294091L4.98037 3.60409L8.26472 0.424093C8.35628 0.321803 8.46785 0.239594 8.59247 0.182608C8.71709 0.125622 8.85207 0.095085 8.98897 0.0929057C9.12588 0.0907265 9.26175 0.116952 9.38811 0.169943C9.51446 0.222934 9.62857 0.301551 9.72331 0.400875C9.81804 0.500199 9.89136 0.618095 9.93868 0.747189C9.986 0.876284 10.0063 1.0138 9.9983 1.15114C9.99031 1.28847 9.95421 1.42267 9.89224 1.54535C9.83028 1.66803 9.74379 1.77653 9.63818 1.86409L5.65714 5.72409C5.47513 5.90041 5.23317 6.00052 4.98037 6.00409Z" />
-                        </svg>
-                      </div>
-                      <div class="favorite__info-item-body">
-                        <p>Gambling in Singapore can be quite difficult for permanent residents of Singapore. Singapore Pools and foreign casinos are the only platforms that can offer gambling services. </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="favorite__aside">
-                  <div class="favorite__aside-img">
-                    <img src="data//Ultimate-Singapore.jpg" width="240" height="156" alt="Ultimate-Singapore">
-                  </div>
-                  <div class="favorite__aside-title">Ultimate Singapore Casinos Guide</div>
-                  <div class="favorite__aside-text">Our tools and key guides provide you with all the information you need to improve your industry knowledge. Learn how to count cards, how sports betting works and how to win at the casino.</div>
-                  <a href="#" class="favorite__aside-btn btn-2">Read  Guide</a>
-                </div>
-              </div>
-              <div class="favorite__bottom">
-                <div class="favorite__bottom-left">
-                  <div class="favorite__title title">Your Favorite <br><span>Casino</span> Advisor</div>
-                  <div class="favorite__text favorite__text--mb30 text-content">As one of the most reputable brands in the online gambling industry, BETadvisor offers betting on a wide variety of sports and games.</div>
-                  <a href="#" class="favorite__all btn-3">
-                    <svg width="20" height="15" viewBox="0 0 20 15" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 8.50427C10.8281 8.50427 11.4994 7.8327 11.4994 7.00427C11.4994 6.17585 10.8281 5.50427 10 5.50427C9.17192 5.50427 8.50061 6.17585 8.50061 7.00427C8.50061 7.8327 9.17192 8.50427 10 8.50427Z"/>
-                      <path d="M19.8661 6.50427C19.2263 5.39427 15.7077 -0.175734 9.73011 0.00426608C4.2023 0.144266 1.00358 5.00427 0.133921 6.50427C0.046188 6.65629 0 6.82873 0 7.00427C0 7.1798 0.046188 7.35225 0.133921 7.50427C0.763671 8.59427 4.13233 14.0043 10.02 14.0043H10.2699C15.7977 13.8643 19.0064 9.00427 19.8661 7.50427C19.9538 7.35225 20 7.1798 20 7.00427C20 6.82873 19.9538 6.65629 19.8661 6.50427V6.50427ZM10 10.5043C9.30804 10.5043 8.63162 10.299 8.05628 9.91441C7.48093 9.52982 7.03251 8.9832 6.76771 8.34366C6.5029 7.70412 6.43362 7.00038 6.56861 6.32145C6.70361 5.64252 7.03682 5.01888 7.52611 4.52939C8.0154 4.03991 8.63879 3.70657 9.31745 3.57152C9.99612 3.43647 10.6996 3.50578 11.3389 3.77069C11.9781 4.03559 12.5246 4.4842 12.909 5.05977C13.2934 5.63534 13.4986 6.31203 13.4986 7.00427C13.4986 7.93252 13.13 8.82276 12.4739 9.47914C11.8178 10.1355 10.9279 10.5043 10 10.5043V10.5043Z"/>
-                    </svg>
-                    View all 982 Casino Games
-                  </a>
-                </div>
-                <div class="favorite__bottom-right">
-                  <div class="favorite__games">
-                    <a href="#" class="favorite__games-item">
-                      <div class="favorite__games-img">
-                        <img src="data/games-Online-Slots.svg" width="80" height="80" alt="games-Online-Slots">
-                      </div>
-                      <div class="favorite__games-item-title">Online Slots</div>
-                    </a>
-                    <a href="#" class="favorite__games-item">
-                      <div class="favorite__games-img">
-                        <img src="data/games-Live-Baccarat.svg" width="80" height="80" alt="games-Live-Baccarat">
-                      </div>
-                      <div class="favorite__games-item-title">Live Baccarat</div>
-                    </a>
-                    <a href="#" class="favorite__games-item">
-                      <div class="favorite__games-img">
-                        <img src="data/games-Live-Blackjack.svg" width="80" height="80" alt="games-Live-Blackjack">
-                      </div>
-                      <div class="favorite__games-item-title">Live Blackjack</div>
-                    </a>
-                    <a href="#" class="favorite__games-item">
-                      <div class="favorite__games-img">
-                        <img src="data/games-Roulette.svg" width="80" height="80" alt="games-Roulette">
-                      </div>
-                      <div class="favorite__games-item-title">Roulette</div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="reviews">
+        <img src="data/nft.jpg" class="first-screen__bg" alt="nft">
         <div class="container">
-          <div class="reviews__box">
-            <div class="reviews__left">
-              <div class="reviews__title title">Online <span>Casino</span> reviews</div>
-              <div class="reviews__holder">
-                <div class="reviews__label" style="background: #E50A14;">#1 TOP RATED </div>
-                <div class="reviews__list">
-                  <div class="reviews__item">
-                    <a href="#" class="reviews__item-img">
-                      <img src="data/jackpot.png" width="140" height="48" alt="jackpot">
-                    </a>
-                    <div class="reviews__item-rate">
-                      <div class="reviews__item-rate-row">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.33412 11.9969C9.23796 11.9973 9.14312 11.9735 9.05753 11.9275L5.99098 10.2419L2.92443 11.9275C2.82485 11.9824 2.71258 12.007 2.60038 11.9983C2.48818 11.9896 2.38055 11.9481 2.28973 11.8783C2.1989 11.8086 2.12853 11.7136 2.08661 11.604C2.04468 11.4944 2.03289 11.3746 2.05256 11.2583L2.65385 7.7042L0.176555 5.17909C0.0992646 5.09811 0.0444358 4.99656 0.0179529 4.88535C-0.00853001 4.77413 -0.00566726 4.65744 0.0262339 4.54781C0.0610844 4.43561 0.125191 4.33592 0.21128 4.26004C0.297368 4.18417 0.40199 4.13514 0.513275 4.11854L3.9406 3.59457L5.44982 0.356111C5.49906 0.24938 5.57594 0.159368 5.67164 0.0963861C5.76735 0.0334043 5.87803 0 5.99098 0C6.10394 0 6.21461 0.0334043 6.31032 0.0963861C6.40602 0.159368 6.4829 0.24938 6.53214 0.356111L8.0594 3.58826L11.4867 4.11222C11.598 4.12883 11.7026 4.17785 11.7887 4.25373C11.8748 4.32961 11.9389 4.4293 11.9738 4.54149C12.0057 4.65113 12.0085 4.76782 11.982 4.87903C11.9556 4.99025 11.9007 5.09179 11.8234 5.17277L9.34615 7.69789L9.94744 11.252C9.9689 11.3703 9.95766 11.4927 9.91504 11.6045C9.87243 11.7164 9.80021 11.8131 9.70692 11.8833C9.59804 11.9634 9.46694 12.0033 9.33412 11.9969Z" fill="#FFB800"/>
-                        </svg>
-                        <div class="reviews__item-rate-value">
-                          <div class="reviews__item-rate-value-big">4.8</div>/
-                          <div class="reviews__item-rate-value-small">5</div>
-                        </div>
-                      </div>
-                      <div class="reviews__item-text">Overall Rating</div>
-                    </div>
-                    <div class="reviews__item-date">
-                      <div class="reviews__item-rate-row">
-                        <div class="reviews__item-rate-value">
-                          <div class="reviews__item-rate-value-big">1-5</div>
-                          <div class="reviews__item-rate-value-small">days</div>
-                        </div>
-                      </div>
-                      <div class="reviews__item-text">Payout Speed</div>
-                    </div>
-                    <div class="reviews__item-pay">
-                      <ul class="reviews__item-pay-list">
-                        <li><img src="data/visa.svg" width="20" height="20" alt="visa"></li>
-                        <li><img src="data/msater.svg" width="20" height="20" alt="msater"></li>
-                        <li><img src="data/scrill.svg" width="20" height="20" alt="scrill"></li>
-                        <li><img src="data/neteller.svg" width="20" height="20" alt="neteller"></li>
-                      </ul>
-                      <div class="reviews__item-text">Payment methods</div>
-                    </div>
-                    <div class="reviews__item-btn-box">
-                      <a href="#" class="reviews__item-btn">
-                        Read full review
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.799997 5.6H7.916L5.738 8.216C5.68757 8.27667 5.64959 8.34668 5.62621 8.42203C5.60284 8.49738 5.59454 8.5766 5.60178 8.65516C5.61641 8.81381 5.69347 8.96016 5.816 9.062C5.93853 9.16385 6.0965 9.21284 6.25515 9.19822C6.41381 9.18359 6.56015 9.10653 6.662 8.984L9.662 5.384C9.68218 5.35537 9.70023 5.32529 9.716 5.294C9.716 5.264 9.746 5.246 9.758 5.216C9.78519 5.14721 9.79943 5.07398 9.8 5C9.79943 4.92603 9.78519 4.8528 9.758 4.784C9.758 4.754 9.728 4.736 9.716 4.706C9.70023 4.67472 9.68218 4.64464 9.662 4.616L6.662 1.016C6.60558 0.948275 6.53494 0.893807 6.45509 0.856474C6.37524 0.819141 6.28814 0.799861 6.2 0.800004C6.05981 0.79973 5.92394 0.848556 5.816 0.938004C5.75524 0.988374 5.70502 1.05023 5.66821 1.12004C5.6314 1.18985 5.60872 1.26624 5.60147 1.34482C5.59423 1.42341 5.60256 1.50265 5.62599 1.57801C5.64941 1.65338 5.68748 1.72338 5.738 1.784L7.916 4.4H0.799997C0.640867 4.4 0.488255 4.46322 0.375733 4.57574C0.263211 4.68826 0.199997 4.84087 0.199997 5C0.199997 5.15913 0.263211 5.31175 0.375733 5.42427C0.488255 5.53679 0.640867 5.6 0.799997 5.6Z" fill="#141414"/>
-                        </svg>
-                      </a>
-                    </div>
+          <div class="first-screen__title">Your best source for NFT </div>
+          <div class="first-screen__text">Buy, sell, and discover the most unique and exclusive digital assets. All in one place. </div>
+          <div class="first-screen__btn-box">
+            <a href="#" class="first-screen__btn btn-2">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-category">
+          <a href="#" class="main-category__item">
+            <div class="main-category__item-img">
+              <img src="data/Academy.jpg" width="240" height="240" alt="Academy">
+            </div>
+            <div class="main-category__item-title">Academy</div>
+          </a>
+          <a href="#" class="main-category__item">
+            <div class="main-category__item-img">
+              <img src="data/NFT-Tools.jpg" width="240" height="240" alt="NFT-Tools">
+            </div>
+            <div class="main-category__item-title">NFT Tools</div>
+          </a>
+          <a href="#" class="main-category__item">
+            <div class="main-category__item-img">
+              <img src="data/Projects.jpg" width="240" height="240" alt="Projects">
+            </div>
+            <div class="main-category__item-title">Projects</div>
+          </a>
+        </div>
+        <div class="about">
+          <svg class="about__decor" width="375" height="153" viewBox="0 0 375 153" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M429.812 80.8524L429.812 -597L320.752 -597L320.752 -560.647L331.937 -560.647L331.937 -542.749L312.922 -542.749L312.922 -560.087L281.602 -560.087L281.602 -597L-91.9996 -597L-91.9996 80.8523L-91.9997 103.224L-78.0176 103.224L-78.0176 80.8523L-57.3218 80.8523L-57.3218 103.224L-35.5098 103.224L-35.5098 98.1902L-25.4451 98.1902L-25.4451 88.123L-35.5098 88.123L-35.5098 80.8523L11.4681 80.8523L11.4681 100.987L48.3809 100.987L48.3809 80.8523L125.564 80.8523L125.564 39.4653L114.375 39.4653L114.375 49.5324L100.952 49.5324L100.952 36.1096L112.698 36.1096L112.698 0.315416L151.848 0.315418L151.848 36.1096L174.781 36.1096L174.781 80.8523L202.184 80.8523L202.184 50.651L255.875 50.651L255.875 80.8523L297.824 80.8524L297.824 114.409L342.562 114.409L342.562 125.595L357.104 125.595L357.104 111.054L348.719 111.054L348.719 80.8524L371.088 80.8524L371.088 94.2751L396.256 94.2751L396.256 80.8524L421.982 80.8524L421.982 88.123L429.252 88.123L429.252 80.8524L429.812 80.8524ZM322.99 144.051L322.99 153L312.923 153L312.923 144.051L322.99 144.051ZM247.486 -36.5974L247.486 -20.3781L231.267 -20.3781L231.267 -36.5974L247.486 -36.5974ZM158.559 -51.1387L158.559 -42.7495L150.169 -42.7495L150.169 -51.1387L158.559 -51.1387ZM270.414 36.6689L270.414 28.2797L262.025 28.2797L262.025 36.6689L270.414 36.6689ZM-22.6484 44.4989L-22.6484 31.0761L-36.0713 31.0761L-36.0713 44.4989L-22.6484 44.4989ZM67.3984 -84.6958L67.3984 -71.273L53.9756 -71.273L53.9756 -84.6958L67.3984 -84.6958ZM23.7715 23.246L23.7715 15.4161L15.9415 15.4161L15.9415 23.246L23.7715 23.246ZM128.36 -140.624L128.36 -132.794L120.53 -132.794L120.53 -140.624L128.36 -140.624ZM327.463 -60.0873L327.463 -66.7987L320.751 -66.7987L320.751 -60.0873L327.463 -60.0873Z" fill="#F2F7F2"/>
+          </svg>
+          <div class="about__top">
+            <div class="about__title title">About project</div>
+            <div class="about__text text-content">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with.</p>
+            </div>
+            <div class="about__btn-box">
+              <a href="#" class="about__btn btn-3">
+                Read More
+                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="about__academy">
+            <div class="about__academy-left">
+              <div class="about__academy-title title">Academy</div>
+              <div class="about__academy-text text-content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              </div>
+              <div class="about__academy-btn-box">
+                <a href="#" class="about__academy-join-btn btn-2">Join Now</a>
+                <a href="#" class="about__academy-btn btn-3">
+                  Read More
+                  <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="about__academy-right">
+              <img src="data/about-Academy.jpg" width="520" height="536" alt="about-Academy">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <div class="form__decor">
+          <svg width="1917" height="56" viewBox="0 0 1917 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 -257H1920V0H1858V26H1762V0H1546V22H1500V0H502V28H474V0H179V56H123V0H96V12H67V0H0V-257ZM1692 19H1650V55H1692V19Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="container"><div class="form__box">
+  <div class="form__title">Start Your Journey as an NFT Artist!</div>
+  <div class="form__text">NFT is far far away, behind the word mountains, far from Vokalia and Consonantia.</div>
+  <form action="#" class="form__form">
+    <div class="form__row">
+      <div class="form__cell">
+        <div class="form__label">Your First Name</div>
+        <input type="text" class="form__input">
+      </div>
+      <div class="form__cell">
+        <div class="form__label">Your E-mail</div>
+        <input type="email" class="form__input">
+      </div>
+    </div>
+    <label class="form__checkbox">
+      <input type="checkbox" class="form__checkbox-input">
+      <span class="form__checkbox-text">I agree to the data protection and the GTC</span>
+    </label>
+    <button type="submit" class="form__btn btn-4">Sign Up Now!</button>
+  </form>
+</div></div>
+      </div>
+      <div class="projects">
+        <div class="container">
+          <div class="projects__top">
+            <div class="projects__left">
+              <div class="projects__title title">Tools & Platforms </div>
+              <div class="projects__head">
+                <div class="projects__icon"></div>
+                <div class="projects__row-title">Collection</div>
+                <div class="projects__rate">Rating</div>
+                <div class="projects__btn-box"></div>
+              </div>
+              <div class="projects__list">
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/OpenSea.svg" width="28" height="28" alt="OpenSea">
                   </div>
-                  <div class="reviews__item">
-                    <a href="#" class="reviews__item-img">
-                      <img src="data/ruby.png" width="140" height="48" alt="ruby">
-                    </a>
-                    <div class="reviews__item-rate">
-                      <div class="reviews__item-rate-row">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.33412 11.9969C9.23796 11.9973 9.14312 11.9735 9.05753 11.9275L5.99098 10.2419L2.92443 11.9275C2.82485 11.9824 2.71258 12.007 2.60038 11.9983C2.48818 11.9896 2.38055 11.9481 2.28973 11.8783C2.1989 11.8086 2.12853 11.7136 2.08661 11.604C2.04468 11.4944 2.03289 11.3746 2.05256 11.2583L2.65385 7.7042L0.176555 5.17909C0.0992646 5.09811 0.0444358 4.99656 0.0179529 4.88535C-0.00853001 4.77413 -0.00566726 4.65744 0.0262339 4.54781C0.0610844 4.43561 0.125191 4.33592 0.21128 4.26004C0.297368 4.18417 0.40199 4.13514 0.513275 4.11854L3.9406 3.59457L5.44982 0.356111C5.49906 0.24938 5.57594 0.159368 5.67164 0.0963861C5.76735 0.0334043 5.87803 0 5.99098 0C6.10394 0 6.21461 0.0334043 6.31032 0.0963861C6.40602 0.159368 6.4829 0.24938 6.53214 0.356111L8.0594 3.58826L11.4867 4.11222C11.598 4.12883 11.7026 4.17785 11.7887 4.25373C11.8748 4.32961 11.9389 4.4293 11.9738 4.54149C12.0057 4.65113 12.0085 4.76782 11.982 4.87903C11.9556 4.99025 11.9007 5.09179 11.8234 5.17277L9.34615 7.69789L9.94744 11.252C9.9689 11.3703 9.95766 11.4927 9.91504 11.6045C9.87243 11.7164 9.80021 11.8131 9.70692 11.8833C9.59804 11.9634 9.46694 12.0033 9.33412 11.9969Z" fill="#FFB800"/>
-                        </svg>
-                        <div class="reviews__item-rate-value">
-                          <div class="reviews__item-rate-value-big">4.65</div>/
-                          <div class="reviews__item-rate-value-small">5</div>
-                        </div>
-                      </div>
-                      <div class="reviews__item-text">Overall Rating</div>
-                    </div>
-                    <div class="reviews__item-date">
-                      <div class="reviews__item-rate-row">
-                        <div class="reviews__item-rate-value">
-                          <div class="reviews__item-rate-value-big">1-5</div>
-                          <div class="reviews__item-rate-value-small">days</div>
-                        </div>
-                      </div>
-                      <div class="reviews__item-text">Payout Speed</div>
-                    </div>
-                    <div class="reviews__item-pay">
-                      <ul class="reviews__item-pay-list">
-                        <li><img src="data/visa.svg" width="20" height="20" alt="visa"></li>
-                        <li><img src="data/msater.svg" width="20" height="20" alt="msater"></li>
-                        <li><img src="data/scrill.svg" width="20" height="20" alt="scrill"></li>
-                      </ul>
-                      <div class="reviews__item-text">Payment methods</div>
-                    </div>
-                    <div class="reviews__item-btn-box">
-                      <a href="#" class="reviews__item-btn">
-                        Read full review
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.799997 5.6H7.916L5.738 8.216C5.68757 8.27667 5.64959 8.34668 5.62621 8.42203C5.60284 8.49738 5.59454 8.5766 5.60178 8.65516C5.61641 8.81381 5.69347 8.96016 5.816 9.062C5.93853 9.16385 6.0965 9.21284 6.25515 9.19822C6.41381 9.18359 6.56015 9.10653 6.662 8.984L9.662 5.384C9.68218 5.35537 9.70023 5.32529 9.716 5.294C9.716 5.264 9.746 5.246 9.758 5.216C9.78519 5.14721 9.79943 5.07398 9.8 5C9.79943 4.92603 9.78519 4.8528 9.758 4.784C9.758 4.754 9.728 4.736 9.716 4.706C9.70023 4.67472 9.68218 4.64464 9.662 4.616L6.662 1.016C6.60558 0.948275 6.53494 0.893807 6.45509 0.856474C6.37524 0.819141 6.28814 0.799861 6.2 0.800004C6.05981 0.79973 5.92394 0.848556 5.816 0.938004C5.75524 0.988374 5.70502 1.05023 5.66821 1.12004C5.6314 1.18985 5.60872 1.26624 5.60147 1.34482C5.59423 1.42341 5.60256 1.50265 5.62599 1.57801C5.64941 1.65338 5.68748 1.72338 5.738 1.784L7.916 4.4H0.799997C0.640867 4.4 0.488255 4.46322 0.375733 4.57574C0.263211 4.68826 0.199997 4.84087 0.199997 5C0.199997 5.15913 0.263211 5.31175 0.375733 5.42427C0.488255 5.53679 0.640867 5.6 0.799997 5.6Z" fill="#141414"/>
-                        </svg>
-                      </a>
-                    </div>
+                  <div class="projects__row-title">OpenSea.com</div>
+                  <div class="projects__rate">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5569 19.9948C15.3966 19.9955 15.2385 19.9558 15.0959 19.8791L9.98497 17.0699L4.87405 19.8791C4.70808 19.9707 4.52097 20.0116 4.33397 19.9972C4.14697 19.9827 3.96759 19.9134 3.81621 19.7972C3.66484 19.6811 3.54755 19.5226 3.47768 19.3399C3.4078 19.1573 3.38814 18.9577 3.42094 18.7638L4.42308 12.8403L0.294259 8.63181C0.165441 8.49685 0.0740596 8.32761 0.0299215 8.14225C-0.0142167 7.95689 -0.00944543 7.7624 0.0437232 7.57968C0.101807 7.39269 0.208652 7.22653 0.352133 7.10007C0.495613 6.97361 0.669984 6.8919 0.855458 6.86423L6.56767 5.99096L9.08304 0.593518C9.1651 0.415633 9.29323 0.265613 9.45274 0.160643C9.61226 0.0556738 9.79671 0 9.98497 0C10.1732 0 10.3577 0.0556738 10.5172 0.160643C10.6767 0.265613 10.8048 0.415633 10.8869 0.593518L13.4323 5.98043L19.1445 6.85371C19.33 6.88138 19.5044 6.96309 19.6479 7.08955C19.7913 7.21601 19.8982 7.38216 19.9563 7.56916C20.0094 7.75188 20.0142 7.94636 19.9701 8.13172C19.9259 8.31708 19.8346 8.48633 19.7057 8.62129L15.5769 12.8298L16.5791 18.7533C16.6148 18.9506 16.5961 19.1545 16.5251 19.3409C16.454 19.5273 16.3337 19.6885 16.1782 19.8055C15.9967 19.939 15.7782 20.0056 15.5569 19.9948Z" fill="#FFB800"/>
+                    </svg>
+                    5/5
                   </div>
-                  <div class="reviews__item">
-                    <a href="#" class="reviews__item-img">
-                      <img src="data/casumo.png" width="140" height="48" alt="casumo">
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      <span>Read</span> Review
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
                     </a>
-                    <div class="reviews__item-rate">
-                      <div class="reviews__item-rate-row">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.33412 11.9969C9.23796 11.9973 9.14312 11.9735 9.05753 11.9275L5.99098 10.2419L2.92443 11.9275C2.82485 11.9824 2.71258 12.007 2.60038 11.9983C2.48818 11.9896 2.38055 11.9481 2.28973 11.8783C2.1989 11.8086 2.12853 11.7136 2.08661 11.604C2.04468 11.4944 2.03289 11.3746 2.05256 11.2583L2.65385 7.7042L0.176555 5.17909C0.0992646 5.09811 0.0444358 4.99656 0.0179529 4.88535C-0.00853001 4.77413 -0.00566726 4.65744 0.0262339 4.54781C0.0610844 4.43561 0.125191 4.33592 0.21128 4.26004C0.297368 4.18417 0.40199 4.13514 0.513275 4.11854L3.9406 3.59457L5.44982 0.356111C5.49906 0.24938 5.57594 0.159368 5.67164 0.0963861C5.76735 0.0334043 5.87803 0 5.99098 0C6.10394 0 6.21461 0.0334043 6.31032 0.0963861C6.40602 0.159368 6.4829 0.24938 6.53214 0.356111L8.0594 3.58826L11.4867 4.11222C11.598 4.12883 11.7026 4.17785 11.7887 4.25373C11.8748 4.32961 11.9389 4.4293 11.9738 4.54149C12.0057 4.65113 12.0085 4.76782 11.982 4.87903C11.9556 4.99025 11.9007 5.09179 11.8234 5.17277L9.34615 7.69789L9.94744 11.252C9.9689 11.3703 9.95766 11.4927 9.91504 11.6045C9.87243 11.7164 9.80021 11.8131 9.70692 11.8833C9.59804 11.9634 9.46694 12.0033 9.33412 11.9969Z" fill="#FFB800"/>
-                        </svg>
-                        <div class="reviews__item-rate-value">
-                          <div class="reviews__item-rate-value-big">4.6</div>/
-                          <div class="reviews__item-rate-value-small">5</div>
-                        </div>
-                      </div>
-                      <div class="reviews__item-text">Overall Rating</div>
-                    </div>
-                    <div class="reviews__item-date">
-                      <div class="reviews__item-rate-row">
-                        <div class="reviews__item-rate-value">
-                          <div class="reviews__item-rate-value-big">1-5</div>
-                          <div class="reviews__item-rate-value-small">days</div>
-                        </div>
-                      </div>
-                      <div class="reviews__item-text">Payout Speed</div>
-                    </div>
-                    <div class="reviews__item-pay">
-                      <ul class="reviews__item-pay-list">
-                        <li><img src="data/visa.svg" width="20" height="20" alt="visa"></li>
-                        <li><img src="data/msater.svg" width="20" height="20" alt="msater"></li>
-                        <li><img src="data/scrill.svg" width="20" height="20" alt="scrill"></li>
-                        <li><img src="data/neteller.svg" width="20" height="20" alt="neteller"></li>
-                      </ul>
-                      <div class="reviews__item-text">Payment methods</div>
-                    </div>
-                    <div class="reviews__item-btn-box">
-                      <a href="#" class="reviews__item-btn">
-                        Read full review
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.799997 5.6H7.916L5.738 8.216C5.68757 8.27667 5.64959 8.34668 5.62621 8.42203C5.60284 8.49738 5.59454 8.5766 5.60178 8.65516C5.61641 8.81381 5.69347 8.96016 5.816 9.062C5.93853 9.16385 6.0965 9.21284 6.25515 9.19822C6.41381 9.18359 6.56015 9.10653 6.662 8.984L9.662 5.384C9.68218 5.35537 9.70023 5.32529 9.716 5.294C9.716 5.264 9.746 5.246 9.758 5.216C9.78519 5.14721 9.79943 5.07398 9.8 5C9.79943 4.92603 9.78519 4.8528 9.758 4.784C9.758 4.754 9.728 4.736 9.716 4.706C9.70023 4.67472 9.68218 4.64464 9.662 4.616L6.662 1.016C6.60558 0.948275 6.53494 0.893807 6.45509 0.856474C6.37524 0.819141 6.28814 0.799861 6.2 0.800004C6.05981 0.79973 5.92394 0.848556 5.816 0.938004C5.75524 0.988374 5.70502 1.05023 5.66821 1.12004C5.6314 1.18985 5.60872 1.26624 5.60147 1.34482C5.59423 1.42341 5.60256 1.50265 5.62599 1.57801C5.64941 1.65338 5.68748 1.72338 5.738 1.784L7.916 4.4H0.799997C0.640867 4.4 0.488255 4.46322 0.375733 4.57574C0.263211 4.68826 0.199997 4.84087 0.199997 5C0.199997 5.15913 0.263211 5.31175 0.375733 5.42427C0.488255 5.53679 0.640867 5.6 0.799997 5.6Z" fill="#141414"/>
-                        </svg>
-                      </a>
-                    </div>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/NftBase.svg" width="28" height="28" alt="NftBase">
+                  </div>
+                  <div class="projects__row-title">NftBase.com</div>
+                  <div class="projects__rate">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5569 19.9948C15.3966 19.9955 15.2385 19.9558 15.0959 19.8791L9.98497 17.0699L4.87405 19.8791C4.70808 19.9707 4.52097 20.0116 4.33397 19.9972C4.14697 19.9827 3.96759 19.9134 3.81621 19.7972C3.66484 19.6811 3.54755 19.5226 3.47768 19.3399C3.4078 19.1573 3.38814 18.9577 3.42094 18.7638L4.42308 12.8403L0.294259 8.63181C0.165441 8.49685 0.0740596 8.32761 0.0299215 8.14225C-0.0142167 7.95689 -0.00944543 7.7624 0.0437232 7.57968C0.101807 7.39269 0.208652 7.22653 0.352133 7.10007C0.495613 6.97361 0.669984 6.8919 0.855458 6.86423L6.56767 5.99096L9.08304 0.593518C9.1651 0.415633 9.29323 0.265613 9.45274 0.160643C9.61226 0.0556738 9.79671 0 9.98497 0C10.1732 0 10.3577 0.0556738 10.5172 0.160643C10.6767 0.265613 10.8048 0.415633 10.8869 0.593518L13.4323 5.98043L19.1445 6.85371C19.33 6.88138 19.5044 6.96309 19.6479 7.08955C19.7913 7.21601 19.8982 7.38216 19.9563 7.56916C20.0094 7.75188 20.0142 7.94636 19.9701 8.13172C19.9259 8.31708 19.8346 8.48633 19.7057 8.62129L15.5769 12.8298L16.5791 18.7533C16.6148 18.9506 16.5961 19.1545 16.5251 19.3409C16.454 19.5273 16.3337 19.6885 16.1782 19.8055C15.9967 19.939 15.7782 20.0056 15.5569 19.9948Z" fill="#FFB800"/>
+                    </svg>
+                    4/5
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      <span>Read</span> Review
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/Traitsniper.svg" width="28" height="28" alt="Traitsniper">
+                  </div>
+                  <div class="projects__row-title">Traitsniper.com</div>
+                  <div class="projects__rate">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5569 19.9948C15.3966 19.9955 15.2385 19.9558 15.0959 19.8791L9.98497 17.0699L4.87405 19.8791C4.70808 19.9707 4.52097 20.0116 4.33397 19.9972C4.14697 19.9827 3.96759 19.9134 3.81621 19.7972C3.66484 19.6811 3.54755 19.5226 3.47768 19.3399C3.4078 19.1573 3.38814 18.9577 3.42094 18.7638L4.42308 12.8403L0.294259 8.63181C0.165441 8.49685 0.0740596 8.32761 0.0299215 8.14225C-0.0142167 7.95689 -0.00944543 7.7624 0.0437232 7.57968C0.101807 7.39269 0.208652 7.22653 0.352133 7.10007C0.495613 6.97361 0.669984 6.8919 0.855458 6.86423L6.56767 5.99096L9.08304 0.593518C9.1651 0.415633 9.29323 0.265613 9.45274 0.160643C9.61226 0.0556738 9.79671 0 9.98497 0C10.1732 0 10.3577 0.0556738 10.5172 0.160643C10.6767 0.265613 10.8048 0.415633 10.8869 0.593518L13.4323 5.98043L19.1445 6.85371C19.33 6.88138 19.5044 6.96309 19.6479 7.08955C19.7913 7.21601 19.8982 7.38216 19.9563 7.56916C20.0094 7.75188 20.0142 7.94636 19.9701 8.13172C19.9259 8.31708 19.8346 8.48633 19.7057 8.62129L15.5769 12.8298L16.5791 18.7533C16.6148 18.9506 16.5961 19.1545 16.5251 19.3409C16.454 19.5273 16.3337 19.6885 16.1782 19.8055C15.9967 19.939 15.7782 20.0056 15.5569 19.9948Z" fill="#FFB800"/>
+                    </svg>
+                    5/5
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      <span>Read</span> Review
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/OpenSea.svg" width="28" height="28" alt="OpenSea">
+                  </div>
+                  <div class="projects__row-title">OpenSea.com</div>
+                  <div class="projects__rate">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5569 19.9948C15.3966 19.9955 15.2385 19.9558 15.0959 19.8791L9.98497 17.0699L4.87405 19.8791C4.70808 19.9707 4.52097 20.0116 4.33397 19.9972C4.14697 19.9827 3.96759 19.9134 3.81621 19.7972C3.66484 19.6811 3.54755 19.5226 3.47768 19.3399C3.4078 19.1573 3.38814 18.9577 3.42094 18.7638L4.42308 12.8403L0.294259 8.63181C0.165441 8.49685 0.0740596 8.32761 0.0299215 8.14225C-0.0142167 7.95689 -0.00944543 7.7624 0.0437232 7.57968C0.101807 7.39269 0.208652 7.22653 0.352133 7.10007C0.495613 6.97361 0.669984 6.8919 0.855458 6.86423L6.56767 5.99096L9.08304 0.593518C9.1651 0.415633 9.29323 0.265613 9.45274 0.160643C9.61226 0.0556738 9.79671 0 9.98497 0C10.1732 0 10.3577 0.0556738 10.5172 0.160643C10.6767 0.265613 10.8048 0.415633 10.8869 0.593518L13.4323 5.98043L19.1445 6.85371C19.33 6.88138 19.5044 6.96309 19.6479 7.08955C19.7913 7.21601 19.8982 7.38216 19.9563 7.56916C20.0094 7.75188 20.0142 7.94636 19.9701 8.13172C19.9259 8.31708 19.8346 8.48633 19.7057 8.62129L15.5769 12.8298L16.5791 18.7533C16.6148 18.9506 16.5961 19.1545 16.5251 19.3409C16.454 19.5273 16.3337 19.6885 16.1782 19.8055C15.9967 19.939 15.7782 20.0056 15.5569 19.9948Z" fill="#FFB800"/>
+                    </svg>
+                    5/5
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      <span>Read</span> Review
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/NftBase.svg" width="28" height="28" alt="NftBase">
+                  </div>
+                  <div class="projects__row-title">NftBase.com</div>
+                  <div class="projects__rate">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5569 19.9948C15.3966 19.9955 15.2385 19.9558 15.0959 19.8791L9.98497 17.0699L4.87405 19.8791C4.70808 19.9707 4.52097 20.0116 4.33397 19.9972C4.14697 19.9827 3.96759 19.9134 3.81621 19.7972C3.66484 19.6811 3.54755 19.5226 3.47768 19.3399C3.4078 19.1573 3.38814 18.9577 3.42094 18.7638L4.42308 12.8403L0.294259 8.63181C0.165441 8.49685 0.0740596 8.32761 0.0299215 8.14225C-0.0142167 7.95689 -0.00944543 7.7624 0.0437232 7.57968C0.101807 7.39269 0.208652 7.22653 0.352133 7.10007C0.495613 6.97361 0.669984 6.8919 0.855458 6.86423L6.56767 5.99096L9.08304 0.593518C9.1651 0.415633 9.29323 0.265613 9.45274 0.160643C9.61226 0.0556738 9.79671 0 9.98497 0C10.1732 0 10.3577 0.0556738 10.5172 0.160643C10.6767 0.265613 10.8048 0.415633 10.8869 0.593518L13.4323 5.98043L19.1445 6.85371C19.33 6.88138 19.5044 6.96309 19.6479 7.08955C19.7913 7.21601 19.8982 7.38216 19.9563 7.56916C20.0094 7.75188 20.0142 7.94636 19.9701 8.13172C19.9259 8.31708 19.8346 8.48633 19.7057 8.62129L15.5769 12.8298L16.5791 18.7533C16.6148 18.9506 16.5961 19.1545 16.5251 19.3409C16.454 19.5273 16.3337 19.6885 16.1782 19.8055C15.9967 19.939 15.7782 20.0056 15.5569 19.9948Z" fill="#FFB800"/>
+                    </svg>
+                    4/5
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      <span>Read</span> Review
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/Traitsniper.svg" width="28" height="28" alt="Traitsniper">
+                  </div>
+                  <div class="projects__row-title">Traitsniper.com</div>
+                  <div class="projects__rate">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5569 19.9948C15.3966 19.9955 15.2385 19.9558 15.0959 19.8791L9.98497 17.0699L4.87405 19.8791C4.70808 19.9707 4.52097 20.0116 4.33397 19.9972C4.14697 19.9827 3.96759 19.9134 3.81621 19.7972C3.66484 19.6811 3.54755 19.5226 3.47768 19.3399C3.4078 19.1573 3.38814 18.9577 3.42094 18.7638L4.42308 12.8403L0.294259 8.63181C0.165441 8.49685 0.0740596 8.32761 0.0299215 8.14225C-0.0142167 7.95689 -0.00944543 7.7624 0.0437232 7.57968C0.101807 7.39269 0.208652 7.22653 0.352133 7.10007C0.495613 6.97361 0.669984 6.8919 0.855458 6.86423L6.56767 5.99096L9.08304 0.593518C9.1651 0.415633 9.29323 0.265613 9.45274 0.160643C9.61226 0.0556738 9.79671 0 9.98497 0C10.1732 0 10.3577 0.0556738 10.5172 0.160643C10.6767 0.265613 10.8048 0.415633 10.8869 0.593518L13.4323 5.98043L19.1445 6.85371C19.33 6.88138 19.5044 6.96309 19.6479 7.08955C19.7913 7.21601 19.8982 7.38216 19.9563 7.56916C20.0094 7.75188 20.0142 7.94636 19.9701 8.13172C19.9259 8.31708 19.8346 8.48633 19.7057 8.62129L15.5769 12.8298L16.5791 18.7533C16.6148 18.9506 16.5961 19.1545 16.5251 19.3409C16.454 19.5273 16.3337 19.6885 16.1782 19.8055C15.9967 19.939 15.7782 20.0056 15.5569 19.9948Z" fill="#FFB800"/>
+                    </svg>
+                    5/5
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      <span>Read</span> Review
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/OpenSea.svg" width="28" height="28" alt="OpenSea">
+                  </div>
+                  <div class="projects__row-title">OpenSea.com</div>
+                  <div class="projects__rate">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5569 19.9948C15.3966 19.9955 15.2385 19.9558 15.0959 19.8791L9.98497 17.0699L4.87405 19.8791C4.70808 19.9707 4.52097 20.0116 4.33397 19.9972C4.14697 19.9827 3.96759 19.9134 3.81621 19.7972C3.66484 19.6811 3.54755 19.5226 3.47768 19.3399C3.4078 19.1573 3.38814 18.9577 3.42094 18.7638L4.42308 12.8403L0.294259 8.63181C0.165441 8.49685 0.0740596 8.32761 0.0299215 8.14225C-0.0142167 7.95689 -0.00944543 7.7624 0.0437232 7.57968C0.101807 7.39269 0.208652 7.22653 0.352133 7.10007C0.495613 6.97361 0.669984 6.8919 0.855458 6.86423L6.56767 5.99096L9.08304 0.593518C9.1651 0.415633 9.29323 0.265613 9.45274 0.160643C9.61226 0.0556738 9.79671 0 9.98497 0C10.1732 0 10.3577 0.0556738 10.5172 0.160643C10.6767 0.265613 10.8048 0.415633 10.8869 0.593518L13.4323 5.98043L19.1445 6.85371C19.33 6.88138 19.5044 6.96309 19.6479 7.08955C19.7913 7.21601 19.8982 7.38216 19.9563 7.56916C20.0094 7.75188 20.0142 7.94636 19.9701 8.13172C19.9259 8.31708 19.8346 8.48633 19.7057 8.62129L15.5769 12.8298L16.5791 18.7533C16.6148 18.9506 16.5961 19.1545 16.5251 19.3409C16.454 19.5273 16.3337 19.6885 16.1782 19.8055C15.9967 19.939 15.7782 20.0056 15.5569 19.9948Z" fill="#FFB800"/>
+                    </svg>
+                    5/5
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      <span>Read</span> Review
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/NftBase.svg" width="28" height="28" alt="NftBase">
+                  </div>
+                  <div class="projects__row-title">NftBase.com</div>
+                  <div class="projects__rate">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5569 19.9948C15.3966 19.9955 15.2385 19.9558 15.0959 19.8791L9.98497 17.0699L4.87405 19.8791C4.70808 19.9707 4.52097 20.0116 4.33397 19.9972C4.14697 19.9827 3.96759 19.9134 3.81621 19.7972C3.66484 19.6811 3.54755 19.5226 3.47768 19.3399C3.4078 19.1573 3.38814 18.9577 3.42094 18.7638L4.42308 12.8403L0.294259 8.63181C0.165441 8.49685 0.0740596 8.32761 0.0299215 8.14225C-0.0142167 7.95689 -0.00944543 7.7624 0.0437232 7.57968C0.101807 7.39269 0.208652 7.22653 0.352133 7.10007C0.495613 6.97361 0.669984 6.8919 0.855458 6.86423L6.56767 5.99096L9.08304 0.593518C9.1651 0.415633 9.29323 0.265613 9.45274 0.160643C9.61226 0.0556738 9.79671 0 9.98497 0C10.1732 0 10.3577 0.0556738 10.5172 0.160643C10.6767 0.265613 10.8048 0.415633 10.8869 0.593518L13.4323 5.98043L19.1445 6.85371C19.33 6.88138 19.5044 6.96309 19.6479 7.08955C19.7913 7.21601 19.8982 7.38216 19.9563 7.56916C20.0094 7.75188 20.0142 7.94636 19.9701 8.13172C19.9259 8.31708 19.8346 8.48633 19.7057 8.62129L15.5769 12.8298L16.5791 18.7533C16.6148 18.9506 16.5961 19.1545 16.5251 19.3409C16.454 19.5273 16.3337 19.6885 16.1782 19.8055C15.9967 19.939 15.7782 20.0056 15.5569 19.9948Z" fill="#FFB800"/>
+                    </svg>
+                    4/5
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      <span>Read</span> Review
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
+              <div class="projects__all">
+                <a href="#" class="projects__all-btn btn-2">All Tools</a>
+              </div>
             </div>
-            <div class="reviews__right">
-              <div class="reviews__title title">Game <span>Provider</span> reviews</div>
-              <div class="reviews__holder">
-                <div class="reviews__label" style="background: #656839;">#1 TOP RATED </div>
-                <div class="reviews__list">
-                  <div class="reviews__item">
-                    <a href="#" class="reviews__item-img">
-                      <img src="data/betcontrrust.jpg" width="140" height="48" alt="betcontrust">
-                    </a>
-                    <div class="reviews__item-games">
-                      <div class="reviews__item-rate-row">
-                        <div class="reviews__item-rate-value">
-                          <div class="reviews__item-rate-value-big">285</div>
-                        </div>
-                      </div>
-                      <div class="reviews__item-text">Games released</div>
-                    </div>
-                    <div class="reviews__item-btn-box">
-                      <a href="#" class="reviews__item-btn">
-                        Read full review
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.799997 5.6H7.916L5.738 8.216C5.68757 8.27667 5.64959 8.34668 5.62621 8.42203C5.60284 8.49738 5.59454 8.5766 5.60178 8.65516C5.61641 8.81381 5.69347 8.96016 5.816 9.062C5.93853 9.16385 6.0965 9.21284 6.25515 9.19822C6.41381 9.18359 6.56015 9.10653 6.662 8.984L9.662 5.384C9.68218 5.35537 9.70023 5.32529 9.716 5.294C9.716 5.264 9.746 5.246 9.758 5.216C9.78519 5.14721 9.79943 5.07398 9.8 5C9.79943 4.92603 9.78519 4.8528 9.758 4.784C9.758 4.754 9.728 4.736 9.716 4.706C9.70023 4.67472 9.68218 4.64464 9.662 4.616L6.662 1.016C6.60558 0.948275 6.53494 0.893807 6.45509 0.856474C6.37524 0.819141 6.28814 0.799861 6.2 0.800004C6.05981 0.79973 5.92394 0.848556 5.816 0.938004C5.75524 0.988374 5.70502 1.05023 5.66821 1.12004C5.6314 1.18985 5.60872 1.26624 5.60147 1.34482C5.59423 1.42341 5.60256 1.50265 5.62599 1.57801C5.64941 1.65338 5.68748 1.72338 5.738 1.784L7.916 4.4H0.799997C0.640867 4.4 0.488255 4.46322 0.375733 4.57574C0.263211 4.68826 0.199997 4.84087 0.199997 5C0.199997 5.15913 0.263211 5.31175 0.375733 5.42427C0.488255 5.53679 0.640867 5.6 0.799997 5.6Z" fill="#141414"/>
-                        </svg>
-                      </a>
-                    </div>
+            <div class="projects__right">
+              <div class="projects__title title">Projects </div>
+              <div class="projects__head">
+                <div class="projects__icon"></div>
+                <div class="projects__row-title">Collection</div>
+                <div class="projects__nfts">NFTs</div>
+                <div class="projects__blockchain">Blockchain</div>
+                <div class="projects__btn-box"></div>
+              </div>
+              <div class="projects__list">
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/IO.png" width="28" height="28" alt="IO">
                   </div>
-                  <div class="reviews__item">
-                    <a href="#" class="reviews__item-img">
-                      <img src="data/evolution.jpg" width="140" height="48" alt="evolution">
-                    </a>
-                    <div class="reviews__item-games">
-                      <div class="reviews__item-rate-row">
-                        <div class="reviews__item-rate-value">
-                          <div class="reviews__item-rate-value-big">24</div>
-                        </div>
-                      </div>
-                      <div class="reviews__item-text">Games released</div>
-                    </div>
-                    <div class="reviews__item-btn-box">
-                      <a href="#" class="reviews__item-btn">
-                        Read full review
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.799997 5.6H7.916L5.738 8.216C5.68757 8.27667 5.64959 8.34668 5.62621 8.42203C5.60284 8.49738 5.59454 8.5766 5.60178 8.65516C5.61641 8.81381 5.69347 8.96016 5.816 9.062C5.93853 9.16385 6.0965 9.21284 6.25515 9.19822C6.41381 9.18359 6.56015 9.10653 6.662 8.984L9.662 5.384C9.68218 5.35537 9.70023 5.32529 9.716 5.294C9.716 5.264 9.746 5.246 9.758 5.216C9.78519 5.14721 9.79943 5.07398 9.8 5C9.79943 4.92603 9.78519 4.8528 9.758 4.784C9.758 4.754 9.728 4.736 9.716 4.706C9.70023 4.67472 9.68218 4.64464 9.662 4.616L6.662 1.016C6.60558 0.948275 6.53494 0.893807 6.45509 0.856474C6.37524 0.819141 6.28814 0.799861 6.2 0.800004C6.05981 0.79973 5.92394 0.848556 5.816 0.938004C5.75524 0.988374 5.70502 1.05023 5.66821 1.12004C5.6314 1.18985 5.60872 1.26624 5.60147 1.34482C5.59423 1.42341 5.60256 1.50265 5.62599 1.57801C5.64941 1.65338 5.68748 1.72338 5.738 1.784L7.916 4.4H0.799997C0.640867 4.4 0.488255 4.46322 0.375733 4.57574C0.263211 4.68826 0.199997 4.84087 0.199997 5C0.199997 5.15913 0.263211 5.31175 0.375733 5.42427C0.488255 5.53679 0.640867 5.6 0.799997 5.6Z" fill="#141414"/>
-                        </svg>
-                      </a>
-                    </div>
+                  <div class="projects__row-title">IO: Imaginary Ones</div>
+                  <div class="projects__nfts">10,000</div>
+                  <div class="projects__blockchain">
+                    ETH
+                    <img src="data/ethereum2.svg" width="8" height="14" alt="ethereum">
                   </div>
-                  <div class="reviews__item">
-                    <a href="#" class="reviews__item-img">
-                      <img src="data/wazdan.jpg" width="140" height="48" alt="wazdan">
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      Learn More
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
                     </a>
-                    <div class="reviews__item-games">
-                      <div class="reviews__item-rate-row">
-                        <div class="reviews__item-rate-value">
-                          <div class="reviews__item-rate-value-big">116</div>
-                        </div>
-                      </div>
-                      <div class="reviews__item-text">Games released</div>
-                    </div>
-                    <div class="reviews__item-btn-box">
-                      <a href="#" class="reviews__item-btn">
-                        Read full review
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0.799997 5.6H7.916L5.738 8.216C5.68757 8.27667 5.64959 8.34668 5.62621 8.42203C5.60284 8.49738 5.59454 8.5766 5.60178 8.65516C5.61641 8.81381 5.69347 8.96016 5.816 9.062C5.93853 9.16385 6.0965 9.21284 6.25515 9.19822C6.41381 9.18359 6.56015 9.10653 6.662 8.984L9.662 5.384C9.68218 5.35537 9.70023 5.32529 9.716 5.294C9.716 5.264 9.746 5.246 9.758 5.216C9.78519 5.14721 9.79943 5.07398 9.8 5C9.79943 4.92603 9.78519 4.8528 9.758 4.784C9.758 4.754 9.728 4.736 9.716 4.706C9.70023 4.67472 9.68218 4.64464 9.662 4.616L6.662 1.016C6.60558 0.948275 6.53494 0.893807 6.45509 0.856474C6.37524 0.819141 6.28814 0.799861 6.2 0.800004C6.05981 0.79973 5.92394 0.848556 5.816 0.938004C5.75524 0.988374 5.70502 1.05023 5.66821 1.12004C5.6314 1.18985 5.60872 1.26624 5.60147 1.34482C5.59423 1.42341 5.60256 1.50265 5.62599 1.57801C5.64941 1.65338 5.68748 1.72338 5.738 1.784L7.916 4.4H0.799997C0.640867 4.4 0.488255 4.46322 0.375733 4.57574C0.263211 4.68826 0.199997 4.84087 0.199997 5C0.199997 5.15913 0.263211 5.31175 0.375733 5.42427C0.488255 5.53679 0.640867 5.6 0.799997 5.6Z" fill="#141414"/>
-                        </svg>
-                      </a>
-                    </div>
                   </div>
                 </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/VeeFriends.png" width="28" height="28" alt="VeeFriends">
+                  </div>
+                  <div class="projects__row-title">VeeFriends Series 2</div>
+                  <div class="projects__nfts">6,600</div>
+                  <div class="projects__blockchain">
+                    ETH
+                    <img src="data/ethereum2.svg" width="8" height="14" alt="ethereum">
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      Learn More
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/Moonbirds.png" width="28" height="28" alt="Moonbirds">
+                  </div>
+                  <div class="projects__row-title">Moonbirds</div>
+                  <div class="projects__nfts">4,200</div>
+                  <div class="projects__blockchain">
+                    ETH
+                    <img src="data/ethereum2.svg" width="8" height="14" alt="ethereum">
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      Learn More
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/Mutant.png" width="28" height="28" alt="Mutant">
+                  </div>
+                  <div class="projects__row-title">Mutant Ape Yacht Club</div>
+                  <div class="projects__nfts">12,000</div>
+                  <div class="projects__blockchain">
+                    ETH
+                    <img src="data/ethereum2.svg" width="8" height="14" alt="ethereum">
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      Learn More
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/Fungible.png" width="28" height="28" alt="Fungible">
+                  </div>
+                  <div class="projects__row-title">Non Fungible Films...</div>
+                  <div class="projects__nfts">3,000</div>
+                  <div class="projects__blockchain">
+                    ETH
+                    <img src="data/ethereum2.svg" width="8" height="14" alt="ethereum">
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      Learn More
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/Lunartics.png" width="28" height="28" alt="Lunartics">
+                  </div>
+                  <div class="projects__row-title">The Lunartics</div>
+                  <div class="projects__nfts">500</div>
+                  <div class="projects__blockchain">
+                    ETH
+                    <img src="data/ethereum2.svg" width="8" height="14" alt="ethereum">
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      Learn More
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/Kennel-Club.png" width="28" height="28" alt="Kennel-Club">
+                  </div>
+                  <div class="projects__row-title">Bored Ape Kennel Club</div>
+                  <div class="projects__nfts">10,000</div>
+                  <div class="projects__blockchain">
+                    ETH
+                    <img src="data/ethereum2.svg" width="8" height="14" alt="ethereum">
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      Learn More
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="projects__row">
+                  <div class="projects__icon">
+                    <img src="data/Cats-NFT.png" width="28" height="28" alt="Cats-NFT">
+                  </div>
+                  <div class="projects__row-title">Cool Cats NFT</div>
+                  <div class="projects__nfts">10,000</div>
+                  <div class="projects__blockchain">
+                    ETH
+                    <img src="data/ethereum2.svg" width="8" height="14" alt="ethereum">
+                  </div>
+                  <div class="projects__btn-box">
+                    <a href="#" class="projects__btn">
+                      Learn More
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.18123 11.5914L9.72889 4.04377L10.1935 9.12858C10.2043 9.24642 10.2383 9.36096 10.2934 9.46567C10.3486 9.57038 10.4238 9.6632 10.5148 9.73885C10.6986 9.89161 10.9355 9.96511 11.1735 9.94316C11.4115 9.92122 11.631 9.80564 11.7838 9.62185C11.9365 9.43805 12.01 9.2011 11.9881 8.96311L11.3517 1.96276C11.3427 1.91098 11.33 1.85993 11.3135 1.81002C11.2817 1.7782 11.2944 1.72729 11.2753 1.68274C11.2312 1.58093 11.1686 1.48815 11.0908 1.40909C11.0117 1.33123 10.9189 1.26866 10.8171 1.22454C10.7853 1.19272 10.7344 1.20544 10.6898 1.18635C10.6399 1.16989 10.5889 1.15713 10.5371 1.14817L3.53676 0.511773C3.40508 0.49977 3.27238 0.516927 3.14809 0.562024C3.0238 0.607121 2.91097 0.67905 2.81763 0.772695C2.66864 0.9211 2.57633 1.11699 2.55671 1.32636C2.54569 1.44423 2.55804 1.56311 2.59303 1.67619C2.62803 1.78928 2.685 1.89435 2.76067 1.98539C2.83633 2.07643 2.92922 2.15164 3.034 2.20673C3.13878 2.26182 3.2534 2.29569 3.37129 2.30641L8.4561 2.77098L0.90844 10.3186C0.739657 10.4874 0.644837 10.7163 0.644836 10.955C0.644836 11.1937 0.739657 11.4226 0.90844 11.5914C1.07722 11.7602 1.30614 11.855 1.54484 11.855C1.78353 11.855 2.01245 11.7602 2.18123 11.5914Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="projects__all">
+                <a href="#" class="projects__all-btn btn-2">All Projects</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects__bottom">
+            <div class="projects__title title">Upcoming Projects </div>
+            <div class="projects__bottom-list">
+              <div class="projects__row projects__row--33">
+                <div class="projects__icon">
+                  <img src="data/IO.png" width="28" height="28" alt="IO">
+                </div>
+                <div class="projects__row-title">IO: Imaginary Ones</div>
+                <div class="projects__date">ETA: 4 days</div>
+              </div>
+              <div class="projects__row projects__row--33">
+                <div class="projects__icon">
+                  <img src="data/Mutant.png" width="28" height="28" alt="Mutant">
+                </div>
+                <div class="projects__row-title">Mutant Ape Yacht...</div>
+                <div class="projects__date">ETA: 2 weeks</div>
+              </div>
+              <div class="projects__row projects__row--33">
+                <div class="projects__icon">
+                  <img src="data/Cool-Cats.png" width="28" height="28" alt="Cool-Cats">
+                </div>
+                <div class="projects__row-title">Cool Cats NFT</div>
+                <div class="projects__date">ETA: 1 month</div>
+              </div>
+              <div class="projects__row projects__row--33">
+                <div class="projects__icon">
+                  <img src="data/VeeFriends2.png" width="28" height="28" alt="VeeFriends">
+                </div>
+                <div class="projects__row-title">VeeFriends Series 2</div>
+                <div class="projects__date">ETA: 6 days</div>
+              </div>
+              <div class="projects__row projects__row--33">
+                <div class="projects__icon">
+                  <img src="data/Fungible2.png" width="28" height="28" alt="Fungible">
+                </div>
+                <div class="projects__row-title">Non Fungible Films...</div>
+                <div class="projects__date">ETA: 1 month</div>
+              </div>
+              <div class="projects__row projects__row--33">
+                <div class="projects__icon">
+                  <img src="data/goblintown.png" width="28" height="28" alt="goblintown">
+                </div>
+                <div class="projects__row-title">goblintown.wtf</div>
+                <div class="projects__date">ETA: 3 months</div>
+              </div>
+              <div class="projects__row projects__row--33">
+                <div class="projects__icon">
+                  <img src="data/Moonbirds2.png" width="28" height="28" alt="Moonbirds">
+                </div>
+                <div class="projects__row-title">Moonbirds</div>
+                <div class="projects__date">ETA: 1 week</div>
+              </div>
+              <div class="projects__row projects__row--33">
+                <div class="projects__icon">
+                  <img src="data/Kennel.png" width="28" height="28" alt="Kennel">
+                </div>
+                <div class="projects__row-title">Bored Ape Kennel...</div>
+                <div class="projects__date">ETA: 1 month</div>
+              </div>
+              <div class="projects__row projects__row--33">
+                <div class="projects__icon">
+                  <img src="data/Boki.png" width="28" height="28" alt="Boki">
+                </div>
+                <div class="projects__row-title">Boki</div>
+                <div class="projects__date">ETA: 3 months</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="results">
-        <img class="results__decor" src="data/decor.jpg" width="640" height="218" alt="decor">
-        <div class="container-small">
-          <div class="results__title title"><span>Lottery</span> results</div>
-          <div class="results__text">Bought your lottery tickets? Check your Singapore Lottery results here where we provide accurate results.</div>
-          <div class="results__list">
-            <a href="#" class="results__item">
-              <div class="results__logo">
-                <img src="data/toto.svg" width="160" height="80" alt="toto">
-              </div>
-              <div class="results__item-title">
-                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.5 8.50427C11.3281 8.50427 11.9994 7.8327 11.9994 7.00427C11.9994 6.17585 11.3281 5.50427 10.5 5.50427C9.67189 5.50427 9.00058 6.17585 9.00058 7.00427C9.00058 7.8327 9.67189 8.50427 10.5 8.50427Z" fill="white"/>
-                  <path d="M20.3661 6.50427C19.7263 5.39427 16.2077 -0.175734 10.2301 0.00426608C4.7023 0.144266 1.50358 5.00427 0.633921 6.50427C0.546188 6.65629 0.5 6.82873 0.5 7.00427C0.5 7.1798 0.546188 7.35225 0.633921 7.50427C1.26367 8.59427 4.63233 14.0043 10.52 14.0043H10.7699C16.2977 13.8643 19.5064 9.00427 20.3661 7.50427C20.4538 7.35225 20.5 7.1798 20.5 7.00427C20.5 6.82873 20.4538 6.65629 20.3661 6.50427ZM10.5 10.5043C9.80804 10.5043 9.13162 10.299 8.55628 9.91441C7.98093 9.52982 7.53251 8.9832 7.26771 8.34366C7.0029 7.70412 6.93362 7.00038 7.06861 6.32145C7.20361 5.64252 7.53682 5.01888 8.02611 4.52939C8.5154 4.03991 9.13879 3.70657 9.81746 3.57152C10.4961 3.43647 11.1996 3.50578 11.8389 3.77069C12.4781 4.03559 13.0246 4.4842 13.409 5.05977C13.7934 5.63534 13.9986 6.31203 13.9986 7.00427C13.9986 7.93252 13.63 8.82276 12.9739 9.47914C12.3178 10.1355 11.4279 10.5043 10.5 10.5043Z" fill="white"/>
-                </svg>
-                View TOTO Results
-              </div>
+      <div class="main-projects">
+        <div class="main-projects__decor">
+          <svg class="main-projects__decor-desktop" width="1920" height="308" viewBox="0 0 1920 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1769 0H1815V42H1769V0ZM1528 38H1506V60H1528V38ZM1700 79H1664V105H954V83H908V105H665V117H550V105H549V58H347V105H267V161V195V237H251V195H219V222H174V195H133V161H91V151H75V167H83V193H75H64V181H39V193H14V187H0V1181H1920V105H1700V79ZM167 237H161V245H167V237ZM181 292H197V308H181V292Z" fill="white"/>
+          </svg>
+          <svg class="main-projects__decor-mobile" width="375" height="120" viewBox="0 0 375 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M691.016 0H708.984V16.4062H691.016V0ZM596.875 14.8438H588.281V23.4375H596.875V14.8438ZM664.062 30.8594H650V41.0156H372.656V32.4219H354.688V41.0156H259.766V45.7031H214.844V41.0156H214.453V22.6562H135.547V41.0156H104.297V62.8906V76.1719V92.5781H98.0469V76.1719H85.5469V86.7188H67.9688V76.1719H51.9531V62.8906H35.5469V58.9844H29.2969V65.2344H32.4219V75.3906H29.2969H25V70.7031H15.2344V75.3906H5.46875V73.0469H0V461.328H750V41.0156H664.062V30.8594ZM65.2344 92.5781H62.8906V95.7031H65.2344V92.5781ZM70.7031 114.062H76.9531V120.312H70.7031V114.062Z" fill="white"/>
+          </svg>
+          <div class="main-projects__decor-bg"></div>
+        </div>
+        <div class="container">
+          <div class="main-projects__head">
+            <div class="main-projects__title title">Projects</div>
+            <a href="#" class="main-projects__more-btn btn-3">
+              Read More
+              <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+              </svg>
             </a>
-            <a href="#" class="results__item">
-              <div class="results__logo">
-                <img src="data/singapoe.svg" width="160" height="80" alt="singapoe">
+          </div>
+          <div class="main-projects__list">
+            <a href="#" class="main-projects__item">
+              <div class="main-projects__item-img">
+                <img src="data/Crypto-Baristas.png" width="300" height="300" alt="Crypto-Baristas">
+                <div class="main-projects__item-label">LABEL</div>
               </div>
-              <div class="results__item-title">
-                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.5 8.50427C11.3281 8.50427 11.9994 7.8327 11.9994 7.00427C11.9994 6.17585 11.3281 5.50427 10.5 5.50427C9.67189 5.50427 9.00058 6.17585 9.00058 7.00427C9.00058 7.8327 9.67189 8.50427 10.5 8.50427Z" fill="white"/>
-                  <path d="M20.3661 6.50427C19.7263 5.39427 16.2077 -0.175734 10.2301 0.00426608C4.7023 0.144266 1.50358 5.00427 0.633921 6.50427C0.546188 6.65629 0.5 6.82873 0.5 7.00427C0.5 7.1798 0.546188 7.35225 0.633921 7.50427C1.26367 8.59427 4.63233 14.0043 10.52 14.0043H10.7699C16.2977 13.8643 19.5064 9.00427 20.3661 7.50427C20.4538 7.35225 20.5 7.1798 20.5 7.00427C20.5 6.82873 20.4538 6.65629 20.3661 6.50427ZM10.5 10.5043C9.80804 10.5043 9.13162 10.299 8.55628 9.91441C7.98093 9.52982 7.53251 8.9832 7.26771 8.34366C7.0029 7.70412 6.93362 7.00038 7.06861 6.32145C7.20361 5.64252 7.53682 5.01888 8.02611 4.52939C8.5154 4.03991 9.13879 3.70657 9.81746 3.57152C10.4961 3.43647 11.1996 3.50578 11.8389 3.77069C12.4781 4.03559 13.0246 4.4842 13.409 5.05977C13.7934 5.63534 13.9986 6.31203 13.9986 7.00427C13.9986 7.93252 13.63 8.82276 12.9739 9.47914C12.3178 10.1355 11.4279 10.5043 10.5 10.5043Z" fill="white"/>
-                </svg>
-                View Singapore Sweep Results
-              </div>
+              <div class="main-projects__item-title">Crypto Baristas</div>
             </a>
-            <a href="#" class="results__item">
-              <div class="results__logo">
-                <img src="data/4d.svg" width="160" height="80" alt="4d">
+            <a href="#" class="main-projects__item">
+              <div class="main-projects__item-img">
+                <img src="data/Kibatsu-Mecha.png" width="300" height="300" alt="Kibatsu-Mecha">
+                <div class="main-projects__item-label">LABEL</div>
               </div>
-              <div class="results__item-title">
-                <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.5 8.50427C11.3281 8.50427 11.9994 7.8327 11.9994 7.00427C11.9994 6.17585 11.3281 5.50427 10.5 5.50427C9.67189 5.50427 9.00058 6.17585 9.00058 7.00427C9.00058 7.8327 9.67189 8.50427 10.5 8.50427Z" fill="white"/>
-                  <path d="M20.3661 6.50427C19.7263 5.39427 16.2077 -0.175734 10.2301 0.00426608C4.7023 0.144266 1.50358 5.00427 0.633921 6.50427C0.546188 6.65629 0.5 6.82873 0.5 7.00427C0.5 7.1798 0.546188 7.35225 0.633921 7.50427C1.26367 8.59427 4.63233 14.0043 10.52 14.0043H10.7699C16.2977 13.8643 19.5064 9.00427 20.3661 7.50427C20.4538 7.35225 20.5 7.1798 20.5 7.00427C20.5 6.82873 20.4538 6.65629 20.3661 6.50427ZM10.5 10.5043C9.80804 10.5043 9.13162 10.299 8.55628 9.91441C7.98093 9.52982 7.53251 8.9832 7.26771 8.34366C7.0029 7.70412 6.93362 7.00038 7.06861 6.32145C7.20361 5.64252 7.53682 5.01888 8.02611 4.52939C8.5154 4.03991 9.13879 3.70657 9.81746 3.57152C10.4961 3.43647 11.1996 3.50578 11.8389 3.77069C12.4781 4.03559 13.0246 4.4842 13.409 5.05977C13.7934 5.63534 13.9986 6.31203 13.9986 7.00427C13.9986 7.93252 13.63 8.82276 12.9739 9.47914C12.3178 10.1355 11.4279 10.5043 10.5 10.5043Z" fill="white"/>
-                </svg>
-                View 4D Results
+              <div class="main-projects__item-title">Kibatsu Mecha</div>
+            </a>
+            <a href="#" class="main-projects__item">
+              <div class="main-projects__item-img">
+                <img src="data/MekaVerse.png" width="300" height="300" alt="MekaVerse">
+                <div class="main-projects__item-label">LABEL</div>
               </div>
+              <div class="main-projects__item-title">MekaVerse</div>
+            </a>
+            <a href="#" class="main-projects__item">
+              <div class="main-projects__item-img">
+                <img src="data/Yacht-Club.png" width="300" height="300" alt="Yacht-Club">
+                <div class="main-projects__item-label">LABEL</div>
+              </div>
+              <div class="main-projects__item-title">Bored Ape Yacht Club</div>
             </a>
           </div>
         </div>
@@ -486,147 +675,201 @@
       <div class="news-home">
         <div class="container">
           <div class="news-home__head">
-            <div class="news-home__left">
-              <div class="news-home__title title"><span>Latest</span> Articles</div>
-              <div class="news-home__text">Get breaking news from our team as we work tirelessly to bring you the latest inside scoop and game releases.</div>
+            <div class="news-home__title title">Latest Articles</div>
+            <a href="#" class="news-home__more-btn btn-3">
+              Read More
+              <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.75691 12.657L10.1432 4.27073L10.6594 9.92052C10.6715 10.0514 10.7092 10.1787 10.7705 10.2951C10.8317 10.4114 10.9153 10.5145 11.0164 10.5986C11.2206 10.7683 11.4839 10.85 11.7483 10.8256C12.0128 10.8012 12.2567 10.6728 12.4264 10.4686C12.5961 10.2644 12.6778 10.0011 12.6534 9.73667L11.9463 1.9585C11.9364 1.90096 11.9222 1.84424 11.9039 1.78879C11.8685 1.75343 11.8827 1.69687 11.8615 1.64737C11.8124 1.53424 11.7429 1.43116 11.6564 1.34331C11.5686 1.2568 11.4655 1.18728 11.3524 1.13825C11.317 1.1029 11.2604 1.11704 11.2109 1.09583C11.1555 1.07754 11.0988 1.06336 11.0412 1.0534L3.26305 0.346292C3.11674 0.332956 2.9693 0.352019 2.8312 0.402127C2.6931 0.452235 2.56773 0.532156 2.46402 0.636206C2.29848 0.8011 2.1959 1.01876 2.1741 1.25139C2.16186 1.38235 2.17558 1.51444 2.21447 1.64009C2.25336 1.76574 2.31665 1.88249 2.40073 1.98364C2.4848 2.0848 2.58801 2.16837 2.70443 2.22958C2.82085 2.29078 2.94821 2.32842 3.0792 2.34033L8.72898 2.85652L0.342698 11.2428C0.155161 11.4303 0.0498048 11.6847 0.0498047 11.9499C0.0498046 12.2151 0.155161 12.4695 0.342698 12.657C0.530234 12.8446 0.784588 12.9499 1.0498 12.9499C1.31502 12.9499 1.56937 12.8446 1.75691 12.657Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="news-home__list">
+          <div class="news-home__item">
+            <a href="#" class="news-home__item-img">
+              <img src="data/How-invest-NFT.jpg" width="360" height="220" alt="How-invest-NFT">
+            </a>
+            <a href="#" class="news-home__item-title" title="How to invest in NFT?">How to invest in NFT?</a>
+            <div class="news-home__item-info">
+              <div class="news-home__item-date">
+                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 9H1V3.5H8V9ZM6.5 0V1H2.5V0H1.5V1H1C0.445 1 0 1.445 0 2V9C0 9.26522 0.105357 9.51957 0.292893 9.70711C0.48043 9.89464 0.734784 10 1 10H8C8.26522 10 8.51957 9.89464 8.70711 9.70711C8.89464 9.51957 9 9.26522 9 9V2C9 1.445 8.55 1 8 1H7.5V0H6.5ZM7 5.5H4.5V8H7V5.5Z" fill="#706C61"/>
+                </svg>
+                26 May, 2022
+              </div>
+              <div class="news-home__item-author">by Barry S.</div>
             </div>
-            <div class="news-home__controls">
-              <a href="#" class="news-home__all btn-3">
-                <svg width="20" height="15" viewBox="0 0 20 15" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 8.50427C10.8281 8.50427 11.4994 7.8327 11.4994 7.00427C11.4994 6.17585 10.8281 5.50427 10 5.50427C9.17192 5.50427 8.50061 6.17585 8.50061 7.00427C8.50061 7.8327 9.17192 8.50427 10 8.50427Z"/>
-                  <path d="M19.8661 6.50427C19.2263 5.39427 15.7077 -0.175734 9.73011 0.00426608C4.2023 0.144266 1.00358 5.00427 0.133921 6.50427C0.046188 6.65629 0 6.82873 0 7.00427C0 7.1798 0.046188 7.35225 0.133921 7.50427C0.763671 8.59427 4.13233 14.0043 10.02 14.0043H10.2699C15.7977 13.8643 19.0064 9.00427 19.8661 7.50427C19.9538 7.35225 20 7.1798 20 7.00427C20 6.82873 19.9538 6.65629 19.8661 6.50427V6.50427ZM10 10.5043C9.30804 10.5043 8.63162 10.299 8.05628 9.91441C7.48093 9.52982 7.03251 8.9832 6.76771 8.34366C6.5029 7.70412 6.43362 7.00038 6.56861 6.32145C6.70361 5.64252 7.03682 5.01888 7.52611 4.52939C8.0154 4.03991 8.63879 3.70657 9.31745 3.57152C9.99612 3.43647 10.6996 3.50578 11.3389 3.77069C11.9781 4.03559 12.5246 4.4842 12.909 5.05977C13.2934 5.63534 13.4986 6.31203 13.4986 7.00427C13.4986 7.93252 13.13 8.82276 12.4739 9.47914C11.8178 10.1355 10.9279 10.5043 10 10.5043V10.5043Z"/>
-                </svg>                
-                View all  Articles
-              </a>
+            <div class="news-home__item-text text-content">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
             </div>
           </div>
-          <div class="news-home__list">
-            <div class="news">
-              <a href="#" class="news__img">
-                <img src="data/news-1.jpg" width="290" height="190" alt="news">
-                <div class="news__label">NEWS</div>
-              </a>
-              <div class="news__row">
-                <div class="news__date">march 3, 2022</div>
-                <div class="news__views">
-                  <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 8.50427C10.8281 8.50427 11.4994 7.8327 11.4994 7.00427C11.4994 6.17585 10.8281 5.50427 10 5.50427C9.17192 5.50427 8.50061 6.17585 8.50061 7.00427C8.50061 7.8327 9.17192 8.50427 10 8.50427Z" fill="#7D7C7A"/>
-                    <path d="M19.8661 6.50427C19.2263 5.39427 15.7077 -0.175734 9.73011 0.00426608C4.2023 0.144266 1.00358 5.00427 0.133921 6.50427C0.046188 6.65629 0 6.82873 0 7.00427C0 7.1798 0.046188 7.35225 0.133921 7.50427C0.763671 8.59427 4.13233 14.0043 10.02 14.0043H10.2699C15.7977 13.8643 19.0064 9.00427 19.8661 7.50427C19.9538 7.35225 20 7.1798 20 7.00427C20 6.82873 19.9538 6.65629 19.8661 6.50427ZM10 10.5043C9.30804 10.5043 8.63162 10.299 8.05628 9.91441C7.48093 9.52982 7.03251 8.9832 6.76771 8.34366C6.5029 7.70412 6.43362 7.00038 6.56861 6.32145C6.70361 5.64252 7.03682 5.01888 7.52611 4.52939C8.0154 4.03991 8.63879 3.70657 9.31746 3.57152C9.99612 3.43647 10.6996 3.50578 11.3389 3.77069C11.9781 4.03559 12.5246 4.4842 12.909 5.05977C13.2934 5.63534 13.4986 6.31203 13.4986 7.00427C13.4986 7.93252 13.13 8.82276 12.4739 9.47914C11.8178 10.1355 10.9279 10.5043 10 10.5043Z" fill="#7D7C7A"/>
-                  </svg>
-                  62
-                </div>
+          <div class="news-home__item">
+            <a href="#" class="news-home__item-img">
+              <img src="data/What-NFT.jpg" width="360" height="220" alt="What-NFT">
+            </a>
+            <a href="#" class="news-home__item-title" title="What is NFT? ">What is NFT? </a>
+            <div class="news-home__item-info">
+              <div class="news-home__item-date">
+                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 9H1V3.5H8V9ZM6.5 0V1H2.5V0H1.5V1H1C0.445 1 0 1.445 0 2V9C0 9.26522 0.105357 9.51957 0.292893 9.70711C0.48043 9.89464 0.734784 10 1 10H8C8.26522 10 8.51957 9.89464 8.70711 9.70711C8.89464 9.51957 9 9.26522 9 9V2C9 1.445 8.55 1 8 1H7.5V0H6.5ZM7 5.5H4.5V8H7V5.5Z" fill="#706C61"/>
+                </svg>
+                26 May, 2022
               </div>
-              <a href="#" class="news__title" title="Vietnam Likely to Extend Pilot Program Allowing Locals to Visit Casinos">Vietnam Likely to Extend Pilot Program Allowing Locals to Visit Casinos</a>
+              <div class="news-home__item-author">by Micheal</div>
             </div>
-            <div class="news">
-              <a href="#" class="news__img">
-                <img src="data/news-2.jpg" width="290" height="190" alt="news">
-                <div class="news__label">NEWS</div>
-              </a>
-              <div class="news__row">
-                <div class="news__date">march 3, 2022</div>
-                <div class="news__views">
-                  <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 8.50427C10.8281 8.50427 11.4994 7.8327 11.4994 7.00427C11.4994 6.17585 10.8281 5.50427 10 5.50427C9.17192 5.50427 8.50061 6.17585 8.50061 7.00427C8.50061 7.8327 9.17192 8.50427 10 8.50427Z" fill="#7D7C7A"/>
-                    <path d="M19.8661 6.50427C19.2263 5.39427 15.7077 -0.175734 9.73011 0.00426608C4.2023 0.144266 1.00358 5.00427 0.133921 6.50427C0.046188 6.65629 0 6.82873 0 7.00427C0 7.1798 0.046188 7.35225 0.133921 7.50427C0.763671 8.59427 4.13233 14.0043 10.02 14.0043H10.2699C15.7977 13.8643 19.0064 9.00427 19.8661 7.50427C19.9538 7.35225 20 7.1798 20 7.00427C20 6.82873 19.9538 6.65629 19.8661 6.50427ZM10 10.5043C9.30804 10.5043 8.63162 10.299 8.05628 9.91441C7.48093 9.52982 7.03251 8.9832 6.76771 8.34366C6.5029 7.70412 6.43362 7.00038 6.56861 6.32145C6.70361 5.64252 7.03682 5.01888 7.52611 4.52939C8.0154 4.03991 8.63879 3.70657 9.31746 3.57152C9.99612 3.43647 10.6996 3.50578 11.3389 3.77069C11.9781 4.03559 12.5246 4.4842 12.909 5.05977C13.2934 5.63534 13.4986 6.31203 13.4986 7.00427C13.4986 7.93252 13.13 8.82276 12.4739 9.47914C11.8178 10.1355 10.9279 10.5043 10 10.5043Z" fill="#7D7C7A"/>
-                  </svg>
-                  62
-                </div>
-              </div>
-              <a href="#" class="news__title" title="Vietnam Likely to Extend Pilot Program Allowing Locals to Visit Casinos">Vietnam Likely to Extend Pilot Program Allowing Locals to Visit Casinos</a>
+            <div class="news-home__item-text text-content">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
             </div>
-            <div class="news">
-              <a href="#" class="news__img">
-                <img src="data/news-3.jpg" width="290" height="190" alt="news">
-                <div class="news__label">NEWS</div>
-              </a>
-              <div class="news__row">
-                <div class="news__date">february 6, 2022</div>
-                <div class="news__views">
-                  <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 8.50427C10.8281 8.50427 11.4994 7.8327 11.4994 7.00427C11.4994 6.17585 10.8281 5.50427 10 5.50427C9.17192 5.50427 8.50061 6.17585 8.50061 7.00427C8.50061 7.8327 9.17192 8.50427 10 8.50427Z" fill="#7D7C7A"/>
-                    <path d="M19.8661 6.50427C19.2263 5.39427 15.7077 -0.175734 9.73011 0.00426608C4.2023 0.144266 1.00358 5.00427 0.133921 6.50427C0.046188 6.65629 0 6.82873 0 7.00427C0 7.1798 0.046188 7.35225 0.133921 7.50427C0.763671 8.59427 4.13233 14.0043 10.02 14.0043H10.2699C15.7977 13.8643 19.0064 9.00427 19.8661 7.50427C19.9538 7.35225 20 7.1798 20 7.00427C20 6.82873 19.9538 6.65629 19.8661 6.50427ZM10 10.5043C9.30804 10.5043 8.63162 10.299 8.05628 9.91441C7.48093 9.52982 7.03251 8.9832 6.76771 8.34366C6.5029 7.70412 6.43362 7.00038 6.56861 6.32145C6.70361 5.64252 7.03682 5.01888 7.52611 4.52939C8.0154 4.03991 8.63879 3.70657 9.31746 3.57152C9.99612 3.43647 10.6996 3.50578 11.3389 3.77069C11.9781 4.03559 12.5246 4.4842 12.909 5.05977C13.2934 5.63534 13.4986 6.31203 13.4986 7.00427C13.4986 7.93252 13.13 8.82276 12.4739 9.47914C11.8178 10.1355 10.9279 10.5043 10 10.5043Z" fill="#7D7C7A"/>
-                  </svg>
-                  1 184
-                </div>
+          </div>
+          <div class="news-home__item">
+            <a href="#" class="news-home__item-img">
+              <img src="data/What-NFT2.jpg" width="360" height="220" alt="What-NFT">
+            </a>
+            <a href="#" class="news-home__item-title" title="How to invest in NFT? ">How to invest in NFT? </a>
+            <div class="news-home__item-info">
+              <div class="news-home__item-date">
+                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 9H1V3.5H8V9ZM6.5 0V1H2.5V0H1.5V1H1C0.445 1 0 1.445 0 2V9C0 9.26522 0.105357 9.51957 0.292893 9.70711C0.48043 9.89464 0.734784 10 1 10H8C8.26522 10 8.51957 9.89464 8.70711 9.70711C8.89464 9.51957 9 9.26522 9 9V2C9 1.445 8.55 1 8 1H7.5V0H6.5ZM7 5.5H4.5V8H7V5.5Z" fill="#706C61"/>
+                </svg>
+                26 May, 2022
               </div>
-              <a href="#" class="news__title" title="Poker Stars Real-Money Apps Down Due to ‘Unscheduled Maintenance Issue’">Poker Stars Real-Money Apps Down Due to ‘Unscheduled Maintenance Issue’</a>
+              <div class="news-home__item-author">by Brian A.</div>
             </div>
-            <div class="news">
-              <a href="#" class="news__img">
-                <img src="data/news-4.jpg" width="290" height="190" alt="news">
-                <div class="news__label">NEWS</div>
-              </a>
-              <div class="news__row">
-                <div class="news__date">march 4, 2022</div>
-                <div class="news__views">
-                  <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 8.50427C10.8281 8.50427 11.4994 7.8327 11.4994 7.00427C11.4994 6.17585 10.8281 5.50427 10 5.50427C9.17192 5.50427 8.50061 6.17585 8.50061 7.00427C8.50061 7.8327 9.17192 8.50427 10 8.50427Z" fill="#7D7C7A"/>
-                    <path d="M19.8661 6.50427C19.2263 5.39427 15.7077 -0.175734 9.73011 0.00426608C4.2023 0.144266 1.00358 5.00427 0.133921 6.50427C0.046188 6.65629 0 6.82873 0 7.00427C0 7.1798 0.046188 7.35225 0.133921 7.50427C0.763671 8.59427 4.13233 14.0043 10.02 14.0043H10.2699C15.7977 13.8643 19.0064 9.00427 19.8661 7.50427C19.9538 7.35225 20 7.1798 20 7.00427C20 6.82873 19.9538 6.65629 19.8661 6.50427ZM10 10.5043C9.30804 10.5043 8.63162 10.299 8.05628 9.91441C7.48093 9.52982 7.03251 8.9832 6.76771 8.34366C6.5029 7.70412 6.43362 7.00038 6.56861 6.32145C6.70361 5.64252 7.03682 5.01888 7.52611 4.52939C8.0154 4.03991 8.63879 3.70657 9.31746 3.57152C9.99612 3.43647 10.6996 3.50578 11.3389 3.77069C11.9781 4.03559 12.5246 4.4842 12.909 5.05977C13.2934 5.63534 13.4986 6.31203 13.4986 7.00427C13.4986 7.93252 13.13 8.82276 12.4739 9.47914C11.8178 10.1355 10.9279 10.5043 10 10.5043Z" fill="#7D7C7A"/>
-                  </svg>
-                  14
-                </div>
+            <div class="news-home__item-text text-content">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+            </div>
+          </div>
+          <div class="news-home__item">
+            <a href="#" class="news-home__item-img">
+              <img src="data/What-NFT3.jpg" width="360" height="220" alt="What-NFT">
+            </a>
+            <a href="#" class="news-home__item-title" title="How to invest in NFT? ">How to invest in NFT? </a>
+            <div class="news-home__item-info">
+              <div class="news-home__item-date">
+                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 9H1V3.5H8V9ZM6.5 0V1H2.5V0H1.5V1H1C0.445 1 0 1.445 0 2V9C0 9.26522 0.105357 9.51957 0.292893 9.70711C0.48043 9.89464 0.734784 10 1 10H8C8.26522 10 8.51957 9.89464 8.70711 9.70711C8.89464 9.51957 9 9.26522 9 9V2C9 1.445 8.55 1 8 1H7.5V0H6.5ZM7 5.5H4.5V8H7V5.5Z" fill="#706C61"/>
+                </svg>
+                26 May, 2022
               </div>
-              <a href="#" class="news__title" title="DraftKings Settles Proxy Sports Betting Dispute in New Jersey, Fined $150K">DraftKings Settles Proxy Sports Betting Dispute in New Jersey, Fined $150K</a>
+              <div class="news-home__item-author">by Brian A.</div>
+            </div>
+            <div class="news-home__item-text text-content">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
+            </div>
+          </div>
+          <div class="news-home__item">
+            <a href="#" class="news-home__item-img">
+              <img src="data/What-NFT4.jpg" width="360" height="220" alt="What-NFT">
+            </a>
+            <a href="#" class="news-home__item-title" title="How to invest in NFT? ">How to invest in NFT? </a>
+            <div class="news-home__item-info">
+              <div class="news-home__item-date">
+                <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 9H1V3.5H8V9ZM6.5 0V1H2.5V0H1.5V1H1C0.445 1 0 1.445 0 2V9C0 9.26522 0.105357 9.51957 0.292893 9.70711C0.48043 9.89464 0.734784 10 1 10H8C8.26522 10 8.51957 9.89464 8.70711 9.70711C8.89464 9.51957 9 9.26522 9 9V2C9 1.445 8.55 1 8 1H7.5V0H6.5ZM7 5.5H4.5V8H7V5.5Z" fill="#706C61"/>
+                </svg>
+                26 May, 2022
+              </div>
+              <div class="news-home__item-author">by Brian A.</div>
+            </div>
+            <div class="news-home__item-text text-content">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <footer class="footer">
-  <div class="container">
-    <div class="footer__box">
-      <div class="footer__left">
-        <div class="footer__logo">
-          <img src="data/logo-white.svg" width="134" height="26" alt="logo">
-          <a href="#" class="footer__logo-link"></a>
-        </div>
-        <ul class="footer__list">
-          <li><a href="#">Terms and Conditions</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-        <div class="footer__copy">BetAdvisor is the world’s leading independent online gaming authority, providing trusted online casino news, guides, reviews and information since 2020.</div>
+  <div class="footer__container">
+    <div class="footer__left">
+      <div class="footer__logo">
+        <img src="images/logo.svg" width="98" height="60" alt="logo">
+        <a href="#" class="footer__logo-link"></a>
       </div>
+      <div class="footer__made">Made with ❤️ for NFT</div>
+      <div class="footer__copy">© Comvitalo Limited 2022</div>
+      <div class="footer__info">
+        <div class="footer__info-item">
+          <div class="footer__info-title">Affiliate </div>
+          <div class="footer__info-text text-content">Wir haben eine Affiliate-Partnerschaft mit einigen Partnern, bei der wir einen Prozentsatz des Umsatzes erhalten, wenn du von unserer Seite aus auf die Seite klickst und etwas kaufst</div>
+        </div>
+        <div class="footer__info-item">
+          <div class="footer__info-title">About us  </div>
+          <div class="footer__info-text text-content">Auf dieser Seite findst du Jagdinhalte von Jägern für Jäger. Wir haben unsere Leidenschaft zu diesem Projekt gemacht und hoffen, dass die Inhalte für so viele Jäger wie möglich hilfreich und interessant sind.</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__center">
+      <svg class="footer__decor" width="524" height="712" viewBox="0 0 524 712" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M129 712H524V553H511V539H524V370H513V341H524V225H488V169H456V135H488V155H524V0H129V1H116V14H129V60H105V105H129V145H75V130H49V156H69V236H129H195V300H211V340H195V456H216V544H195V564H209V588H195V657H129V682H53V712H129ZM16 209H0V191H16V209ZM425 490H410V475H425V490ZM401 672H425V648H401V672ZM433 206H421V194H433V206Z" fill="white"/>
+      </svg>
       <nav class="footer__nav">
-        <div class="footer__nav-cell">
-          <div class="footer__nav-cell-title">Online Betting</div>
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Legal</div>
           <ul class="footer__nav-list">
-            <li><a href="#">Football Betting</a></li>
-            <li><a href="#">NBA Betting</a></li>
-            <li><a href="#">Horse Betting</a></li>
-            <li><a href="#">Tennis Betting</a></li>
-            <li><a href="#">Esports Betting</a></li>
+            <li><a href="#">Legal Notice</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div class="footer__nav-cell">
-          <div class="footer__nav-cell-title">Online Casino</div>
+        <div class="footer__nav-item">
+          <div class="footer__nav-title">Quick Links</div>
           <ul class="footer__nav-list">
-            <li><a href="#">Live Casino</a></li>
-            <li><a href="#">Mobile Casino</a></li>
-            <li><a href="#">Real Money Online Casino</a></li>
-            <li><a href="#">Free SGD Credit Online Casino</a></li>
-            <li><a href="#">Casino Games</a></li>
-          </ul>
-        </div>
-        <div class="footer__nav-cell">
-          <div class="footer__nav-cell-title">Links</div>
-          <ul class="footer__nav-list">
+            <li><a href="#">Academy</a></li>
             <li><a href="#">Reviews</a></li>
-            <li><a href="#">Lottery Results</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#">Projects</a></li>
           </ul>
-          <a href="#" class="footer__btn btn-4">Contact Us</a>
         </div>
       </nav>
     </div>
-  </div>
-  <div class="btn-top js-scroll-top">
-    <div class="btn-top__icon">
-      <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7.99939 15.0006L7.99939 3.14061L12.3594 6.77061C12.4605 6.85466 12.5772 6.91796 12.7028 6.95692C12.8284 6.99587 12.9604 7.0097 13.0913 6.99763C13.3557 6.97325 13.5997 6.84483 13.7694 6.64061C13.9391 6.4364 14.0208 6.17311 13.9964 5.90869C13.972 5.64426 13.8436 5.40035 13.6394 5.23061L7.63939 0.23061C7.59167 0.196971 7.54153 0.166889 7.48939 0.14061C7.43939 0.14061 7.40939 0.0906101 7.35939 0.0706101C7.24473 0.0252836 7.12268 0.00155149 6.99939 0.000610352C6.8761 0.00155146 6.75405 0.0252835 6.63939 0.07061C6.58939 0.07061 6.55939 0.12061 6.50939 0.14061C6.45725 0.166889 6.40712 0.19697 6.35939 0.23061L0.359392 5.23061C0.246509 5.32463 0.155729 5.44237 0.0935078 5.57546C0.0312867 5.70854 -0.000847004 5.8537 -0.000608441 6.00061C-0.00106498 6.23426 0.0803099 6.4607 0.229391 6.64061C0.31334 6.74187 0.416441 6.82557 0.532788 6.88692C0.649135 6.94827 0.776443 6.98607 0.90742 6.99815C1.0384 7.01022 1.17047 6.99634 1.29607 6.9573C1.42168 6.91825 1.53834 6.85481 1.63939 6.77061L5.99939 3.14061L5.99939 15.0006C5.99939 15.2658 6.10475 15.5202 6.29228 15.7077C6.47982 15.8953 6.73417 16.0006 6.99939 16.0006C7.26461 16.0006 7.51896 15.8953 7.7065 15.7077C7.89403 15.5202 7.99939 15.2658 7.99939 15.0006Z" />
-      </svg>
+    <div class="footer__right">
+      <div class="footer__contacts-title">Newsletter Sign Up</div>
+      <div class="footer__contacts-text text-content">We share the top stories and discussions about NFT in a 5 minute email newsletter. Subscribe below to receive it, every week, for free</div>
+      <form action="#" class="footer__form">
+        <div class="footer__form-row">
+          <input type="email" placeholder="Enter your email Address">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <div class="footer__form-row">
+          <input type="text" placeholder="Enter your Name">
+          <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.33265 14.2226L11.5576 4.9977L12.1254 11.2125C12.1387 11.3565 12.1802 11.4965 12.2476 11.6245C12.3149 11.7524 12.4069 11.8659 12.5181 11.9583C12.7427 12.1451 13.0323 12.2349 13.3232 12.2081C13.6141 12.1812 13.8824 12.04 14.0691 11.8153C14.2558 11.5907 14.3456 11.3011 14.3188 11.0102L13.541 2.45424C13.53 2.39095 13.5144 2.32855 13.4943 2.26756C13.4554 2.22867 13.471 2.16644 13.4477 2.112C13.3937 1.98756 13.3173 1.87416 13.2221 1.77753C13.1255 1.68237 13.0121 1.6059 12.8876 1.55197C12.8487 1.51308 12.7865 1.52863 12.7321 1.5053C12.6711 1.48518 12.6087 1.46958 12.5454 1.45863L3.9894 0.680811C3.82847 0.666142 3.66628 0.687111 3.51437 0.74223C3.36245 0.797349 3.22455 0.885261 3.11047 0.999717C2.92837 1.1811 2.81554 1.42052 2.79156 1.67642C2.7781 1.82048 2.79319 1.96577 2.83596 2.10399C2.87874 2.24221 2.94836 2.37063 3.04085 2.4819C3.13333 2.59317 3.24686 2.6851 3.37492 2.75243C3.50299 2.81975 3.64308 2.86115 3.78717 2.87426L10.0019 3.44206L0.777016 12.667C0.570726 12.8733 0.454834 13.1531 0.454834 13.4448C0.454834 13.7365 0.570726 14.0163 0.777016 14.2226C0.983306 14.4289 1.2631 14.5448 1.55483 14.5448C1.84657 14.5448 2.12636 14.4289 2.33265 14.2226Z" />
+          </svg>
+        </div>
+        <label class="footer__form-checkbox">
+          <input type="checkbox" class="footer__form-checkbox-input">
+          <span class="footer__form-checkbox-text">I agree to my personal data being stored and used to receive newsletters. <a href="#">Terms & Conditions</a> apply.</span>
+        </label>
+        <button type="submit" class="footer__form-btn btn-2">Sign Up Now</button>
+      </form>
+      <div class="social">
+        <div class="social__title">Follow Us</div>
+        <ul class="social__list">
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/facebook.svg" width="36" height="36" alt="facebook">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/twitter.svg" width="36" height="36" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/instagram.svg" width="36" height="36" alt="instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" rel="nofollow">
+              <img src="data/linkedin.svg" width="36" height="36" alt="linkedin">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    BACK TO TOP
   </div>
 </footer>
     
